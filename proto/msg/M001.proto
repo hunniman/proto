@@ -13,6 +13,7 @@ message M1111{  //心跳包
     }
 
     message C2S{
+	required string userId=1;//用户id
     }
 	
 }
@@ -32,4 +33,19 @@ message M1112{  //登陆
 	
 }
 
+
+message M1113{  //图片聊天
+
+    message  S2C{
+	optional Commons.SimpleUserInfo fromUser=1; //消息来源
+	required Commons.ImageMessage image=2;//图片内容 
+    }
+
+    message C2S{
+	required string fromUserId=1;//发送者的用户id
+	required string toUserId=2;//目标的用户id
+	required Commons.ImageMessage image=3;//图片内容 
+    }
+	
+}
 

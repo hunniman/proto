@@ -1,12 +1,13 @@
 
-‘
+€
 
-M001.protocom.tworr.msg.M0001Commoms.proto")
+M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
 S2C
 
-serverTime (
-C2S"’
+serverTime (
+C2S
+userId (	"’
 M1112a
 S2C
 status (
@@ -14,5 +15,14 @@ serverTime (
 simpleUserInfo (2%.com.tworr.msg.Commons.SimpleUserInfo&
 C2S
 phone (	
-password (	B
+password (	"Ü
+M1113r
+S2C7
+fromUser (2%.com.tworr.msg.Commons.SimpleUserInfo2
+image (2#.com.tworr.msg.Commons.ImageMessage_
+C2S
+
+fromUserId (	
+toUserId (	2
+image (2#.com.tworr.msg.Commons.ImageMessageB
 com.tworr.msg.protocalBM0001

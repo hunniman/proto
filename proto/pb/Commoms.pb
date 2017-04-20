@@ -1,5 +1,5 @@
 
-ê
+š
 Commoms.protocom.tworr.msg.Commons"+
 ResponseInfo
 status (
@@ -12,5 +12,8 @@
 headerPath (	
 email (	
 level (
-isOnline (B!
+isOnline (".
+ImageMessage
+file (
+fileName (	B!
 com.tworr.msg.protocalBCommons

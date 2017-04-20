@@ -1,0 +1,217 @@
+package M16;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M16";  //抽奖协议
+
+import "Common.proto";
+
+message TargetInfo{     
+	required string name = 1;//地点
+	required int32 time = 2;//时间
+	optional int32 result = 3;//战斗结果:0胜利，1失败
+	required int32 posX = 4;//坐标x
+	required int32 posY = 5;//坐标y
+	required string posSoldier = 7;//据点驻军
+	optional string legionName =  8;//所属军团
+	optional int32 honner = 9;//获得荣誉
+	required int32 level = 10; //等级
+	optional int32 prosper = 11; //繁荣度
+	optional int32 totalprosper = 12;//总繁荣度
+	optional string aim=13;//目标
+}
+
+message fivePos{
+	repeated int32 posCount = 1;//五个点的值
+}
+
+message Resource{
+	required int32 type = 1;//0:侦察玩家,1:侦察资源,2:战斗资源信息
+	optional int32 resourceId = 2;//侦察资源id
+	optional int32 get = 3;//侦察资源已经采集
+	optional fivePos info = 4;//5个点的资源值
+	optional int32 mostGet = 5;//最多可掠夺
+	optional int32 cityIcon = 6;//资源点或者玩家的城池图标
+}
+
+message PosInfo{   //
+    required int32 typeid = 1;//武将
+    optional int32 post = 2;//位置
+    required int32 num = 3;//数量
+}
+
+message SolidierInfo{
+	repeated PosInfo info = 1;
+}
+
+message FightItem{   //将领信息
+	required int32 iconId = 1;//将领品质图标
+	required string name = 2;//将领名字
+	optional int32 SkillId = 3;//将领技能图标
+	optional string skillName = 4;//将领技能名称
+}
+
+message lostItem{
+	required string name = 1;//名称
+	optional int32 ftvip = 2; //vip等级
+	optional string ftTeam = 3;//军团名称
+	optional FightItem fightSr = 5;//将领
+	required int32  fightExp = 7;//编制经验
+	repeated PosInfo ftLost = 9;  //损失
+}
+
+message lostSoldiers{  //部队损失
+	required lostItem attackItem = 1;//攻击损失
+	required lostItem defentItem = 2;//防守损失
+	required int32 firstHand = 3;//先手值,0:攻击先出手,1:防守先出手
+}
+
+message CityInfo{
+	required int32 attackIcon = 1;//攻击方的图标
+	required int32 attackAddBoom = 2; //攻击方的繁荣度加成,可能为负值
+	optional int32 attackTotalBoom = 3;//攻击方的总繁荣度
+	optional int32 attackCurrBoom = 4;//攻击方当前繁荣度
+	required int32 defentAddBoom = 5;//防守方的繁荣度加成,可能为负值
+	optional int32 defentTotalBoom = 6;//防守方的总繁荣度
+	optional int32 defentCurrBoom = 7;//防守方当前繁荣度
+	required int32 defentIcon = 8;//防守方的图标
+	required string oName = 9;//对方的名字  
+	required string myName = 10;//我方的名字
+	optional int32  defenPox=11;//防守方坐标x
+	optional int32  defenPoy=12;//防守方坐标y
+}
+
+message Report{
+	required int32 mailType = 1;//1:攻击;2:被攻击;3:侦查
+	required int32 isPerson = 2;//0:对方是玩家,1：对方是怪物
+	required TargetInfo InfoPanel = 3;  //信息
+	required Resource resourcePanel = 4;       //资源
+	optional SolidierInfo watchSerPanel = 5;   //侦察兵力信息
+	required int32 haveBattle = 6;//是否有战斗产生0没有，1有
+	optional lostSoldiers lostSerPanel = 7;  //战斗损失
+	optional CityInfo cityPanel = 8;//城市的繁荣度
+	repeated Common.RewardInfo reward = 9;//奖励
+	optional fixed64 battleId = 10;//战斗id
+}
+
+message MailDetalInfo{
+	required fixed64 id = 1;
+	optional string title = 2;
+	required int32 type = 3;//邮件类型1:系统，2：发件箱；3：邮件；4：报告
+	required int32 senderType =4;//发送者类型：0系统，1玩家
+	optional string name= 5; //对方名称
+	optional string context=6;//邮件内容
+	repeated Common.RewardInfo reward = 7;//邮件附件
+	optional int32 extracted = 8;//附件是否已经提取0：未提取，1：已提取
+	required int32 createTime = 9;//创建的时间戳
+	optional Report infos = 10;//报告的详情
+	optional fixed64 playerId = 11;//对方id
+	optional fixed64 friendId = 12;//好友id
+	optional int32 helpX = 13;  //求助
+	optional int32 helpY = 14;
+}
+
+message MailShortInfo{
+	required fixed64 id = 1;
+	optional string title = 2;
+	required string name= 3; //对方名称
+	required int32 createTime = 4;//创建的时间戳
+	required int32 state = 5;//邮件状态1：已读，0：未读
+	required int32 type = 6;//邮件类型1:系统，2：发件箱；3：邮件；4：报告
+	required int32 senderType =7;//发送者类型：0系统，1玩家
+	optional int32 level = 8;//报告界面用的到
+	optional int32 mailType = 9;//1:攻击;2:被攻击;3:侦查
+}
+
+message M160000  {  //获取邮件列表
+	message  S2C{
+	    required int32 rs=1;
+	    repeated MailShortInfo mails = 2;
+	}
+
+	message  C2S{
+		
+	}
+
+}
+
+message M160001  {  //查看邮件
+	message  S2C{
+	    required int32 rs=1;
+	    optional MailDetalInfo info = 2;
+	}
+
+	message  C2S{
+		required fixed64 id = 1;
+	}
+
+}
+
+message M160002  {  //新邮件通知
+	message  S2C{
+	    required int32 num=1;//未读邮件数量
+	}
+
+	message  C2S{
+	
+	}
+
+}
+
+message M160003  {  //发送邮件
+	message  S2C{
+	    required int32 rs=1;
+	    repeated MailShortInfo info = 2;
+	    repeated string notGetNameList = 3;//不存在的名字列表
+	}
+
+	message  C2S{
+		repeated string name = 1;//接收者名字
+		required string title = 2;
+		required string context=3;//邮件内容
+	}
+
+}
+
+message M160004 {  //删除邮件
+	message  S2C{
+	    required int32 rs=1;
+	    repeated fixed64 idlist = 2;
+	}
+
+	message  C2S{
+		repeated fixed64 idlist = 1;//要删除的邮件id
+	}
+
+}
+
+message M160005 {//请求请求战斗播放
+	message  S2C{
+	    required int32 rs=1;
+	}
+
+	message  C2S{
+		required fixed64 battleId = 1;
+	}
+}
+
+message M160006 {//提取附件
+	message  S2C{
+	    required int32 rs=1;
+	}
+
+	message  C2S{
+		required fixed64 mailId = 1;
+	}
+}
+
+message M160007  {  //新邮件增加
+	message  S2C{
+	     required int32 rs=1;
+	    repeated MailShortInfo mails = 2;
+	}
+
+	message  C2S{
+	
+	}
+
+}

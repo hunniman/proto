@@ -1,0 +1,361 @@
+package M2;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M2";  //角色协议
+
+import "Common.proto";
+import "M28.proto";
+import "M3.proto";
+import "M7.proto";
+import "M12.proto";
+import "M9.proto";
+import "M8.proto";
+import "M16.proto";
+import "M23.proto";
+import "M26.proto";
+import "M4.proto";
+import "M6.proto";
+import "M21.proto";
+import "M17.proto";
+
+message ActorInfo{   //玩家power信息
+    repeated Common.AttrInfo attrInfos = 1;
+    optional string name = 2;
+    optional int32 worldTileX = 3; 		//世界坐标 -1表示未开启
+    optional int32 worldTileY = 4;
+    optional fixed64 playerId = 5; 		//玩家ID
+    optional int32 iconId =6;      		//头像ID
+	optional int32 pendantId =7;   		//挂件ID
+	optional fixed64  legionId =8;   	//军团id没有是-1
+	optional string legionName = 9;  	//军团名字
+	optional int32  legionLevel =10;    //军团等级
+	optional int32 newGift = 11;		//是否领取过新手礼包：0未领取，1已领
+	required int32	fameState = 12;		//声望是否领取
+	optional int32  engryprice=13;		//购买体力价格
+    optional int32  boomRefTime=14;		//繁荣度恢复到满剩余时间
+    optional int32  energyRefTime=15;	//体力恢复到满剩余时间
+    optional int32  totalOnlineTime=16; //玩家在线时长（秒）在线好礼活动专用
+    repeated int32  tanbaoFrees=17;     //探宝免费次数类型根据下标定    
+    optional int32  fightCount = 18;	//西域远征剩余挑战次数
+	optional int32  backCount = 19;		//西域远征剩余重置次数
+	optional int32 nextOpenId=20;//下一个要开启的活动id
+    optional int32 nextOpenTime=21;//下一个要开启的时间
+}
+
+message TipInfo{   //玩家提示
+    optional int32 type =1;      //提示类型
+	optional int32 num =2;   //数量
+}
+
+message M20000  {  //获取角色详细信息
+	message  S2C{
+	    required int32 rs = 1;
+	    optional ActorInfo actorInfo = 2;
+	    repeated Common.SoldierInfo soldierList = 3;
+	    repeated Common.ItemInfo itemList = 4;
+	    repeated M28.BuildingInfo buildingInfos = 5; ////初始化建筑基本信息
+	    repeated Common.OrdnanceInfo odInfos=6;//军械
+	    repeated Common.OrdnancePieceInfo odpInfos=7;//军械碎片
+	 	optional M6.dungeonlist dungeonInfos=8;			//副本信息				M60000
+	    optional M28.AutoUpgradeInfo autoUpgradeInfo = 9;	//自动建造信息
+	    repeated Common.EquipInfo equipinfos=10;			//装备信息(武将信息)   	M130000
+	    repeated M3.ClientCacheInfo cacheInfos = 11; 		//  获取缓存信息 		M30100 
+	    repeated M7.FormationInfo info = 12;   				//佣兵攻击力属性    	M70000
+	    optional Common.TaskInfoList taskList = 13; 		//任务初始化信息更新  	M190000
+	    repeated M12.SkillInfo skillInfos = 14;				//技能基本信息 			M120000
+	    repeated M9.ItemBuffInfo itemBuffInfo=15; 			//推送道具buff加成效果 	M90003
+	    repeated M8.TaskTeamInfo list = 16; 				//任务部队列表 			M80003
+	    repeated M16.MailShortInfo mails = 17; 				//获取邮件列表  		M160000
+	    repeated M23.ActivityInfo activitys = 18; 			//获取活动列表  		M230000
+	    repeated M23.LimitActivityInfo limitActivitys=19; 	//获取限时活动列表 		M230002
+	    repeated Common.AdviserInfo adviserinfo=20;			//初始化请求军师信息  	M260000
+	    repeated M26.CostInfo costInfos=21;					//军师抽奖信息 			M260004
+	    repeated M4.FixSoldierInfo soldiers = 22;				//可修复的佣兵列表 		M40001
+	    repeated M21.RankListInfo   rankinfos=23;              //排行榜信息      M210000
+	    optional M17.FriendBlessInfos  friBleInfos=24;           //社交信息      M1700000
+	    optional LogionRewardInfo  legionrewardinfo=25;           //开服礼包转盘信息
+	    repeated M8.TeamNoticeInfo infos = 26; 			    //部队通知列表 			M80007
+	}
+
+	message  C2S{
+	}
+
+}
+
+message M20001 { //角色军衔升级
+	message S2C{
+		required int32 rs = 1;
+	}
+	
+	message C2S{
+
+	}
+}
+
+message M20002 { //角色power修改推送
+	message S2C{
+		repeated Common.AttrDifInfo diffs = 1;
+	}
+	
+	message C2S{
+
+	}
+}
+
+message M20003{ //购买恢复繁荣
+	message S2C{
+		required int32 rs = 1;
+	}
+
+	message C2S{
+
+	}
+}
+
+message M20004{ //统帅等级升级
+	message S2C{
+		required int32 rs = 1;
+	}
+
+	message C2S{
+     	required int32 type = 1;
+	}
+}
+
+message M20005{ //授勋领取声望
+	message S2C{
+		required int32 rs = 1;
+		required int32 type = 2; //返回授勋配表的ID
+	}
+
+	message C2S{
+		required int32 type = 1;
+	}
+}
+
+message M20007{ //发送各种背包刷新
+	message S2C{
+		repeated Common.SoldierInfo soldierList = 1;
+	    repeated Common.ItemInfo itemList = 2;
+	    repeated Common.EquipInfo equipinfos=3;//装备信息
+	    repeated Common.OrdnanceInfo odInfos=4;//军械
+	    repeated Common.OrdnancePieceInfo odpInfos=5;//军械碎片
+	    repeated Common.AdviserInfo   adviserInfos=6;//军师信息
+
+	}
+
+	message C2S{
+	}
+}
+
+message M20008{  //创建角色
+	message S2C{
+	    required int32 rs = 1;
+	    optional string name = 2; //角色名称
+	}
+
+
+	message C2S{
+	    required string name = 1;  //角色名称
+	    required int32 sex = 2;  //性别
+	}
+
+}
+
+message M20009{//奖励飘字
+	message S2C{
+		repeated Common.RewardInfo rewards = 1;
+	}
+
+	message C2S{
+	}
+	
+}
+
+message M20010{ //打开领取声望
+	message S2C{
+		required int32 rs = 1;
+		optional int32 state = 2; //请求state=0时，返回状态；请求state=1时，不返回
+		
+	}
+	message C2S{
+		required int32 state = 1; //0：rs不用返回真实状态 ，1:rs要返回真实状态
+
+	}
+}
+
+message M20013{ //请求是否可以购买体力
+	message S2C{
+		required int32 rs = 1;
+		required int32 price = 2;//本次购买体力的价格
+	}
+	message C2S{
+
+	}
+}
+
+message M20011{ //购买体力
+	message S2C{
+		required int32 rs = 1;
+	}
+	message C2S{
+
+	}
+}
+
+message M20012{  //设置头像，挂件
+	message S2C{
+		required int32 rs =1;
+		optional int32 iconId =2;
+		optional int32 pendantId =3;
+	}
+
+	message C2S{
+		optional int32 iconId =1;
+		optional int32 pendantId =2; //0 未设置
+	}
+}
+
+message M20014{  //设置玩家坐标
+	message S2C{
+		optional int32 worldTileX = 1; 
+    	optional int32 worldTileY = 2;
+	}
+
+	message C2S{
+	
+	}
+}
+
+message M20015{  //30天登录奖励
+	message S2C{
+		required int32 rs =1;
+		repeated int32 canGet =2;//可以领的登录第几天
+		required int32 type =3;//类型：1：30天登录奖励，2：每日登录抽奖
+		optional int32 allDay =4;//登录的总天数
+	}
+
+	message C2S{
+		required int32 dayNum =1;
+	}
+}
+
+
+
+message  LogionRewardInfo{//登陆奖励信息
+	    repeated int32 canGet =1;//可以领的登录第几天
+		required int32 type =2;//类型：1：30天登录奖励，2：每日登录抽奖
+		optional int32 allDay =3;//登录的总天数
+}
+
+message loginLottery{  //每日登录抽奖获得的奖励组
+	required int32 power=1;
+	required int32 itemId=2;
+	required int32 num=3;
+}
+message M20016{  //每日登录抽奖
+	message S2C{
+		required int32 rs =1;
+		repeated loginLottery rewardInfo=2; //礼品组
+	}
+
+	message C2S{
+		required int32 type=1;//0请求，1领取
+	}
+}
+
+
+message M20017{  //每日登录领取声望的id
+	message S2C{
+		required int32 rs =1;
+		required int32 preid=2; //声望的id
+	}
+
+	message C2S{
+	
+	}
+}
+
+message M20200{  //游戏提示
+	message S2C{
+	repeated TipInfo tipInfos =1;
+	}
+
+	message C2S{
+	
+	}
+}
+
+
+message M20201{  //军团名字用更新
+	message S2C{
+	required string name =1;
+	}
+
+	message C2S{
+	
+	}
+}
+
+message M20300{  //改变通知选项
+	message S2C{
+	required int32 rs =1;
+	repeated int32  remainlist=2 ;//通知选项  原样返回
+	}
+
+	message C2S{
+	repeated int32  remainlist=1 ;//通知选项
+	}
+}
+
+message M20301{//领取新手礼包
+	message S2C{
+		required int32 rs =1;
+	}
+
+	message C2S{
+	
+	}
+}
+
+message laterinfo{  //最近信息
+	required string name=1;
+	required fixed64 playerId=2;
+	required int32 iconId=3;
+}
+
+
+
+message M20400{//最近信息
+	message S2C{
+		required int32 rs =1;
+		repeated  laterinfo infos=2;//最近信息
+	}
+
+	message C2S{
+	
+	}
+}
+
+message M20500{		//繁荣度的定时器校验
+	message S2C{
+		required int32 rs =1;
+		optional int32  boomRefTime =2;		//繁荣度恢复到满剩余时间
+	}
+
+	message C2S{
+
+	}
+}
+
+message M20501{		//体力定时器校验
+	message S2C{
+		required int32 rs =1;
+		optional int32  energyRefTime =2;	//体力恢复到满剩余时间
+	}
+
+	message C2S{
+	
+	}
+}
+

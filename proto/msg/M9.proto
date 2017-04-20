@@ -1,0 +1,130 @@
+package M9;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M9";  //道具buff协议
+
+import "Common.proto";
+
+
+
+message M90000  {  //道具信息
+	message  S2C{
+	    required int32 rs = 1;//错误码
+	    repeated Common.ItemInfo iteminfos = 2;//道具信息
+	}
+
+	message  C2S{
+	}
+
+}
+
+
+message M90001  {  //道具使用
+	message  S2C{
+	    required int32 rs = 1;
+	    required int32 num=2;//数量
+	    required int32 typeId= 3;
+	    repeated Common.ItemInfo iteminfos=4;
+	    optional ItemBuffInfo itemBuffInfo=5;	//buff类道具使用信息
+
+	}
+
+	message  C2S{
+		required int32 typeId= 1;
+		required int32 num=2;//数量
+		optional int32 costType =3;//使用消耗类型1道具，2金币 
+	   
+	}
+
+}
+
+message M90002{  //buff倒计时完成后请求
+
+    message S2C{
+        required int32 rs = 1;
+	    required int32 type =2;    	//道具类型
+	    required int32 powerId =3;  //要加成效果的powerId
+        optional int32 remainTime = 4;
+    }
+	
+	message C2S{
+	    required int32 type =1;    	//道具类型
+	    required int32 powerId =2;  //要加成效果的powerId
+	}
+}
+
+
+message M90003{//更新推送道具buff加成效果 只推送新增、更新的(初始化)
+	message S2C{
+		required int32 rs = 1;
+		repeated ItemBuffInfo itemBuffInfo=2;
+	}
+
+	message C2S{
+
+	}
+}
+
+
+message M90004  {  //道具使用发红包改名卡
+	message  S2C{
+	    required int32 rs = 1;
+        repeated Common.ItemInfo iteminfos=2;//更新改变的道具
+
+	}
+
+	message  C2S{
+		required  int32  typeId= 1;
+	    required  string name=2;//名字  发红包 改名卡
+	}
+
+}
+
+
+message M90005  {  //请求是否有外观道具正在使用
+	message  S2C{
+	    required int32 rs = 1;
+        required int32 typeId=2;//0 没有，1正在使用的外观道具id
+	}
+
+	message  C2S{
+		
+	}
+
+}
+
+
+message M90006  {  //使用喇叭协议
+	message  S2C{
+	    required int32 rs = 1;
+	}
+
+	message  C2S{
+		required  int32  typeId= 1;
+	    required  string  mess =2;//信息
+	}
+
+}
+
+message M90007  {  //增加军团贡献度
+	message  S2C{
+	    required int32 rs = 1;
+	}
+
+	message  C2S{
+		required  int32  typeId= 1;
+	    required  int32  num =2;//使用军团贡献度
+	}
+
+}
+
+message ItemBuffInfo{//道具buff信息
+	required int32 itemId =1;   //道具Id
+	required int32 type =2;    	//道具类型
+	required int32 powerId =3;  //要加成效果的powerId
+	required int32 value =4;    //加成效果（百分比）
+	required int32 time =5;	    //buff有效时间
+	required int32 remainTime = 6; //剩余时间
+}
+
+

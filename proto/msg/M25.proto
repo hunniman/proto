@@ -1,0 +1,29 @@
+package M25;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M25";  //系统相关协议
+
+import "Common.proto";
+import "M20.proto";
+import "M16.proto";
+import "M14.proto";
+message M250000{  //分享功能
+    message S2C{
+        required int32 rs =1;
+        optional int32 type =2;//1：佣兵分享，2：竞技场战报分享，3：野外战报分享，4：系统公告 ，5军团招募
+        optional Common.SoldierInfo soldierInfo = 3;
+        optional M20.PerDetailInfos areanInfo = 4;
+        optional M16.MailDetalInfo reportInfo = 5;
+        optional M14.ChatInfo chat = 6;
+        optional fixed64 id = 7;
+        optional int32 typeId = 8;//佣兵分享的时候传typeId，系统公告时传公告id
+        optional int32 shareType =9;//1:世界分享，2：军团分享
+    }
+
+    message  C2S{  
+        required int32 type =1;//1：佣兵分享，2：竞技场战报分享，3：野外战报分享，4：系统公告
+        optional fixed64 id = 2;
+        optional int32 typeId = 3;//佣兵分享的时候传typeId
+        required int32 shareType =4;//1:世界分享，2：军团分享
+    }
+}

@@ -1,0 +1,135 @@
+package Common;  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "Common";  //共用定义
+
+
+
+message AttrDifInfo{ //玩家各种属性各种列表
+	required int32 typeid = 1;   //属性
+	required int64 value= 2;     //值
+}
+
+///////////////////power相关对应结构体///////////////
+
+message AttrInfo{  //玩家各种属性列表，包括资源属性
+	required int32 typeid = 1;   //属性
+	required int64 value= 2;     //值
+}
+
+///powerList 需要优化
+message SoldierInfo{  //佣兵信息
+	required int32 typeid = 1;		//佣兵模板id
+	required int32 num = 2;			//数量
+	repeated int32 powerList = 3;	//战斗属性列表
+	//required int32 attack = 4;//攻击
+	//required int32 hp =5;//总血量
+}
+
+message ItemInfo{//道具信息
+	required int32 typeid = 1;//道具id
+	required int32 num = 2;//道具数量
+}
+
+message AdviserInfo{     //军师信息
+    required int32 typeId = 1;//军师配置表id
+    required int32 num = 2;//军师数量
+    required int32 fightnum = 3;//军师出战数量
+    optional int32 quilty=4;//品质
+
+}
+
+
+////////////////////////////////////////////////////
+
+message RewardInfo{  //奖励信息
+	required int32 power = 1;		//分类  
+	optional int32 typeid = 2;		//类型
+	required int32 num = 3;			//数量
+}
+
+message FightElementInfo{//出战单位属性
+	required int32 typeid = 1;//佣兵模板id
+	required int32 num = 2;//出战数量
+	required int32 post = 3;//位置
+}
+
+
+//////////////////////////////////////////////////
+message EquipInfo{    //装备信息
+	required fixed64 id = 1; //装备唯一id
+	required int32 typeid = 2; //装备配置id
+	required int32 level = 3; //装备等级
+	required int32 exp = 4; //装备储存的exp
+	required int32 position = 5; //装备的位置，0在仓库里,123456槽位
+    required int32 type=6;//装备类型
+    required int32 quality=7;//品质
+    required int32 upproperty=8;//功能属性
+   
+}
+
+
+message OrdnancePieceInfo{    //军械碎片信息
+    required int32 typeid = 1; //typeid
+	required int32 num = 2; //数量
+	
+}
+
+
+message OrdnanceInfo{    //军械信息
+    required fixed64 id = 1; //军械唯一id
+	required int32 typeid = 2; //军械碎片装备配置id
+	required int32 strgthlv=3;//强化等级
+    required int32 remoulv=4;//改造等级
+    required int32 type=5;//兵种类型
+    required int32 quality=6;//品质
+    required int32 part=7;//部位
+    required int32 position = 8; //装备的位置，0在仓库里,1槽位
+    required int32 strength=9;//强度
+  
+}
+
+
+
+message DungeonInfo{
+    required int32 rs = 1;
+    repeated EventInfo eventInfo = 2;
+    repeated int32 boxes = 3;//可领取副本宝箱列表：1 2 3
+    optional int32 star = 4;//副本获得的星星数
+    optional int32 totalStar = 5;//副本的总星星数
+    optional int32 dungeoId = 6;//副本id
+    optional int32 times = 7;//剩余次数
+    optional int32 timesTotal = 8;//总次数
+}
+
+message EventInfo{   //关卡信息
+    required int32 id = 1;//关卡id
+    required int32 star = 2;//关卡获得的星星数
+    repeated MonsterInfo monsterInfos = 3;//关卡怪物信息
+    required int32 force = 4;//怪物战力
+}
+
+message MonsterInfo{   //关卡信息
+    required int32 id = 1;//关卡id
+    required int32 post = 2;//位置
+    required int32 num = 3;//怪物数量
+}
+
+
+
+
+
+message TaskInfo{    //任务信息 
+    required int32 tableType = 1; //任务类型 1，主线任务，2每日任务，3每日活跃
+    required int32 typeId = 2; //任务对应表的Id
+    optional int64  num= 3; //完成度
+    optional int32 state = 4; //状态 0未完成 1已经完成 2领取过了 3要删除的
+    optional int32 accept = 5; //状态 0未接受 ，1接受
+}
+
+message TaskInfoList {
+    repeated TaskInfo taskInfos = 1; //
+    optional int32 dayliynum=2;//日常任务任务完成数
+    optional int32 dayActivityId=3;//日常活跃Id
+    required int32 rs=4;//错误吗
+    optional int32 hasGetMaxId=5;//已经领取活跃最大id
+}

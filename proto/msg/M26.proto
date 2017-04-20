@@ -1,0 +1,109 @@
+package M26;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M26";  //军师相关协议
+
+import "Common.proto";
+
+
+message M260000{  //军师信息 用于初始化请求
+    message S2C{
+     repeated  Common.AdviserInfo adviserinfo=1;//军师信息
+     required int32 rs=2;//错误码
+    }
+
+    message  C2S{  
+     
+    }
+}
+
+
+
+message M260001{  //军师进阶
+    message S2C{
+      required int32 rs=1;//错误码
+      optional int32 newid=2;//获得新的军师id
+    }
+
+    message  C2S{  
+     repeated int32 typeIds=1;//升级的军师id默认1个如果两个同种id分开发
+     required int32 quilty=2;//品质
+    }
+}
+
+
+message M260002{  //军师升级
+    message S2C{
+     required int32 rs=1;//错误码
+    }
+
+    message  C2S{  
+       required int32 typeId=1;//升级的军师id
+    }
+}
+
+
+message M260003{  //军师分解
+    message S2C{
+     required int32 rs=1;//错误码
+    }
+
+    message  C2S{  
+       repeated int32 typeids=1;//升级的军师id
+    }
+}
+
+
+
+
+///////////////军师抽奖
+
+message CostInfo{  //价格信息
+    required int32 type = 1;      //抽奖类型
+    required int32 onceprice = 2;       //1次抽价格
+    required int32 fiveprice = 5;       //5次抽价格
+}
+
+
+message M260004{  //军师抽奖信息
+    message S2C{
+     required int32 rs=1;//错误码
+     repeated CostInfo costInfos=2;//抽奖信息
+    }
+
+    message  C2S{  
+    
+    }
+}
+
+
+message M260005{  //军师抽奖
+    message S2C{
+     required int32 rs=1;//错误码
+     repeated CostInfo costInfos=2;//抽奖信息
+     repeated int32 getids=3;//抽到的军师id
+     optional int32 type=4;//原样返回
+    }
+
+    message  C2S{  
+     required int32 type=1;//抽奖类型
+     required int32 num=2;//抽奖数量
+    }
+}
+
+
+message M260006{  //军师一键进阶
+    message S2C{
+      required int32 rs=1;//错误码
+      repeated int32 newids=2;//获得新的军师id
+    }
+
+    message  C2S{  
+     required int32 quilty=1;//品质
+    }
+}
+
+
+
+
+

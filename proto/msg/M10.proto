@@ -1,0 +1,219 @@
+﻿package M10;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M10";  //建筑协议
+
+import "Common.proto";
+
+
+message BuildingInfo{    //建筑总信息
+	required int32 index = 1; //所在大类的位置 对应配置表的ID
+	required int32 buildingType = 2; //建筑类型  0为空地
+	required int32 level = 3; //建筑等级 0级可建造
+	optional int32 levelTime = 4; //升级完成时间倒计时
+	repeated ProductionInfo productionInfos = 5; //生产队列信息
+	repeated BuildingDetailInfo buildingDetailInfos = 6; //建筑里面的详细信息
+	optional int32 speedRate = 7;  //生产的加速百分比 
+	optional int32 productNum=8;//生产总队列数
+}
+
+//达到条件的，才打包进来
+message BuildingDetailInfo{ //建筑里面的详细信息
+	required int32 typeid = 1; //类型ID
+	optional int32 num = 2;  //当前数量
+}
+
+message ProductionInfo{  //建筑生产信息
+	required int32 typeid = 1; //类型ID
+	required int32 num = 2; //数量
+	required int32 state = 3;  //生产类型 1生产中， 2等待生产
+	optional int32 remainTime = 4; //生产所需时间
+	optional int32 order=5;//顺序
+
+}
+
+message M100000  {  //建筑信息 相关建筑更新信息  服务端主动推送，比如生产完毕了一个
+	message  S2C{
+	    required int32 rs = 1;//错误码
+	    repeated BuildingInfo buildingInfos = 2;//建筑基本信息 升级完成,生产完成
+	}
+
+	message  C2S{
+
+	}
+
+}
+
+
+message M100001  {  //建筑升级 包括建造（0级升1级）
+	message  S2C{
+	    required int32 rs = 1;//错误码
+	    optional BuildingInfo buildingInfo=2;//升级完成后建筑信息
+	}
+
+	message  C2S{
+       required int32 index = 1;//建筑位置
+       required int32 type = 2;  //1普通升级 2金币升级
+       optional int32 buildingType = 3;//建筑类型 （野外建筑客户端选择的建筑类型）
+       optional int32 isAutoLv = 4; //1位自动升级的请求
+       optional int32 uplevel = 5;//请求升级到的等级
+	}
+
+}
+
+
+message M100003  {  //取消升级
+	message  S2C{
+	    required int32 rs = 1;//错误码
+	    optional BuildingInfo buildingInfo = 2;//消升级后建筑信息
+	}
+
+	message  C2S{
+       required int32 buildingType = 1;//建筑类型
+       required int32 index= 2;//建筑位置
+       optional int32 order = 3; // -1表示建筑
+	}
+
+}
+
+message M100004  {  //加速升级
+	message  S2C{
+	    required int32 rs = 1;//错误码
+	    optional BuildingInfo buildingInfo = 2;//消升级后建筑信息
+	}
+
+	message  C2S{
+       required int32 buildingType = 1;//建筑类型
+       required int32 index= 2;//建筑位置
+       optional int32 order = 3; // -1表示建筑
+       required int32 useType = 4; //1金币全部加速 2：道具1 3：道具2 4：道具3
+	}
+
+}
+
+message M100005 {  //建筑拆除
+	message  S2C{
+	    required int32 rs = 1;//错误码
+	    optional BuildingInfo buildingInfo=2;//拆除后建筑信息
+        required int32 buildingType= 3;//原样返回：建筑类型
+        required int32 index= 4;//原样返回：建筑位置
+
+	}
+
+	message  C2S{
+       required int32 buildingType= 1;//建筑类型
+       required int32 index= 2;//建筑位置
+	}
+
+}
+
+
+message M100006{  //建筑生产
+
+    message S2C{
+        required int32 rs = 1;//错误码
+        optional BuildingInfo buildingInfo=2; //建筑生产后建筑信息
+    }
+	
+
+	message  C2S{
+	   required int32 buildingType= 1;//建筑类型
+       required int32 index= 2;//建筑位置
+       required int32 typeid =3 ; //所要生产的类型ID
+       required int32 num = 4; //所要生产的数量
+	}
+
+}
+
+
+
+message M100007{  //建筑资源购买使用
+
+    message S2C{
+        required int32 rs = 1;//错误码
+    }
+	
+
+	message  C2S{
+	   required int32 id= 1;//购买Id
+	}
+
+}
+
+
+message M100008{  //商店购买道具
+
+    message S2C{
+        required int32 rs = 1;//错误码
+    }
+	
+
+	message  C2S{
+	   required int32 id= 1;//购买Id
+	   required int32 num= 2;//购买数量
+	}
+
+}
+
+message M100009{  //请求购买建筑位
+
+    message S2C{
+        required int32 rs = 1;//错误码
+        optional int32 gold = 2;//需要花费的金币
+    }
+	
+	message  C2S{
+	   
+	}
+
+}
+
+message M100010{  //VIP购买建筑位
+
+    message S2C{
+        required int32 rs = 1;//错误码
+    	repeated BuildingInfo buildingInfos = 2;//建筑基本信息 升级完成,生产完成
+    	required int32 type = 3;//开关状态：1开启，0关闭
+    }
+	
+	message  C2S{
+	   
+	}
+
+}
+
+
+message M100011{  //购买自动升级建筑
+
+    message S2C{
+        required int32 rs = 1;//错误码
+        required int32 type = 2;//开关状态：1开启，0关闭
+    	
+    }
+	
+	message  C2S{
+	   
+	}
+
+}
+
+message M100012{  //自动升级建筑开关
+
+    message S2C{
+        required int32 rs = 1;//
+        required int32 type = 2;//原样返回
+    	
+    }
+	
+	message  C2S{
+	     required int32 type = 1;//1开启，0关闭
+	}
+
+}
+
+
+
+
+
+
+

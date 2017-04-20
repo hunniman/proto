@@ -1,0 +1,83 @@
+package M15;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M15";  //抽奖协议
+
+import "Common.proto";
+
+message EquipLotterInfo{
+	required int32 type = 1;//抽奖类型  1普通抽奖2,高级抽奖3,顶级抽奖
+	required int32 cost = 2;//本次抽奖价格 
+	required int32 freeTimes =3;//免费次数
+	optional int32 time= 4; //倒计时
+	optional int32 willNum=5;//几次后必出
+}
+
+message Taobao{
+	required int32 type=1;
+	required int32 times=2;
+}
+
+message M150000  {  //装备抽奖信息
+	message  S2C{
+	    required int32 rs=1;
+	    repeated EquipLotterInfo equipLotterInfos = 2;
+	}
+
+	message  C2S{
+	
+	}
+
+}
+
+
+message M150001  {  //装备抽奖
+	message  S2C{
+	   required int32 rs=1;
+	   repeated EquipLotterInfo equipLotterInfos = 2;
+       repeated int32 equips=3;//抽到的装备typeId
+       required int32 type = 4;
+	}
+
+	message  C2S{
+	   required int32 type = 1;//抽奖类型  1普通抽奖2,高级抽奖3,顶级抽奖4，顶级就连抽
+
+	}
+
+}
+
+message M150002  {  //探宝
+	message  S2C{
+	   required int32 rs=1;
+	   repeated Common.RewardInfo idlist=2;
+	   repeated Common.RewardInfo getid=3;//获取的id
+	   required int32 type = 4;
+	}
+
+	message  C2S{
+	   required int32 type = 1;//抽奖类型  1普通探宝2,高级探宝
+	   optional int32 num=2;//抽奖次数
+	}
+
+}
+
+
+message M150003 {  //探宝购买幸运币
+	message  S2C{
+	   required int32 rs=1;
+	   optional int32 type=2;//原样返回
+	   repeated Taobao taobaos=3;//
+	   optional int32 autoTenBuy = 4;//是否10连抽 客户端用
+	}
+
+	message  C2S{
+	   required int32 type = 1;//抽奖类型  1普通探宝2,高级探宝3,请求免费
+	   optional int32 num=2;//购买的个数
+	   optional int32 autoTenBuy = 3;//是否10连抽 客户端用
+	}
+
+}
+
+
+
+

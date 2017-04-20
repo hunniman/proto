@@ -1,0 +1,40 @@
+package M7;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M7";  //部队协议
+
+import "Common.proto";
+
+message FormationMember{
+	required int32 typeid = 1;//佣兵模板id
+	required int32 num = 2;//数量
+	required int32 post = 3;//位置
+}
+
+message FormationInfo{
+	required int32 type = 1;// 1套用阵型；2防守阵型；3竞技场阵型
+	repeated FormationMember members = 2;//阵型成员信息
+}
+
+
+message M70000  {  //佣兵攻击力属性
+	message  S2C{
+	    required int32 rs = 1;
+	    repeated FormationInfo info = 2;
+	}
+
+	message  C2S{
+	}
+
+}
+
+message M70001 {//队伍设置
+	message  S2C{
+	    required int32 rs = 1;
+	    repeated FormationInfo info = 2;
+	}
+
+	message  C2S{
+		required FormationInfo info = 1;
+	}
+}

@@ -1,0 +1,245 @@
+package M23;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M23";  //系统相关协议
+
+import "Common.proto";
+
+message ButtonInfo{
+    required int32 type = 1;    //1:跳转模块，2:未领取,3:已领取，4:购买 
+    optional string name = 2;
+    optional string jump = 3;   //跳转信息 module
+    optional string jumpPanel = 4;   //跳转信息 panel
+}
+
+message PriceInfo{
+    required int32 power = 1;    
+    required int32 typeId = 2;
+    required int32 num = 3;   
+}
+
+message ActivityEffectInfo{
+    required int32 type = 1;
+    required int32 effectId = 2;
+    optional string conditionName = 3;  //条件名称
+    required int32 sort = 4;    //排序
+    optional string info = 5;   //条件描述
+    required int32 iscanget = 6;    //是否有领取按钮0:无，1有，2购买,3未可领，4已领
+    optional string icon = 7;    //图标ICON
+    optional string jumpbutton = 8; //跳转按钮描述
+    optional string jumpmodule = 9; //跳转模块
+    repeated Common.RewardInfo rewards = 10; //领取奖励
+    optional int32 effecttype = 11; //生效类型
+    optional int32 effect = 12; //生效效果
+    repeated PriceInfo originalprice =13; //原价
+    repeated PriceInfo disprice =14; //现价
+    optional int32 limit =15; //限购次数
+    optional int32 totalLimit =16; //总的次数
+}
+
+message ActivityInfo{ //活动相关信息 
+    required int32 activityId = 1; //配置表活动id
+    required string name = 2;//活动名字
+    required int32 artIcon = 3;
+    required string info = 4;
+    required int32 uitype = 5;  //活动UI模板类型
+    required string title = 6;  //活动小标题
+    required int32 sort = 7; //活动排序
+    repeated ButtonInfo buttons = 8;
+    repeated ActivityEffectInfo effectInfos = 9;//活动效果
+    optional int32 startTime = 10;//开始时间
+    optional int32 endTime = 11;//结束时间
+    required int32 bgIcon = 12;
+    optional int32 already = 13;//已完成,针对进度条
+    optional int32 total = 14;//总共,针对进度条
+    optional int32 conditiontype=15;//活动条件类型
+    optional int32 show=16;//限时活动
+    optional string text=17;//活动文字描述
+    optional int32 endjudge=19; //活动结束判断,0:时间到消失,1:奖励全部领取完消失,2:活动时间到并且奖励全部领取完消失
+    optional int32 lestime= 20;// 关闭剩余倒计时，小于等于0不管
+}
+
+message ActivityShowInfo{ //活动相关信息(230007用) 
+    required int32 activityId = 1; //配置表活动id
+    repeated ButtonInfo buttons = 2;
+    repeated ActivityEffectInfo effectInfos = 3;//活动效果
+    optional int32 already = 4;//活动排名
+}
+
+message LimitActivityInfo{
+    required int32 uitype = 1; //对应的uitype
+    required int32 activityId = 2;//活动id
+    required int32 effectId = 3;//对应的功能id
+    required string name = 4;//活动名称
+    required int32 startTime = 5;//开始时间戳
+    required int32 endTime = 6;//结束时间戳
+    required int32 bgIcon = 7;//背景边框字段
+    required string info = 8;//活动文字说明
+    optional int32 lestime= 9;// 关闭剩余倒计时，小于等于0不管
+}
+
+message LaBaInfo{ //拉霸抽奖信息
+    required int32 id = 1; 
+    required int32 free =2;//免费:1是，0否
+    required int32 startTime = 3;//开始时间戳
+    required int32 endTime = 4;//结束时间戳
+    required int32 price =5;//单次抽奖价格
+    required int32 tenPrice =6;//10连抽价格
+    required int32 rewardgroup =7;//奖励组id
+    optional int32 rewardgroupId =8;//奖励id  //查看的时候就不需要,抽奖的时候就需要
+    optional int32 type = 9; // 0.显示信息 1.免费抽 2.单抽 10.十连抽
+}
+
+message LegionShareInfo{ //有福同享宝箱信息
+    required int32 id = 1; 
+    required string player = 2;//分享者名字
+    required int32 timeLeft = 3;//剩余时间
+}
+
+message ActivityRankInfo{ //活动排名信息
+    required int32 activityid = 1; 
+    required int32 rank= 2;//排名
+}
+
+
+
+
+message M230000{  //获取活动列表
+    message S2C{
+        required int32 rs =1;
+        repeated ActivityInfo activitys = 2;
+        optional int32 nextOpenId=3;//下一个要开启的活动id
+        optional int32 nextOpenTime=4;//下一个要开启的时间
+    }
+
+    message  C2S{  
+    }
+}
+
+message M230001{    //领取、购买
+    message S2C{
+        required  int32 rs =1;
+        required  int32 activityId=2;
+        required  int32 effectId=3;
+    }
+
+    message  C2S{  
+        required int32 activityId = 1; //配置表活动id
+        required int32 effectId = 2;
+        required int32 sort = 3;
+    }
+}
+
+
+
+
+message M230002{ //获取限时活动列表
+    message S2C{
+        required int32 rs=1;
+        repeated LimitActivityInfo activitys=2;
+        optional int32 nextOpenId=3;//下一个要开启的活动id
+        optional int32 nextOpenTime=4;//下一个要开启的时间
+    }
+    message C2S{
+    } 
+}
+
+message M230003{ //获取拉霸活动信息
+       message S2C{
+       required int32 rs = 1;
+       optional LaBaInfo labaInfo =2;//拉霸活动信息
+
+    }
+ 
+    message C2S{
+       required int32 effectId = 1;
+       required int32 type = 2; // 0.显示信息 1.免费抽 2.单抽 10.十连抽
+    }
+
+}
+
+message M230005{ //获取有福同享活动信息
+       message S2C{
+        required int32 rs=1;//-1:失败，活动没开启或已过期，0：成功
+        repeated LegionShareInfo legionShareInfo =2;//宝箱箱列表活动信息
+    }
+ 
+    message C2S{
+       
+    }
+}
+
+message M230006{ //请求领取有福同享宝箱奖励
+       message S2C{
+        required int32 result=1;//-1有福同享活动未开启或者已经过期,-2领取有福同享宝箱失败，宝箱不存在或已经过期
+    }
+ 
+    message C2S{
+        required int32 id=1;//
+    }
+}
+
+message M230007{ //刷新单个普通活动内容
+    message S2C{
+        repeated ActivityShowInfo activityInfo=1;
+    }
+}
+
+message M230008{ //删除一个活动
+    message S2C{
+        repeated int32 activityIds=1;//要删除的活动id
+    }
+    message C2S{
+        repeated int32 checkActivityIds=1;//要校验的活动id
+    }
+}
+
+message M230009{ //刷新单个限时活动
+    message S2C{
+        required LimitActivityInfo activityInfo=1;
+    }
+}
+
+message M230010{ //检测一个普通活动是否开启
+    message S2C{
+        required int32 rs=1;//检测结果:0.没有开放，1.开放
+        repeated ActivityInfo activityInfo=2;//开启的活动
+        optional int32 nextOpenId=3;//下一个要开启的活动id
+        optional int32 nextOpenTime=4;//下一个要开启的时间
+    }
+    message C2S{
+        required int32 checkActivityIds=1;//要校验的活动id
+    }
+}
+
+
+message M230011{ //检测一个限时活动是否开启
+    message S2C{
+        required int32 rs=1;//检测结果:0.没有开放，1.开放
+        repeated LimitActivityInfo activityInfo=2;//开启的活动
+    }
+    message C2S{
+        required int32 checkActivityIds=1;//要校验的活动id
+    }
+  
+}
+
+message M230012{ //校验在线礼包开启
+    message S2C{
+        required int32 rs=1;
+        required int32  totalOnlineTime=2;;//玩家在线时长（秒）在线好礼活动专用
+    }
+    message C2S{
+
+    }
+}
+
+message M230013{ //刷新活动排行榜排名
+    message S2C{
+        required int32 rs=1;
+        repeated ActivityRankInfo  activityRankInfo=2;
+    }
+    message C2S{
+
+    }
+}

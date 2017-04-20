@@ -1,0 +1,21 @@
+package com.tworr.msg.Commons;  
+  
+option java_package = "com.tworr.msg.protocal"; 
+
+option java_outer_classname = "Commons";  //公共
+
+
+message ResponseInfo{ //返回客户端的实体
+	required int32 status = 1;   //状态
+	optional string msg= 2;     //提示消息
+	
+}
+
+message SimpleUserInfo{
+	required string id=1;//用户id
+	required string nickName=2;//用户昵称
+	required string headerPath=3;//头像地址
+	required string email=4;//邮箱
+	optional int32 level=5;//等级
+	required bool isOnline=6;//是否在线
+}

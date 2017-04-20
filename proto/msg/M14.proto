@@ -1,0 +1,163 @@
+package M14;  
+  
+option java_package = "com.znl.proto";  
+option java_outer_classname = "M14";  //副本协议
+
+import "Common.proto";
+
+message ChatInfo{
+	required string name =1;
+	required int32 type = 2;//聊天频道1：世界;0：私聊;2：军团
+	required int32 iconId = 3;//头像id
+	required string context =4;//内容
+	required fixed64 playerId = 5; //玩家ID
+	required int32 time = 6;//聊天时间戳
+	required int32 vipLevel = 7;//vip等级
+	optional int32 playerType = 8;//0:正常玩家，1新手指导员
+	optional int32 pendantId = 9;//玩家挂件id
+	optional string legionName=10;//招募军团名字
+	optional int32  level=11 ;//玩家等级
+}
+
+message M140000  {  //聊天
+	message  S2C{
+	    repeated ChatInfo chats = 1;
+	    required int32 type = 2;//聊天频道1：世界;2：军团 
+	}
+
+	message  C2S{
+		required int32 type = 1;//聊天频道1：世界;2：军团
+		required string context = 2;//聊天内容
+	}
+
+}
+
+
+message SimplePlayerInfo{
+	required string name =1;
+	required fixed64 playerId = 2; //玩家ID
+	required int32 iconId = 3;//头像id
+	required int32 level = 4;//等级
+	required int64 capacity = 5;//战力
+	required int64 boom = 6;//繁荣度
+	required int64 boomUpLimit = 7;//繁荣度上限
+	required int32 militaryRank = 8;//军衔
+	optional string legion = 9;//军团
+	required int32 x = 10;
+	required int32 y = 11;
+	optional int32 pendantId = 12;//玩家挂件id
+	optional int32 cityIcon = 13;//建筑外观
+}
+
+message M140001  {  //查看信息
+	message  S2C{
+		required int32 rs = 1;
+	    optional SimplePlayerInfo info = 2;
+	}
+
+	message  C2S{
+		required fixed64 playerId = 1;//对方id，按名字查找的时候发0
+		optional string name = 2;//对方名称
+	}
+
+}
+
+message M140002  {  //私聊
+	message  S2C{
+		required int32 rs = 1;
+	}
+
+	message  C2S{
+		required fixed64 playerId = 1;//对方id
+		required string context =2;//内容
+	}
+
+}
+
+message M140003  {  //接收到私聊
+	message  S2C{
+		required int32 rs = 1;
+		optional ChatInfo chatInfo = 2;
+	}
+
+	message  C2S{
+	}
+
+}
+
+message M140004  {  //请求到私聊
+	message  S2C{
+		required int32 rs = 1;
+		optional SimplePlayerInfo info = 2;
+	}
+
+	message  C2S{
+		required int32 type = 1;//0:通过id查找，1：通过名字查找
+		optional fixed64 playerId = 2;
+		optional string name =3;//名字
+	}
+
+}
+
+message M140005  {  //添加到屏蔽列表
+	message  S2C{
+		required int32 rs = 1;
+	}
+	message  C2S{
+		required int32 type = 1;//0:邮件，1：聊天
+		optional fixed64 playerId = 2;
+	}
+}
+
+message ShieldInfo{
+	required string name =1;
+	required int32 level = 2;
+	required int32 iconId = 3;//头像id
+	required fixed64 playerId = 4;
+}
+
+message M140006  {  //屏蔽列表请求
+	message  S2C{
+		required int32 rs = 1;
+		repeated ShieldInfo infos = 2;
+	}
+	message  C2S{
+		required int32 type = 1;//0:邮件，1：聊天
+	}
+}
+
+message M140007  {  //移除屏蔽请求
+	message  S2C{
+		required int32 rs = 1;
+	}
+	message  C2S{
+		required int32 type = 1;//0:邮件，1：聊天
+		required fixed64 playerId = 2;
+	}
+}
+
+
+message TrumpeInfo{
+	required string name =1;//名字
+	required string mess = 2;//信息
+	required int32  type=3;//类型
+}
+
+message M140008  {  //喇叭
+	message  S2C{
+		repeated TrumpeInfo info = 1;
+		optional ChatInfo chatInfo=2;
+	}
+	message  C2S{
+		
+	}
+}
+
+message M140009  {  //获取自己的类型：0普通玩家，1新手指导员
+	message  S2C{
+		required int32 type = 1;
+	}
+	message  C2S{
+		
+	}
+}

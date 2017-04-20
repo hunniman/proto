@@ -37,8 +37,10 @@ message M1112{  //登陆
 message M1113{  //图片聊天
 
     message  S2C{
-	optional Commons.SimpleUserInfo fromUser=1; //消息来源
-	required Commons.ImageMessage image=2;//图片内容 
+	required int32 status = 1;   //状态
+	optional string msg= 2;     //提示消息
+	optional Commons.SimpleUserInfo fromUser=3; //消息来源
+	required Commons.ImageMessage image=4;//图片内容 
     }
 
     message C2S{

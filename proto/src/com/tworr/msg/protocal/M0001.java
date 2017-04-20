@@ -3347,9 +3347,54 @@ public final class M0001 {
     public interface S2COrBuilder
         extends com.google.protobuf.MessageOrBuilder {
 
-      // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;
+      // required int32 status = 1;
       /**
-       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态
+       * </pre>
+       */
+      boolean hasStatus();
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态
+       * </pre>
+       */
+      int getStatus();
+
+      // optional string msg = 2;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      boolean hasMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      java.lang.String getMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getMsgBytes();
+
+      // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
        *消息来源
@@ -3357,7 +3402,7 @@ public final class M0001 {
        */
       boolean hasFromUser();
       /**
-       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
        *消息来源
@@ -3365,7 +3410,7 @@ public final class M0001 {
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser();
       /**
-       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
        *消息来源
@@ -3373,9 +3418,9 @@ public final class M0001 {
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder();
 
-      // required .com.tworr.msg.Commons.ImageMessage image = 2;
+      // required .com.tworr.msg.Commons.ImageMessage image = 4;
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
        *
        * <pre>
        *图片内容 
@@ -3383,7 +3428,7 @@ public final class M0001 {
        */
       boolean hasImage();
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
        *
        * <pre>
        *图片内容 
@@ -3391,7 +3436,7 @@ public final class M0001 {
        */
       com.tworr.msg.protocal.Commons.ImageMessage getImage();
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
        *
        * <pre>
        *图片内容 
@@ -3450,9 +3495,19 @@ public final class M0001 {
                 }
                 break;
               }
-              case 10: {
+              case 8: {
+                bitField0_ |= 0x00000001;
+                status_ = input.readInt32();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                msg_ = input.readBytes();
+                break;
+              }
+              case 26: {
                 com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder subBuilder = null;
-                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                if (((bitField0_ & 0x00000004) == 0x00000004)) {
                   subBuilder = fromUser_.toBuilder();
                 }
                 fromUser_ = input.readMessage(com.tworr.msg.protocal.Commons.SimpleUserInfo.PARSER, extensionRegistry);
@@ -3460,12 +3515,12 @@ public final class M0001 {
                   subBuilder.mergeFrom(fromUser_);
                   fromUser_ = subBuilder.buildPartial();
                 }
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000004;
                 break;
               }
-              case 18: {
+              case 34: {
                 com.tworr.msg.protocal.Commons.ImageMessage.Builder subBuilder = null;
-                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                if (((bitField0_ & 0x00000008) == 0x00000008)) {
                   subBuilder = image_.toBuilder();
                 }
                 image_ = input.readMessage(com.tworr.msg.protocal.Commons.ImageMessage.PARSER, extensionRegistry);
@@ -3473,7 +3528,7 @@ public final class M0001 {
                   subBuilder.mergeFrom(image_);
                   image_ = subBuilder.buildPartial();
                 }
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000008;
                 break;
               }
             }
@@ -3516,21 +3571,100 @@ public final class M0001 {
       }
 
       private int bitField0_;
-      // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;
-      public static final int FROMUSER_FIELD_NUMBER = 1;
+      // required int32 status = 1;
+      public static final int STATUS_FIELD_NUMBER = 1;
+      private int status_;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态
+       * </pre>
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态
+       * </pre>
+       */
+      public int getStatus() {
+        return status_;
+      }
+
+      // optional string msg = 2;
+      public static final int MSG_FIELD_NUMBER = 2;
+      private java.lang.Object msg_;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public boolean hasMsg() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public java.lang.String getMsg() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            msg_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getMsgBytes() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          msg_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;
+      public static final int FROMUSER_FIELD_NUMBER = 3;
       private com.tworr.msg.protocal.Commons.SimpleUserInfo fromUser_;
       /**
-       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
        *消息来源
        * </pre>
        */
       public boolean hasFromUser() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
        *消息来源
@@ -3540,7 +3674,7 @@ public final class M0001 {
         return fromUser_;
       }
       /**
-       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
        *消息来源
@@ -3550,21 +3684,21 @@ public final class M0001 {
         return fromUser_;
       }
 
-      // required .com.tworr.msg.Commons.ImageMessage image = 2;
-      public static final int IMAGE_FIELD_NUMBER = 2;
+      // required .com.tworr.msg.Commons.ImageMessage image = 4;
+      public static final int IMAGE_FIELD_NUMBER = 4;
       private com.tworr.msg.protocal.Commons.ImageMessage image_;
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
        *
        * <pre>
        *图片内容 
        * </pre>
        */
       public boolean hasImage() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
        *
        * <pre>
        *图片内容 
@@ -3574,7 +3708,7 @@ public final class M0001 {
         return image_;
       }
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
        *
        * <pre>
        *图片内容 
@@ -3585,6 +3719,8 @@ public final class M0001 {
       }
 
       private void initFields() {
+        status_ = 0;
+        msg_ = "";
         fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
         image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
       }
@@ -3593,6 +3729,10 @@ public final class M0001 {
         byte isInitialized = memoizedIsInitialized;
         if (isInitialized != -1) return isInitialized == 1;
 
+        if (!hasStatus()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
         if (!hasImage()) {
           memoizedIsInitialized = 0;
           return false;
@@ -3615,10 +3755,16 @@ public final class M0001 {
                           throws java.io.IOException {
         getSerializedSize();
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeMessage(1, fromUser_);
+          output.writeInt32(1, status_);
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeMessage(2, image_);
+          output.writeBytes(2, getMsgBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeMessage(3, fromUser_);
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          output.writeMessage(4, image_);
         }
         getUnknownFields().writeTo(output);
       }
@@ -3631,11 +3777,19 @@ public final class M0001 {
         size = 0;
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, fromUser_);
+            .computeInt32Size(1, status_);
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, image_);
+            .computeBytesSize(2, getMsgBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(3, fromUser_);
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(4, image_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -3755,18 +3909,22 @@ public final class M0001 {
 
         public Builder clear() {
           super.clear();
+          status_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000001);
+          msg_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
           if (fromUserBuilder_ == null) {
             fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
           } else {
             fromUserBuilder_.clear();
           }
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
           if (imageBuilder_ == null) {
             image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
           } else {
             imageBuilder_.clear();
           }
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000008);
           return this;
         }
 
@@ -3798,13 +3956,21 @@ public final class M0001 {
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
             to_bitField0_ |= 0x00000001;
           }
+          result.status_ = status_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.msg_ = msg_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
           if (fromUserBuilder_ == null) {
             result.fromUser_ = fromUser_;
           } else {
             result.fromUser_ = fromUserBuilder_.build();
           }
-          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-            to_bitField0_ |= 0x00000002;
+          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+            to_bitField0_ |= 0x00000008;
           }
           if (imageBuilder_ == null) {
             result.image_ = image_;
@@ -3827,6 +3993,14 @@ public final class M0001 {
 
         public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1113.S2C other) {
           if (other == com.tworr.msg.protocal.M0001.M1113.S2C.getDefaultInstance()) return this;
+          if (other.hasStatus()) {
+            setStatus(other.getStatus());
+          }
+          if (other.hasMsg()) {
+            bitField0_ |= 0x00000002;
+            msg_ = other.msg_;
+            onChanged();
+          }
           if (other.hasFromUser()) {
             mergeFromUser(other.getFromUser());
           }
@@ -3838,6 +4012,10 @@ public final class M0001 {
         }
 
         public final boolean isInitialized() {
+          if (!hasStatus()) {
+            
+            return false;
+          }
           if (!hasImage()) {
             
             return false;
@@ -3874,22 +4052,169 @@ public final class M0001 {
         }
         private int bitField0_;
 
-        // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;
+        // required int32 status = 1;
+        private int status_ ;
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态
+         * </pre>
+         */
+        public boolean hasStatus() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态
+         * </pre>
+         */
+        public int getStatus() {
+          return status_;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态
+         * </pre>
+         */
+        public Builder setStatus(int value) {
+          bitField0_ |= 0x00000001;
+          status_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态
+         * </pre>
+         */
+        public Builder clearStatus() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          status_ = 0;
+          onChanged();
+          return this;
+        }
+
+        // optional string msg = 2;
+        private java.lang.Object msg_ = "";
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public boolean hasMsg() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public java.lang.String getMsg() {
+          java.lang.Object ref = msg_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            msg_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getMsgBytes() {
+          java.lang.Object ref = msg_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            msg_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder setMsg(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder clearMsg() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          msg_ = getDefaultInstance().getMsg();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder setMsgBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;
         private com.tworr.msg.protocal.Commons.SimpleUserInfo fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
             com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> fromUserBuilder_;
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
          * </pre>
          */
         public boolean hasFromUser() {
-          return ((bitField0_ & 0x00000001) == 0x00000001);
+          return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -3903,7 +4228,7 @@ public final class M0001 {
           }
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -3919,11 +4244,11 @@ public final class M0001 {
           } else {
             fromUserBuilder_.setMessage(value);
           }
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
           return this;
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -3937,11 +4262,11 @@ public final class M0001 {
           } else {
             fromUserBuilder_.setMessage(builderForValue.build());
           }
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
           return this;
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -3949,7 +4274,7 @@ public final class M0001 {
          */
         public Builder mergeFromUser(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
           if (fromUserBuilder_ == null) {
-            if (((bitField0_ & 0x00000001) == 0x00000001) &&
+            if (((bitField0_ & 0x00000004) == 0x00000004) &&
                 fromUser_ != com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance()) {
               fromUser_ =
                 com.tworr.msg.protocal.Commons.SimpleUserInfo.newBuilder(fromUser_).mergeFrom(value).buildPartial();
@@ -3960,11 +4285,11 @@ public final class M0001 {
           } else {
             fromUserBuilder_.mergeFrom(value);
           }
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
           return this;
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -3977,23 +4302,23 @@ public final class M0001 {
           } else {
             fromUserBuilder_.clear();
           }
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
           return this;
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder getFromUserBuilder() {
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
           onChanged();
           return getFromUserFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -4007,7 +4332,7 @@ public final class M0001 {
           }
         }
         /**
-         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+         * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
          *消息来源
@@ -4027,22 +4352,22 @@ public final class M0001 {
           return fromUserBuilder_;
         }
 
-        // required .com.tworr.msg.Commons.ImageMessage image = 2;
+        // required .com.tworr.msg.Commons.ImageMessage image = 4;
         private com.tworr.msg.protocal.Commons.ImageMessage image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
             com.tworr.msg.protocal.Commons.ImageMessage, com.tworr.msg.protocal.Commons.ImageMessage.Builder, com.tworr.msg.protocal.Commons.ImageMessageOrBuilder> imageBuilder_;
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
          * </pre>
          */
         public boolean hasImage() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
+          return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -4056,7 +4381,7 @@ public final class M0001 {
           }
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -4072,11 +4397,11 @@ public final class M0001 {
           } else {
             imageBuilder_.setMessage(value);
           }
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000008;
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -4090,11 +4415,11 @@ public final class M0001 {
           } else {
             imageBuilder_.setMessage(builderForValue.build());
           }
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000008;
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -4102,7 +4427,7 @@ public final class M0001 {
          */
         public Builder mergeImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
           if (imageBuilder_ == null) {
-            if (((bitField0_ & 0x00000002) == 0x00000002) &&
+            if (((bitField0_ & 0x00000008) == 0x00000008) &&
                 image_ != com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance()) {
               image_ =
                 com.tworr.msg.protocal.Commons.ImageMessage.newBuilder(image_).mergeFrom(value).buildPartial();
@@ -4113,11 +4438,11 @@ public final class M0001 {
           } else {
             imageBuilder_.mergeFrom(value);
           }
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000008;
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -4130,23 +4455,23 @@ public final class M0001 {
           } else {
             imageBuilder_.clear();
           }
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000008);
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessage.Builder getImageBuilder() {
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000008;
           onChanged();
           return getImageFieldBuilder().getBuilder();
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -4160,7 +4485,7 @@ public final class M0001 {
           }
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 2;</code>
+         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
          *
          * <pre>
          *图片内容 
@@ -5479,13 +5804,14 @@ public final class M0001 {
       "\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022=\n\016sim" +
       "pleUserInfo\030\003 \001(\0132%.com.tworr.msg.Common" +
       "s.SimpleUserInfo\032&\n\003C2S\022\r\n\005phone\030\001 \002(\t\022\020" +
-      "\n\010password\030\002 \002(\t\"\334\001\n\005M1113\032r\n\003S2C\0227\n\010fro" +
-      "mUser\030\001 \001(\0132%.com.tworr.msg.Commons.Simp" +
-      "leUserInfo\0222\n\005image\030\002 \002(\0132#.com.tworr.ms" +
-      "g.Commons.ImageMessage\032_\n\003C2S\022\022\n\nfromUse",
-      "rId\030\001 \002(\t\022\020\n\010toUserId\030\002 \002(\t\0222\n\005image\030\003 \002" +
-      "(\0132#.com.tworr.msg.Commons.ImageMessageB" +
-      "\037\n\026com.tworr.msg.protocalB\005M0001"
+      "\n\010password\030\002 \002(\t\"\372\001\n\005M1113\032\217\001\n\003S2C\022\016\n\006st" +
+      "atus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0227\n\010fromUser\030\003 \001(" +
+      "\0132%.com.tworr.msg.Commons.SimpleUserInfo" +
+      "\0222\n\005image\030\004 \002(\0132#.com.tworr.msg.Commons.",
+      "ImageMessage\032_\n\003C2S\022\022\n\nfromUserId\030\001 \002(\t\022" +
+      "\020\n\010toUserId\030\002 \002(\t\0222\n\005image\030\003 \002(\0132#.com.t" +
+      "worr.msg.Commons.ImageMessageB\037\n\026com.two" +
+      "rr.msg.protocalB\005M0001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5539,7 +5865,7 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1113_S2C_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1113_S2C_descriptor,
-              new java.lang.String[] { "FromUser", "Image", });
+              new java.lang.String[] { "Status", "Msg", "FromUser", "Image", });
           internal_static_com_tworr_msg_M0001_M1113_C2S_descriptor =
             internal_static_com_tworr_msg_M0001_M1113_descriptor.getNestedTypes().get(1);
           internal_static_com_tworr_msg_M0001_M1113_C2S_fieldAccessorTable = new

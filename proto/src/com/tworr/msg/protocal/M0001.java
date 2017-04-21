@@ -3418,31 +3418,32 @@ public final class M0001 {
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder();
 
-      // required .com.tworr.msg.Commons.ImageMessage image = 4;
+      // required string imagePath = 4;
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+       * <code>required string imagePath = 4;</code>
        *
        * <pre>
        *Í¼Æ¬ÄÚÈÝ 
        * </pre>
        */
-      boolean hasImage();
+      boolean hasImagePath();
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+       * <code>required string imagePath = 4;</code>
        *
        * <pre>
        *Í¼Æ¬ÄÚÈÝ 
        * </pre>
        */
-      com.tworr.msg.protocal.Commons.ImageMessage getImage();
+      java.lang.String getImagePath();
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+       * <code>required string imagePath = 4;</code>
        *
        * <pre>
        *Í¼Æ¬ÄÚÈÝ 
        * </pre>
        */
-      com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder();
+      com.google.protobuf.ByteString
+          getImagePathBytes();
     }
     /**
      * Protobuf type {@code com.tworr.msg.M0001.M1113.S2C}
@@ -3519,16 +3520,8 @@ public final class M0001 {
                 break;
               }
               case 34: {
-                com.tworr.msg.protocal.Commons.ImageMessage.Builder subBuilder = null;
-                if (((bitField0_ & 0x00000008) == 0x00000008)) {
-                  subBuilder = image_.toBuilder();
-                }
-                image_ = input.readMessage(com.tworr.msg.protocal.Commons.ImageMessage.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(image_);
-                  image_ = subBuilder.buildPartial();
-                }
                 bitField0_ |= 0x00000008;
+                imagePath_ = input.readBytes();
                 break;
               }
             }
@@ -3684,45 +3677,66 @@ public final class M0001 {
         return fromUser_;
       }
 
-      // required .com.tworr.msg.Commons.ImageMessage image = 4;
-      public static final int IMAGE_FIELD_NUMBER = 4;
-      private com.tworr.msg.protocal.Commons.ImageMessage image_;
+      // required string imagePath = 4;
+      public static final int IMAGEPATH_FIELD_NUMBER = 4;
+      private java.lang.Object imagePath_;
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+       * <code>required string imagePath = 4;</code>
        *
        * <pre>
        *Í¼Æ¬ÄÚÈÝ 
        * </pre>
        */
-      public boolean hasImage() {
+      public boolean hasImagePath() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+       * <code>required string imagePath = 4;</code>
        *
        * <pre>
        *Í¼Æ¬ÄÚÈÝ 
        * </pre>
        */
-      public com.tworr.msg.protocal.Commons.ImageMessage getImage() {
-        return image_;
+      public java.lang.String getImagePath() {
+        java.lang.Object ref = imagePath_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            imagePath_ = s;
+          }
+          return s;
+        }
       }
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+       * <code>required string imagePath = 4;</code>
        *
        * <pre>
        *Í¼Æ¬ÄÚÈÝ 
        * </pre>
        */
-      public com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder() {
-        return image_;
+      public com.google.protobuf.ByteString
+          getImagePathBytes() {
+        java.lang.Object ref = imagePath_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          imagePath_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
       }
 
       private void initFields() {
         status_ = 0;
         msg_ = "";
         fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
-        image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
+        imagePath_ = "";
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -3733,7 +3747,7 @@ public final class M0001 {
           memoizedIsInitialized = 0;
           return false;
         }
-        if (!hasImage()) {
+        if (!hasImagePath()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -3742,10 +3756,6 @@ public final class M0001 {
             memoizedIsInitialized = 0;
             return false;
           }
-        }
-        if (!getImage().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
         }
         memoizedIsInitialized = 1;
         return true;
@@ -3764,7 +3774,7 @@ public final class M0001 {
           output.writeMessage(3, fromUser_);
         }
         if (((bitField0_ & 0x00000008) == 0x00000008)) {
-          output.writeMessage(4, image_);
+          output.writeBytes(4, getImagePathBytes());
         }
         getUnknownFields().writeTo(output);
       }
@@ -3789,7 +3799,7 @@ public final class M0001 {
         }
         if (((bitField0_ & 0x00000008) == 0x00000008)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, image_);
+            .computeBytesSize(4, getImagePathBytes());
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -3900,7 +3910,6 @@ public final class M0001 {
         private void maybeForceBuilderInitialization() {
           if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
             getFromUserFieldBuilder();
-            getImageFieldBuilder();
           }
         }
         private static Builder create() {
@@ -3919,11 +3928,7 @@ public final class M0001 {
             fromUserBuilder_.clear();
           }
           bitField0_ = (bitField0_ & ~0x00000004);
-          if (imageBuilder_ == null) {
-            image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
-          } else {
-            imageBuilder_.clear();
-          }
+          imagePath_ = "";
           bitField0_ = (bitField0_ & ~0x00000008);
           return this;
         }
@@ -3972,11 +3977,7 @@ public final class M0001 {
           if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
             to_bitField0_ |= 0x00000008;
           }
-          if (imageBuilder_ == null) {
-            result.image_ = image_;
-          } else {
-            result.image_ = imageBuilder_.build();
-          }
+          result.imagePath_ = imagePath_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
@@ -4004,8 +4005,10 @@ public final class M0001 {
           if (other.hasFromUser()) {
             mergeFromUser(other.getFromUser());
           }
-          if (other.hasImage()) {
-            mergeImage(other.getImage());
+          if (other.hasImagePath()) {
+            bitField0_ |= 0x00000008;
+            imagePath_ = other.imagePath_;
+            onChanged();
           }
           this.mergeUnknownFields(other.getUnknownFields());
           return this;
@@ -4016,7 +4019,7 @@ public final class M0001 {
             
             return false;
           }
-          if (!hasImage()) {
+          if (!hasImagePath()) {
             
             return false;
           }
@@ -4025,10 +4028,6 @@ public final class M0001 {
               
               return false;
             }
-          }
-          if (!getImage().isInitialized()) {
-            
-            return false;
           }
           return true;
         }
@@ -4352,157 +4351,102 @@ public final class M0001 {
           return fromUserBuilder_;
         }
 
-        // required .com.tworr.msg.Commons.ImageMessage image = 4;
-        private com.tworr.msg.protocal.Commons.ImageMessage image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
-        private com.google.protobuf.SingleFieldBuilder<
-            com.tworr.msg.protocal.Commons.ImageMessage, com.tworr.msg.protocal.Commons.ImageMessage.Builder, com.tworr.msg.protocal.Commons.ImageMessageOrBuilder> imageBuilder_;
+        // required string imagePath = 4;
+        private java.lang.Object imagePath_ = "";
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+         * <code>required string imagePath = 4;</code>
          *
          * <pre>
          *Í¼Æ¬ÄÚÈÝ 
          * </pre>
          */
-        public boolean hasImage() {
+        public boolean hasImagePath() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+         * <code>required string imagePath = 4;</code>
          *
          * <pre>
          *Í¼Æ¬ÄÚÈÝ 
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.ImageMessage getImage() {
-          if (imageBuilder_ == null) {
-            return image_;
+        public java.lang.String getImagePath() {
+          java.lang.Object ref = imagePath_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            imagePath_ = s;
+            return s;
           } else {
-            return imageBuilder_.getMessage();
+            return (java.lang.String) ref;
           }
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+         * <code>required string imagePath = 4;</code>
          *
          * <pre>
          *Í¼Æ¬ÄÚÈÝ 
          * </pre>
          */
-        public Builder setImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
-          if (imageBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            image_ = value;
-            onChanged();
+        public com.google.protobuf.ByteString
+            getImagePathBytes() {
+          java.lang.Object ref = imagePath_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            imagePath_ = b;
+            return b;
           } else {
-            imageBuilder_.setMessage(value);
+            return (com.google.protobuf.ByteString) ref;
           }
-          bitField0_ |= 0x00000008;
-          return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+         * <code>required string imagePath = 4;</code>
          *
          * <pre>
          *Í¼Æ¬ÄÚÈÝ 
          * </pre>
          */
-        public Builder setImage(
-            com.tworr.msg.protocal.Commons.ImageMessage.Builder builderForValue) {
-          if (imageBuilder_ == null) {
-            image_ = builderForValue.build();
-            onChanged();
-          } else {
-            imageBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00000008;
-          return this;
-        }
-        /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
-         *
-         * <pre>
-         *Í¼Æ¬ÄÚÈÝ 
-         * </pre>
-         */
-        public Builder mergeImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
-          if (imageBuilder_ == null) {
-            if (((bitField0_ & 0x00000008) == 0x00000008) &&
-                image_ != com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance()) {
-              image_ =
-                com.tworr.msg.protocal.Commons.ImageMessage.newBuilder(image_).mergeFrom(value).buildPartial();
-            } else {
-              image_ = value;
-            }
-            onChanged();
-          } else {
-            imageBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00000008;
-          return this;
-        }
-        /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
-         *
-         * <pre>
-         *Í¼Æ¬ÄÚÈÝ 
-         * </pre>
-         */
-        public Builder clearImage() {
-          if (imageBuilder_ == null) {
-            image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
-            onChanged();
-          } else {
-            imageBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000008);
-          return this;
-        }
-        /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
-         *
-         * <pre>
-         *Í¼Æ¬ÄÚÈÝ 
-         * </pre>
-         */
-        public com.tworr.msg.protocal.Commons.ImageMessage.Builder getImageBuilder() {
-          bitField0_ |= 0x00000008;
+        public Builder setImagePath(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          imagePath_ = value;
           onChanged();
-          return getImageFieldBuilder().getBuilder();
+          return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+         * <code>required string imagePath = 4;</code>
          *
          * <pre>
          *Í¼Æ¬ÄÚÈÝ 
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder() {
-          if (imageBuilder_ != null) {
-            return imageBuilder_.getMessageOrBuilder();
-          } else {
-            return image_;
-          }
+        public Builder clearImagePath() {
+          bitField0_ = (bitField0_ & ~0x00000008);
+          imagePath_ = getDefaultInstance().getImagePath();
+          onChanged();
+          return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 4;</code>
+         * <code>required string imagePath = 4;</code>
          *
          * <pre>
          *Í¼Æ¬ÄÚÈÝ 
          * </pre>
          */
-        private com.google.protobuf.SingleFieldBuilder<
-            com.tworr.msg.protocal.Commons.ImageMessage, com.tworr.msg.protocal.Commons.ImageMessage.Builder, com.tworr.msg.protocal.Commons.ImageMessageOrBuilder> 
-            getImageFieldBuilder() {
-          if (imageBuilder_ == null) {
-            imageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                com.tworr.msg.protocal.Commons.ImageMessage, com.tworr.msg.protocal.Commons.ImageMessage.Builder, com.tworr.msg.protocal.Commons.ImageMessageOrBuilder>(
-                    image_,
-                    getParentForChildren(),
-                    isClean());
-            image_ = null;
-          }
-          return imageBuilder_;
+        public Builder setImagePathBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          imagePath_ = value;
+          onChanged();
+          return this;
         }
 
         // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1113.S2C)
@@ -5804,14 +5748,13 @@ public final class M0001 {
       "\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022=\n\016sim" +
       "pleUserInfo\030\003 \001(\0132%.com.tworr.msg.Common" +
       "s.SimpleUserInfo\032&\n\003C2S\022\r\n\005phone\030\001 \002(\t\022\020" +
-      "\n\010password\030\002 \002(\t\"\372\001\n\005M1113\032\217\001\n\003S2C\022\016\n\006st" +
-      "atus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0227\n\010fromUser\030\003 \001(" +
-      "\0132%.com.tworr.msg.Commons.SimpleUserInfo" +
-      "\0222\n\005image\030\004 \002(\0132#.com.tworr.msg.Commons.",
-      "ImageMessage\032_\n\003C2S\022\022\n\nfromUserId\030\001 \002(\t\022" +
-      "\020\n\010toUserId\030\002 \002(\t\0222\n\005image\030\003 \002(\0132#.com.t" +
-      "worr.msg.Commons.ImageMessageB\037\n\026com.two" +
-      "rr.msg.protocalB\005M0001"
+      "\n\010password\030\002 \002(\t\"\330\001\n\005M1113\032n\n\003S2C\022\016\n\006sta" +
+      "tus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0227\n\010fromUser\030\003 \001(\013" +
+      "2%.com.tworr.msg.Commons.SimpleUserInfo\022" +
+      "\021\n\timagePath\030\004 \002(\t\032_\n\003C2S\022\022\n\nfromUserId\030",
+      "\001 \002(\t\022\020\n\010toUserId\030\002 \002(\t\0222\n\005image\030\003 \002(\0132#" +
+      ".com.tworr.msg.Commons.ImageMessageB\037\n\026c" +
+      "om.tworr.msg.protocalB\005M0001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5865,7 +5808,7 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1113_S2C_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1113_S2C_descriptor,
-              new java.lang.String[] { "Status", "Msg", "FromUser", "Image", });
+              new java.lang.String[] { "Status", "Msg", "FromUser", "ImagePath", });
           internal_static_com_tworr_msg_M0001_M1113_C2S_descriptor =
             internal_static_com_tworr_msg_M0001_M1113_descriptor.getNestedTypes().get(1);
           internal_static_com_tworr_msg_M0001_M1113_C2S_fieldAccessorTable = new

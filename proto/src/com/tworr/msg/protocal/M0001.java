@@ -3352,7 +3352,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *状态
+       *状态   
        * </pre>
        */
       boolean hasStatus();
@@ -3360,7 +3360,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *状态
+       *状态   
        * </pre>
        */
       int getStatus();
@@ -3444,6 +3444,24 @@ public final class M0001 {
        */
       com.google.protobuf.ByteString
           getImagePathBytes();
+
+      // required int64 time = 5;
+      /**
+       * <code>required int64 time = 5;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      boolean hasTime();
+      /**
+       * <code>required int64 time = 5;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      long getTime();
     }
     /**
      * Protobuf type {@code com.tworr.msg.M0001.M1113.S2C}
@@ -3524,6 +3542,11 @@ public final class M0001 {
                 imagePath_ = input.readBytes();
                 break;
               }
+              case 40: {
+                bitField0_ |= 0x00000010;
+                time_ = input.readInt64();
+                break;
+              }
             }
           }
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -3571,7 +3594,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *状态
+       *状态   
        * </pre>
        */
       public boolean hasStatus() {
@@ -3581,7 +3604,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *状态
+       *状态   
        * </pre>
        */
       public int getStatus() {
@@ -3732,11 +3755,36 @@ public final class M0001 {
         }
       }
 
+      // required int64 time = 5;
+      public static final int TIME_FIELD_NUMBER = 5;
+      private long time_;
+      /**
+       * <code>required int64 time = 5;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      public boolean hasTime() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int64 time = 5;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      public long getTime() {
+        return time_;
+      }
+
       private void initFields() {
         status_ = 0;
         msg_ = "";
         fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
         imagePath_ = "";
+        time_ = 0L;
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -3748,6 +3796,10 @@ public final class M0001 {
           return false;
         }
         if (!hasImagePath()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        if (!hasTime()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -3776,6 +3828,9 @@ public final class M0001 {
         if (((bitField0_ & 0x00000008) == 0x00000008)) {
           output.writeBytes(4, getImagePathBytes());
         }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          output.writeInt64(5, time_);
+        }
         getUnknownFields().writeTo(output);
       }
 
@@ -3800,6 +3855,10 @@ public final class M0001 {
         if (((bitField0_ & 0x00000008) == 0x00000008)) {
           size += com.google.protobuf.CodedOutputStream
             .computeBytesSize(4, getImagePathBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt64Size(5, time_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -3930,6 +3989,8 @@ public final class M0001 {
           bitField0_ = (bitField0_ & ~0x00000004);
           imagePath_ = "";
           bitField0_ = (bitField0_ & ~0x00000008);
+          time_ = 0L;
+          bitField0_ = (bitField0_ & ~0x00000010);
           return this;
         }
 
@@ -3978,6 +4039,10 @@ public final class M0001 {
             to_bitField0_ |= 0x00000008;
           }
           result.imagePath_ = imagePath_;
+          if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+            to_bitField0_ |= 0x00000010;
+          }
+          result.time_ = time_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
@@ -4010,6 +4075,9 @@ public final class M0001 {
             imagePath_ = other.imagePath_;
             onChanged();
           }
+          if (other.hasTime()) {
+            setTime(other.getTime());
+          }
           this.mergeUnknownFields(other.getUnknownFields());
           return this;
         }
@@ -4020,6 +4088,10 @@ public final class M0001 {
             return false;
           }
           if (!hasImagePath()) {
+            
+            return false;
+          }
+          if (!hasTime()) {
             
             return false;
           }
@@ -4057,7 +4129,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *状态
+         *状态   
          * </pre>
          */
         public boolean hasStatus() {
@@ -4067,7 +4139,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *状态
+         *状态   
          * </pre>
          */
         public int getStatus() {
@@ -4077,7 +4149,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *状态
+         *状态   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -4090,7 +4162,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *状态
+         *状态   
          * </pre>
          */
         public Builder clearStatus() {
@@ -4445,6 +4517,55 @@ public final class M0001 {
   }
   bitField0_ |= 0x00000008;
           imagePath_ = value;
+          onChanged();
+          return this;
+        }
+
+        // required int64 time = 5;
+        private long time_ ;
+        /**
+         * <code>required int64 time = 5;</code>
+         *
+         * <pre>
+         *服务器时间
+         * </pre>
+         */
+        public boolean hasTime() {
+          return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+        /**
+         * <code>required int64 time = 5;</code>
+         *
+         * <pre>
+         *服务器时间
+         * </pre>
+         */
+        public long getTime() {
+          return time_;
+        }
+        /**
+         * <code>required int64 time = 5;</code>
+         *
+         * <pre>
+         *服务器时间
+         * </pre>
+         */
+        public Builder setTime(long value) {
+          bitField0_ |= 0x00000010;
+          time_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int64 time = 5;</code>
+         *
+         * <pre>
+         *服务器时间
+         * </pre>
+         */
+        public Builder clearTime() {
+          bitField0_ = (bitField0_ & ~0x00000010);
+          time_ = 0L;
           onChanged();
           return this;
         }
@@ -5748,13 +5869,14 @@ public final class M0001 {
       "\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022=\n\016sim" +
       "pleUserInfo\030\003 \001(\0132%.com.tworr.msg.Common" +
       "s.SimpleUserInfo\032&\n\003C2S\022\r\n\005phone\030\001 \002(\t\022\020" +
-      "\n\010password\030\002 \002(\t\"\330\001\n\005M1113\032n\n\003S2C\022\016\n\006sta" +
+      "\n\010password\030\002 \002(\t\"\346\001\n\005M1113\032|\n\003S2C\022\016\n\006sta" +
       "tus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0227\n\010fromUser\030\003 \001(\013" +
       "2%.com.tworr.msg.Commons.SimpleUserInfo\022" +
-      "\021\n\timagePath\030\004 \002(\t\032_\n\003C2S\022\022\n\nfromUserId\030",
-      "\001 \002(\t\022\020\n\010toUserId\030\002 \002(\t\0222\n\005image\030\003 \002(\0132#" +
-      ".com.tworr.msg.Commons.ImageMessageB\037\n\026c" +
-      "om.tworr.msg.protocalB\005M0001"
+      "\021\n\timagePath\030\004 \002(\t\022\014\n\004time\030\005 \002(\003\032_\n\003C2S\022",
+      "\022\n\nfromUserId\030\001 \002(\t\022\020\n\010toUserId\030\002 \002(\t\0222\n" +
+      "\005image\030\003 \002(\0132#.com.tworr.msg.Commons.Ima" +
+      "geMessageB\037\n\026com.tworr.msg.protocalB\005M00" +
+      "01"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5808,7 +5930,7 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1113_S2C_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1113_S2C_descriptor,
-              new java.lang.String[] { "Status", "Msg", "FromUser", "ImagePath", });
+              new java.lang.String[] { "Status", "Msg", "FromUser", "ImagePath", "Time", });
           internal_static_com_tworr_msg_M0001_M1113_C2S_descriptor =
             internal_static_com_tworr_msg_M0001_M1113_descriptor.getNestedTypes().get(1);
           internal_static_com_tworr_msg_M0001_M1113_C2S_fieldAccessorTable = new

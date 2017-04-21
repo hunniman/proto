@@ -40,14 +40,17 @@ message M1113{  //图片聊天
 	required int32 status = 1;   //状态   
 	optional string msg= 2;     //提示消息
 	optional Commons.SimpleUserInfo fromUser=3; //消息来源
-	required string msgData=4;//图片内容 
+	required string msgData=4;//内容（图片路径 或者 文本内容）
 	required int64 time=5;//服务器时间
+	required int32 type=6;//1.纯文本，2.图片
     }
 
     message C2S{
 	required string fromUserId=1;//发送者的用户id
 	required string toUserId=2;//目标的用户id
-	required Commons.ImageMessage image=3;//图片内容 
+	optional Commons.ImageMessage image=3;//图片内容byte[]数组 
+	optional string txtData=4;//纯文本内容
+	required int32 type=5;//1.纯文本，2.图片
     }
 	
 }

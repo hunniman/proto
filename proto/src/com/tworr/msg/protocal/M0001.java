@@ -3423,7 +3423,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *图片内容 
+       *内容（图片路径 或者 文本内容）
        * </pre>
        */
       boolean hasMsgData();
@@ -3431,7 +3431,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *图片内容 
+       *内容（图片路径 或者 文本内容）
        * </pre>
        */
       java.lang.String getMsgData();
@@ -3439,7 +3439,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *图片内容 
+       *内容（图片路径 或者 文本内容）
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -3462,6 +3462,24 @@ public final class M0001 {
        * </pre>
        */
       long getTime();
+
+      // required int32 type = 6;
+      /**
+       * <code>required int32 type = 6;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      boolean hasType();
+      /**
+       * <code>required int32 type = 6;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      int getType();
     }
     /**
      * Protobuf type {@code com.tworr.msg.M0001.M1113.S2C}
@@ -3545,6 +3563,11 @@ public final class M0001 {
               case 40: {
                 bitField0_ |= 0x00000010;
                 time_ = input.readInt64();
+                break;
+              }
+              case 48: {
+                bitField0_ |= 0x00000020;
+                type_ = input.readInt32();
                 break;
               }
             }
@@ -3707,7 +3730,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *图片内容 
+       *内容（图片路径 或者 文本内容）
        * </pre>
        */
       public boolean hasMsgData() {
@@ -3717,7 +3740,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *图片内容 
+       *内容（图片路径 或者 文本内容）
        * </pre>
        */
       public java.lang.String getMsgData() {
@@ -3738,7 +3761,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *图片内容 
+       *内容（图片路径 或者 文本内容）
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -3779,12 +3802,37 @@ public final class M0001 {
         return time_;
       }
 
+      // required int32 type = 6;
+      public static final int TYPE_FIELD_NUMBER = 6;
+      private int type_;
+      /**
+       * <code>required int32 type = 6;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>required int32 type = 6;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public int getType() {
+        return type_;
+      }
+
       private void initFields() {
         status_ = 0;
         msg_ = "";
         fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
         msgData_ = "";
         time_ = 0L;
+        type_ = 0;
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -3800,6 +3848,10 @@ public final class M0001 {
           return false;
         }
         if (!hasTime()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        if (!hasType()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -3831,6 +3883,9 @@ public final class M0001 {
         if (((bitField0_ & 0x00000010) == 0x00000010)) {
           output.writeInt64(5, time_);
         }
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          output.writeInt32(6, type_);
+        }
         getUnknownFields().writeTo(output);
       }
 
@@ -3859,6 +3914,10 @@ public final class M0001 {
         if (((bitField0_ & 0x00000010) == 0x00000010)) {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(5, time_);
+        }
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(6, type_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -3991,6 +4050,8 @@ public final class M0001 {
           bitField0_ = (bitField0_ & ~0x00000008);
           time_ = 0L;
           bitField0_ = (bitField0_ & ~0x00000010);
+          type_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000020);
           return this;
         }
 
@@ -4043,6 +4104,10 @@ public final class M0001 {
             to_bitField0_ |= 0x00000010;
           }
           result.time_ = time_;
+          if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+            to_bitField0_ |= 0x00000020;
+          }
+          result.type_ = type_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
@@ -4078,6 +4143,9 @@ public final class M0001 {
           if (other.hasTime()) {
             setTime(other.getTime());
           }
+          if (other.hasType()) {
+            setType(other.getType());
+          }
           this.mergeUnknownFields(other.getUnknownFields());
           return this;
         }
@@ -4092,6 +4160,10 @@ public final class M0001 {
             return false;
           }
           if (!hasTime()) {
+            
+            return false;
+          }
+          if (!hasType()) {
             
             return false;
           }
@@ -4429,7 +4501,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *图片内容 
+         *内容（图片路径 或者 文本内容）
          * </pre>
          */
         public boolean hasMsgData() {
@@ -4439,7 +4511,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *图片内容 
+         *内容（图片路径 或者 文本内容）
          * </pre>
          */
         public java.lang.String getMsgData() {
@@ -4457,7 +4529,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *图片内容 
+         *内容（图片路径 或者 文本内容）
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -4477,7 +4549,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *图片内容 
+         *内容（图片路径 或者 文本内容）
          * </pre>
          */
         public Builder setMsgData(
@@ -4494,7 +4566,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *图片内容 
+         *内容（图片路径 或者 文本内容）
          * </pre>
          */
         public Builder clearMsgData() {
@@ -4507,7 +4579,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *图片内容 
+         *内容（图片路径 或者 文本内容）
          * </pre>
          */
         public Builder setMsgDataBytes(
@@ -4566,6 +4638,55 @@ public final class M0001 {
         public Builder clearTime() {
           bitField0_ = (bitField0_ & ~0x00000010);
           time_ = 0L;
+          onChanged();
+          return this;
+        }
+
+        // required int32 type = 6;
+        private int type_ ;
+        /**
+         * <code>required int32 type = 6;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public boolean hasType() {
+          return ((bitField0_ & 0x00000020) == 0x00000020);
+        }
+        /**
+         * <code>required int32 type = 6;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public int getType() {
+          return type_;
+        }
+        /**
+         * <code>required int32 type = 6;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public Builder setType(int value) {
+          bitField0_ |= 0x00000020;
+          type_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 type = 6;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public Builder clearType() {
+          bitField0_ = (bitField0_ & ~0x00000020);
+          type_ = 0;
           onChanged();
           return this;
         }
@@ -4638,31 +4759,76 @@ public final class M0001 {
       com.google.protobuf.ByteString
           getToUserIdBytes();
 
-      // required .com.tworr.msg.Commons.ImageMessage image = 3;
+      // optional .com.tworr.msg.Commons.ImageMessage image = 3;
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+       * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *图片内容 
+       *图片内容byte[]数组 
        * </pre>
        */
       boolean hasImage();
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+       * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *图片内容 
+       *图片内容byte[]数组 
        * </pre>
        */
       com.tworr.msg.protocal.Commons.ImageMessage getImage();
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+       * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *图片内容 
+       *图片内容byte[]数组 
        * </pre>
        */
       com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder();
+
+      // optional string txtData = 4;
+      /**
+       * <code>optional string txtData = 4;</code>
+       *
+       * <pre>
+       *纯文本内容
+       * </pre>
+       */
+      boolean hasTxtData();
+      /**
+       * <code>optional string txtData = 4;</code>
+       *
+       * <pre>
+       *纯文本内容
+       * </pre>
+       */
+      java.lang.String getTxtData();
+      /**
+       * <code>optional string txtData = 4;</code>
+       *
+       * <pre>
+       *纯文本内容
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getTxtDataBytes();
+
+      // required int32 type = 5;
+      /**
+       * <code>required int32 type = 5;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      boolean hasType();
+      /**
+       * <code>required int32 type = 5;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      int getType();
     }
     /**
      * Protobuf type {@code com.tworr.msg.M0001.M1113.C2S}
@@ -4736,6 +4902,16 @@ public final class M0001 {
                   image_ = subBuilder.buildPartial();
                 }
                 bitField0_ |= 0x00000004;
+                break;
+              }
+              case 34: {
+                bitField0_ |= 0x00000008;
+                txtData_ = input.readBytes();
+                break;
+              }
+              case 40: {
+                bitField0_ |= 0x00000010;
+                type_ = input.readInt32();
                 break;
               }
             }
@@ -4888,44 +5064,125 @@ public final class M0001 {
         }
       }
 
-      // required .com.tworr.msg.Commons.ImageMessage image = 3;
+      // optional .com.tworr.msg.Commons.ImageMessage image = 3;
       public static final int IMAGE_FIELD_NUMBER = 3;
       private com.tworr.msg.protocal.Commons.ImageMessage image_;
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+       * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *图片内容 
+       *图片内容byte[]数组 
        * </pre>
        */
       public boolean hasImage() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+       * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *图片内容 
+       *图片内容byte[]数组 
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.ImageMessage getImage() {
         return image_;
       }
       /**
-       * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+       * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *图片内容 
+       *图片内容byte[]数组 
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder() {
         return image_;
       }
 
+      // optional string txtData = 4;
+      public static final int TXTDATA_FIELD_NUMBER = 4;
+      private java.lang.Object txtData_;
+      /**
+       * <code>optional string txtData = 4;</code>
+       *
+       * <pre>
+       *纯文本内容
+       * </pre>
+       */
+      public boolean hasTxtData() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string txtData = 4;</code>
+       *
+       * <pre>
+       *纯文本内容
+       * </pre>
+       */
+      public java.lang.String getTxtData() {
+        java.lang.Object ref = txtData_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            txtData_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string txtData = 4;</code>
+       *
+       * <pre>
+       *纯文本内容
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getTxtDataBytes() {
+        java.lang.Object ref = txtData_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          txtData_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // required int32 type = 5;
+      public static final int TYPE_FIELD_NUMBER = 5;
+      private int type_;
+      /**
+       * <code>required int32 type = 5;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int32 type = 5;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public int getType() {
+        return type_;
+      }
+
       private void initFields() {
         fromUserId_ = "";
         toUserId_ = "";
         image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
+        txtData_ = "";
+        type_ = 0;
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -4940,13 +5197,15 @@ public final class M0001 {
           memoizedIsInitialized = 0;
           return false;
         }
-        if (!hasImage()) {
+        if (!hasType()) {
           memoizedIsInitialized = 0;
           return false;
         }
-        if (!getImage().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
+        if (hasImage()) {
+          if (!getImage().isInitialized()) {
+            memoizedIsInitialized = 0;
+            return false;
+          }
         }
         memoizedIsInitialized = 1;
         return true;
@@ -4963,6 +5222,12 @@ public final class M0001 {
         }
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
           output.writeMessage(3, image_);
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          output.writeBytes(4, getTxtDataBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          output.writeInt32(5, type_);
         }
         getUnknownFields().writeTo(output);
       }
@@ -4984,6 +5249,14 @@ public final class M0001 {
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(3, image_);
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(4, getTxtDataBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(5, type_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -5112,6 +5385,10 @@ public final class M0001 {
             imageBuilder_.clear();
           }
           bitField0_ = (bitField0_ & ~0x00000004);
+          txtData_ = "";
+          bitField0_ = (bitField0_ & ~0x00000008);
+          type_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000010);
           return this;
         }
 
@@ -5156,6 +5433,14 @@ public final class M0001 {
           } else {
             result.image_ = imageBuilder_.build();
           }
+          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+            to_bitField0_ |= 0x00000008;
+          }
+          result.txtData_ = txtData_;
+          if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+            to_bitField0_ |= 0x00000010;
+          }
+          result.type_ = type_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
@@ -5185,6 +5470,14 @@ public final class M0001 {
           if (other.hasImage()) {
             mergeImage(other.getImage());
           }
+          if (other.hasTxtData()) {
+            bitField0_ |= 0x00000008;
+            txtData_ = other.txtData_;
+            onChanged();
+          }
+          if (other.hasType()) {
+            setType(other.getType());
+          }
           this.mergeUnknownFields(other.getUnknownFields());
           return this;
         }
@@ -5198,13 +5491,15 @@ public final class M0001 {
             
             return false;
           }
-          if (!hasImage()) {
+          if (!hasType()) {
             
             return false;
           }
-          if (!getImage().isInitialized()) {
-            
-            return false;
+          if (hasImage()) {
+            if (!getImage().isInitialized()) {
+              
+              return false;
+            }
           }
           return true;
         }
@@ -5424,25 +5719,25 @@ public final class M0001 {
           return this;
         }
 
-        // required .com.tworr.msg.Commons.ImageMessage image = 3;
+        // optional .com.tworr.msg.Commons.ImageMessage image = 3;
         private com.tworr.msg.protocal.Commons.ImageMessage image_ = com.tworr.msg.protocal.Commons.ImageMessage.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
             com.tworr.msg.protocal.Commons.ImageMessage, com.tworr.msg.protocal.Commons.ImageMessage.Builder, com.tworr.msg.protocal.Commons.ImageMessageOrBuilder> imageBuilder_;
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public boolean hasImage() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessage getImage() {
@@ -5453,10 +5748,10 @@ public final class M0001 {
           }
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public Builder setImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
@@ -5473,10 +5768,10 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public Builder setImage(
@@ -5491,10 +5786,10 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public Builder mergeImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
@@ -5514,10 +5809,10 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public Builder clearImage() {
@@ -5531,10 +5826,10 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessage.Builder getImageBuilder() {
@@ -5543,10 +5838,10 @@ public final class M0001 {
           return getImageFieldBuilder().getBuilder();
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder() {
@@ -5557,10 +5852,10 @@ public final class M0001 {
           }
         }
         /**
-         * <code>required .com.tworr.msg.Commons.ImageMessage image = 3;</code>
+         * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *图片内容 
+         *图片内容byte[]数组 
          * </pre>
          */
         private com.google.protobuf.SingleFieldBuilder<
@@ -5575,6 +5870,153 @@ public final class M0001 {
             image_ = null;
           }
           return imageBuilder_;
+        }
+
+        // optional string txtData = 4;
+        private java.lang.Object txtData_ = "";
+        /**
+         * <code>optional string txtData = 4;</code>
+         *
+         * <pre>
+         *纯文本内容
+         * </pre>
+         */
+        public boolean hasTxtData() {
+          return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+        /**
+         * <code>optional string txtData = 4;</code>
+         *
+         * <pre>
+         *纯文本内容
+         * </pre>
+         */
+        public java.lang.String getTxtData() {
+          java.lang.Object ref = txtData_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            txtData_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string txtData = 4;</code>
+         *
+         * <pre>
+         *纯文本内容
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getTxtDataBytes() {
+          java.lang.Object ref = txtData_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            txtData_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string txtData = 4;</code>
+         *
+         * <pre>
+         *纯文本内容
+         * </pre>
+         */
+        public Builder setTxtData(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          txtData_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string txtData = 4;</code>
+         *
+         * <pre>
+         *纯文本内容
+         * </pre>
+         */
+        public Builder clearTxtData() {
+          bitField0_ = (bitField0_ & ~0x00000008);
+          txtData_ = getDefaultInstance().getTxtData();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string txtData = 4;</code>
+         *
+         * <pre>
+         *纯文本内容
+         * </pre>
+         */
+        public Builder setTxtDataBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          txtData_ = value;
+          onChanged();
+          return this;
+        }
+
+        // required int32 type = 5;
+        private int type_ ;
+        /**
+         * <code>required int32 type = 5;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public boolean hasType() {
+          return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+        /**
+         * <code>required int32 type = 5;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public int getType() {
+          return type_;
+        }
+        /**
+         * <code>required int32 type = 5;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public Builder setType(int value) {
+          bitField0_ |= 0x00000010;
+          type_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 type = 5;</code>
+         *
+         * <pre>
+         *1.纯文本，2.图片
+         * </pre>
+         */
+        public Builder clearType() {
+          bitField0_ = (bitField0_ & ~0x00000010);
+          type_ = 0;
+          onChanged();
+          return this;
         }
 
         // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1113.C2S)
@@ -5869,13 +6311,15 @@ public final class M0001 {
       "\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022=\n\016sim" +
       "pleUserInfo\030\003 \001(\0132%.com.tworr.msg.Common" +
       "s.SimpleUserInfo\032&\n\003C2S\022\r\n\005phone\030\001 \002(\t\022\020" +
-      "\n\010password\030\002 \002(\t\"\344\001\n\005M1113\032z\n\003S2C\022\016\n\006sta" +
-      "tus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0227\n\010fromUser\030\003 \001(\013" +
-      "2%.com.tworr.msg.Commons.SimpleUserInfo\022" +
-      "\017\n\007msgData\030\004 \002(\t\022\014\n\004time\030\005 \002(\003\032_\n\003C2S\022\022\n",
-      "\nfromUserId\030\001 \002(\t\022\020\n\010toUserId\030\002 \002(\t\0222\n\005i" +
-      "mage\030\003 \002(\0132#.com.tworr.msg.Commons.Image" +
-      "MessageB\037\n\026com.tworr.msg.protocalB\005M0001"
+      "\n\010password\030\002 \002(\t\"\222\002\n\005M1113\032\210\001\n\003S2C\022\016\n\006st" +
+      "atus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0227\n\010fromUser\030\003 \001(" +
+      "\0132%.com.tworr.msg.Commons.SimpleUserInfo" +
+      "\022\017\n\007msgData\030\004 \002(\t\022\014\n\004time\030\005 \002(\003\022\014\n\004type\030",
+      "\006 \002(\005\032~\n\003C2S\022\022\n\nfromUserId\030\001 \002(\t\022\020\n\010toUs" +
+      "erId\030\002 \002(\t\0222\n\005image\030\003 \001(\0132#.com.tworr.ms" +
+      "g.Commons.ImageMessage\022\017\n\007txtData\030\004 \001(\t\022" +
+      "\014\n\004type\030\005 \002(\005B\037\n\026com.tworr.msg.protocalB" +
+      "\005M0001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5929,13 +6373,13 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1113_S2C_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1113_S2C_descriptor,
-              new java.lang.String[] { "Status", "Msg", "FromUser", "MsgData", "Time", });
+              new java.lang.String[] { "Status", "Msg", "FromUser", "MsgData", "Time", "Type", });
           internal_static_com_tworr_msg_M0001_M1113_C2S_descriptor =
             internal_static_com_tworr_msg_M0001_M1113_descriptor.getNestedTypes().get(1);
           internal_static_com_tworr_msg_M0001_M1113_C2S_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1113_C2S_descriptor,
-              new java.lang.String[] { "FromUserId", "ToUserId", "Image", });
+              new java.lang.String[] { "FromUserId", "ToUserId", "Image", "TxtData", "Type", });
           return null;
         }
       };

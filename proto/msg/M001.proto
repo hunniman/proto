@@ -70,3 +70,31 @@ message M1114{  //获取聊天好友
     }
 	
 }
+
+message M1115{  //标识好友
+
+    message S2C{
+	required int32 status = 1;   //状态   
+	optional string msg= 2;     //提示消息
+    }
+
+    message C2S{
+	required string userId=1;//发送者的用户id
+	required int32 type=2;//1.标记好友，2.取消标记好友
+    }
+	
+}
+
+message M1115{  //黑名单
+
+    message S2C{
+	required int32 status = 1;   //状态   
+	optional string msg= 2;     //提示消息
+    }
+
+    message C2S{
+	required string userId=1;//发送者的用户id
+	required int32 type=2;//1.拉入黑名单，2.取消黑名单
+    }
+	
+}

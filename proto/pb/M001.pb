@@ -1,5 +1,5 @@
 
-÷
+ﬁ
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -30,12 +30,12 @@ fromUserId (	
 toUserId (	2
 image (2#.com.tworr.msg.Commons.ImageMessage
 txtData (	
-type ("z
-M1114Z
+type ("Å
+M1114a
 S2C
 status (
-msg (	6
-friends (2%.com.tworr.msg.Commons.SimpleUserInfo
+msg (	=
+friends (2,.com.tworr.msg.Commons.FriendWithLastMessage
 C2S
 userId (	"P
 M1115"

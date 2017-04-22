@@ -62,7 +62,7 @@ message M1114{  //获取聊天好友
     message S2C{
 	required int32 status = 1;   //状态   
 	optional string msg= 2;     //提示消息
-	repeated Commons.SimpleUserInfo friends=3; //好友列表
+	repeated Commons.FriendWithLastMessage friends=3; //好友列表
     }
 
     message C2S{

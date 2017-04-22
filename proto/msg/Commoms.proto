@@ -25,3 +25,19 @@ message ImageMessage{
 	required bytes file=1;//图片内容
 	optional string fileName=2;//图片名称
 }
+
+
+message ChatMessage{
+	optional SimpleUserInfo fromUser=1; //消息来源
+	required string msgData=2;//内容（图片路径 或者 文本内容）
+	required int64 time=3;//服务器时间
+	required int32 type=4;//1.纯文本，2.图片
+}
+
+
+message FriendWithLastMessage{
+	required SimpleUserInfo friend=1;//好友
+	optional ChatMessage message=2;//最新一条信息
+}
+
+

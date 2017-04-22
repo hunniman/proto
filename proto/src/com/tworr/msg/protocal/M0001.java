@@ -6395,26 +6395,26 @@ public final class M0001 {
       com.google.protobuf.ByteString
           getMsgBytes();
 
-      // repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;
+      // repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      java.util.List<com.tworr.msg.protocal.Commons.SimpleUserInfo> 
+      java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> 
           getFriendsList();
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      com.tworr.msg.protocal.Commons.SimpleUserInfo getFriends(int index);
+      com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index);
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
@@ -6422,22 +6422,22 @@ public final class M0001 {
        */
       int getFriendsCount();
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      java.util.List<? extends com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> 
+      java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
           getFriendsOrBuilderList();
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFriendsOrBuilder(
+      com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
           int index);
     }
     /**
@@ -6503,10 +6503,10 @@ public final class M0001 {
               }
               case 26: {
                 if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                  friends_ = new java.util.ArrayList<com.tworr.msg.protocal.Commons.SimpleUserInfo>();
+                  friends_ = new java.util.ArrayList<com.tworr.msg.protocal.Commons.FriendWithLastMessage>();
                   mutable_bitField0_ |= 0x00000004;
                 }
-                friends_.add(input.readMessage(com.tworr.msg.protocal.Commons.SimpleUserInfo.PARSER, extensionRegistry));
+                friends_.add(input.readMessage(com.tworr.msg.protocal.Commons.FriendWithLastMessage.PARSER, extensionRegistry));
                 break;
               }
             }
@@ -6631,32 +6631,32 @@ public final class M0001 {
         }
       }
 
-      // repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;
+      // repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;
       public static final int FRIENDS_FIELD_NUMBER = 3;
-      private java.util.List<com.tworr.msg.protocal.Commons.SimpleUserInfo> friends_;
+      private java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> friends_;
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      public java.util.List<com.tworr.msg.protocal.Commons.SimpleUserInfo> getFriendsList() {
+      public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> getFriendsList() {
         return friends_;
       }
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      public java.util.List<? extends com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> 
+      public java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
           getFriendsOrBuilderList() {
         return friends_;
       }
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
@@ -6666,23 +6666,23 @@ public final class M0001 {
         return friends_.size();
       }
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      public com.tworr.msg.protocal.Commons.SimpleUserInfo getFriends(int index) {
+      public com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index) {
         return friends_.get(index);
       }
       /**
-       * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+       * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
        *好友列表
        * </pre>
        */
-      public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFriendsOrBuilder(
+      public com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
           int index) {
         return friends_.get(index);
       }
@@ -7150,27 +7150,27 @@ public final class M0001 {
           return this;
         }
 
-        // repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;
-        private java.util.List<com.tworr.msg.protocal.Commons.SimpleUserInfo> friends_ =
+        // repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;
+        private java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> friends_ =
           java.util.Collections.emptyList();
         private void ensureFriendsIsMutable() {
           if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-            friends_ = new java.util.ArrayList<com.tworr.msg.protocal.Commons.SimpleUserInfo>(friends_);
+            friends_ = new java.util.ArrayList<com.tworr.msg.protocal.Commons.FriendWithLastMessage>(friends_);
             bitField0_ |= 0x00000004;
            }
         }
 
         private com.google.protobuf.RepeatedFieldBuilder<
-            com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> friendsBuilder_;
+            com.tworr.msg.protocal.Commons.FriendWithLastMessage, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder, com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> friendsBuilder_;
 
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public java.util.List<com.tworr.msg.protocal.Commons.SimpleUserInfo> getFriendsList() {
+        public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> getFriendsList() {
           if (friendsBuilder_ == null) {
             return java.util.Collections.unmodifiableList(friends_);
           } else {
@@ -7178,7 +7178,7 @@ public final class M0001 {
           }
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
@@ -7192,13 +7192,13 @@ public final class M0001 {
           }
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.SimpleUserInfo getFriends(int index) {
+        public com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index) {
           if (friendsBuilder_ == null) {
             return friends_.get(index);
           } else {
@@ -7206,14 +7206,14 @@ public final class M0001 {
           }
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
         public Builder setFriends(
-            int index, com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+            int index, com.tworr.msg.protocal.Commons.FriendWithLastMessage value) {
           if (friendsBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -7227,14 +7227,14 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
         public Builder setFriends(
-            int index, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder builderForValue) {
+            int index, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder builderForValue) {
           if (friendsBuilder_ == null) {
             ensureFriendsIsMutable();
             friends_.set(index, builderForValue.build());
@@ -7245,13 +7245,13 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public Builder addFriends(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+        public Builder addFriends(com.tworr.msg.protocal.Commons.FriendWithLastMessage value) {
           if (friendsBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -7265,14 +7265,14 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
         public Builder addFriends(
-            int index, com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+            int index, com.tworr.msg.protocal.Commons.FriendWithLastMessage value) {
           if (friendsBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -7286,14 +7286,14 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
         public Builder addFriends(
-            com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder builderForValue) {
+            com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder builderForValue) {
           if (friendsBuilder_ == null) {
             ensureFriendsIsMutable();
             friends_.add(builderForValue.build());
@@ -7304,14 +7304,14 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
         public Builder addFriends(
-            int index, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder builderForValue) {
+            int index, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder builderForValue) {
           if (friendsBuilder_ == null) {
             ensureFriendsIsMutable();
             friends_.add(index, builderForValue.build());
@@ -7322,14 +7322,14 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
         public Builder addAllFriends(
-            java.lang.Iterable<? extends com.tworr.msg.protocal.Commons.SimpleUserInfo> values) {
+            java.lang.Iterable<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessage> values) {
           if (friendsBuilder_ == null) {
             ensureFriendsIsMutable();
             super.addAll(values, friends_);
@@ -7340,7 +7340,7 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
@@ -7357,7 +7357,7 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
@@ -7374,24 +7374,24 @@ public final class M0001 {
           return this;
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder getFriendsBuilder(
+        public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder getFriendsBuilder(
             int index) {
           return getFriendsFieldBuilder().getBuilder(index);
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFriendsOrBuilder(
+        public com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
             int index) {
           if (friendsBuilder_ == null) {
             return friends_.get(index);  } else {
@@ -7399,13 +7399,13 @@ public final class M0001 {
           }
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public java.util.List<? extends com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> 
+        public java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
              getFriendsOrBuilderList() {
           if (friendsBuilder_ != null) {
             return friendsBuilder_.getMessageOrBuilderList();
@@ -7414,45 +7414,45 @@ public final class M0001 {
           }
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder addFriendsBuilder() {
+        public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder addFriendsBuilder() {
           return getFriendsFieldBuilder().addBuilder(
-              com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance());
+              com.tworr.msg.protocal.Commons.FriendWithLastMessage.getDefaultInstance());
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder addFriendsBuilder(
+        public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder addFriendsBuilder(
             int index) {
           return getFriendsFieldBuilder().addBuilder(
-              index, com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance());
+              index, com.tworr.msg.protocal.Commons.FriendWithLastMessage.getDefaultInstance());
         }
         /**
-         * <code>repeated .com.tworr.msg.Commons.SimpleUserInfo friends = 3;</code>
+         * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
          *好友列表
          * </pre>
          */
-        public java.util.List<com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder> 
+        public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder> 
              getFriendsBuilderList() {
           return getFriendsFieldBuilder().getBuilderList();
         }
         private com.google.protobuf.RepeatedFieldBuilder<
-            com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> 
+            com.tworr.msg.protocal.Commons.FriendWithLastMessage, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder, com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
             getFriendsFieldBuilder() {
           if (friendsBuilder_ == null) {
             friendsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-                com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder>(
+                com.tworr.msg.protocal.Commons.FriendWithLastMessage, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder, com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder>(
                     friends_,
                     ((bitField0_ & 0x00000004) == 0x00000004),
                     getParentForChildren(),
@@ -11543,15 +11543,15 @@ public final class M0001 {
       "\006 \002(\005\032~\n\003C2S\022\022\n\nfromUserId\030\001 \002(\t\022\020\n\010toUs" +
       "erId\030\002 \002(\t\0222\n\005image\030\003 \001(\0132#.com.tworr.ms" +
       "g.Commons.ImageMessage\022\017\n\007txtData\030\004 \001(\t\022" +
-      "\014\n\004type\030\005 \002(\005\"z\n\005M1114\032Z\n\003S2C\022\016\n\006status\030" +
-      "\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0226\n\007friends\030\003 \003(\0132%.co" +
-      "m.tworr.msg.Commons.SimpleUserInfo\032\025\n\003C2" +
-      "S\022\016\n\006userId\030\001 \002(\t\"P\n\005M1115\032\"\n\003S2C\022\016\n\006sta" +
-      "tus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\032#\n\003C2S\022\016\n\006userId\030" +
-      "\001 \002(\t\022\014\n\004type\030\002 \002(\005\"P\n\005M1116\032\"\n\003S2C\022\016\n\006s" +
-      "tatus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\032#\n\003C2S\022\016\n\006userI",
-      "d\030\001 \002(\t\022\014\n\004type\030\002 \002(\005B\037\n\026com.tworr.msg.p" +
-      "rotocalB\005M0001"
+      "\014\n\004type\030\005 \002(\005\"\201\001\n\005M1114\032a\n\003S2C\022\016\n\006status" +
+      "\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022=\n\007friends\030\003 \003(\0132,.c" +
+      "om.tworr.msg.Commons.FriendWithLastMessa" +
+      "ge\032\025\n\003C2S\022\016\n\006userId\030\001 \002(\t\"P\n\005M1115\032\"\n\003S2" +
+      "C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\032#\n\003C2S\022\016\n" +
+      "\006userId\030\001 \002(\t\022\014\n\004type\030\002 \002(\005\"P\n\005M1116\032\"\n\003" +
+      "S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\032#\n\003C2S\022",
+      "\016\n\006userId\030\001 \002(\t\022\014\n\004type\030\002 \002(\005B\037\n\026com.two" +
+      "rr.msg.protocalB\005M0001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {

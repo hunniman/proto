@@ -8221,6 +8221,3216 @@ public final class M0001 {
     // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1114)
   }
 
+  public interface M1115OrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code com.tworr.msg.M0001.M1115}
+   *
+   * <pre>
+   *标识好友
+   * </pre>
+   */
+  public static final class M1115 extends
+      com.google.protobuf.GeneratedMessage
+      implements M1115OrBuilder {
+    // Use M1115.newBuilder() to construct.
+    private M1115(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private M1115(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final M1115 defaultInstance;
+    public static M1115 getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public M1115 getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private M1115(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.tworr.msg.protocal.M0001.M1115.class, com.tworr.msg.protocal.M0001.M1115.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<M1115> PARSER =
+        new com.google.protobuf.AbstractParser<M1115>() {
+      public M1115 parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new M1115(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<M1115> getParserForType() {
+      return PARSER;
+    }
+
+    public interface S2COrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // required int32 status = 1;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      boolean hasStatus();
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      int getStatus();
+
+      // optional string msg = 2;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      boolean hasMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      java.lang.String getMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getMsgBytes();
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1115.S2C}
+     */
+    public static final class S2C extends
+        com.google.protobuf.GeneratedMessage
+        implements S2COrBuilder {
+      // Use S2C.newBuilder() to construct.
+      private S2C(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private S2C(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final S2C defaultInstance;
+      public static S2C getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public S2C getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private S2C(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 8: {
+                bitField0_ |= 0x00000001;
+                status_ = input.readInt32();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                msg_ = input.readBytes();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_S2C_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_S2C_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1115.S2C.class, com.tworr.msg.protocal.M0001.M1115.S2C.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<S2C> PARSER =
+          new com.google.protobuf.AbstractParser<S2C>() {
+        public S2C parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new S2C(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<S2C> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // required int32 status = 1;
+      public static final int STATUS_FIELD_NUMBER = 1;
+      private int status_;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      public int getStatus() {
+        return status_;
+      }
+
+      // optional string msg = 2;
+      public static final int MSG_FIELD_NUMBER = 2;
+      private java.lang.Object msg_;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public boolean hasMsg() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public java.lang.String getMsg() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            msg_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getMsgBytes() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          msg_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private void initFields() {
+        status_ = 0;
+        msg_ = "";
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        if (!hasStatus()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeInt32(1, status_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getMsgBytes());
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(1, status_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(2, getMsgBytes());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.S2C parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1115.S2C prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code com.tworr.msg.M0001.M1115.S2C}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.tworr.msg.protocal.M0001.M1115.S2COrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_S2C_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_S2C_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.tworr.msg.protocal.M0001.M1115.S2C.class, com.tworr.msg.protocal.M0001.M1115.S2C.Builder.class);
+        }
+
+        // Construct using com.tworr.msg.protocal.M0001.M1115.S2C.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          status_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000001);
+          msg_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_S2C_descriptor;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1115.S2C getDefaultInstanceForType() {
+          return com.tworr.msg.protocal.M0001.M1115.S2C.getDefaultInstance();
+        }
+
+        public com.tworr.msg.protocal.M0001.M1115.S2C build() {
+          com.tworr.msg.protocal.M0001.M1115.S2C result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1115.S2C buildPartial() {
+          com.tworr.msg.protocal.M0001.M1115.S2C result = new com.tworr.msg.protocal.M0001.M1115.S2C(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.status_ = status_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.msg_ = msg_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.tworr.msg.protocal.M0001.M1115.S2C) {
+            return mergeFrom((com.tworr.msg.protocal.M0001.M1115.S2C)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1115.S2C other) {
+          if (other == com.tworr.msg.protocal.M0001.M1115.S2C.getDefaultInstance()) return this;
+          if (other.hasStatus()) {
+            setStatus(other.getStatus());
+          }
+          if (other.hasMsg()) {
+            bitField0_ |= 0x00000002;
+            msg_ = other.msg_;
+            onChanged();
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          if (!hasStatus()) {
+            
+            return false;
+          }
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.tworr.msg.protocal.M0001.M1115.S2C parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.tworr.msg.protocal.M0001.M1115.S2C) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // required int32 status = 1;
+        private int status_ ;
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public boolean hasStatus() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public int getStatus() {
+          return status_;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public Builder setStatus(int value) {
+          bitField0_ |= 0x00000001;
+          status_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public Builder clearStatus() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          status_ = 0;
+          onChanged();
+          return this;
+        }
+
+        // optional string msg = 2;
+        private java.lang.Object msg_ = "";
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public boolean hasMsg() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public java.lang.String getMsg() {
+          java.lang.Object ref = msg_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            msg_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getMsgBytes() {
+          java.lang.Object ref = msg_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            msg_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder setMsg(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder clearMsg() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          msg_ = getDefaultInstance().getMsg();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder setMsgBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1115.S2C)
+      }
+
+      static {
+        defaultInstance = new S2C(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1115.S2C)
+    }
+
+    public interface C2SOrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // required string userId = 1;
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      boolean hasUserId();
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      java.lang.String getUserId();
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getUserIdBytes();
+
+      // required int32 type = 2;
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.标记好友，2.取消标记好友
+       * </pre>
+       */
+      boolean hasType();
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.标记好友，2.取消标记好友
+       * </pre>
+       */
+      int getType();
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1115.C2S}
+     */
+    public static final class C2S extends
+        com.google.protobuf.GeneratedMessage
+        implements C2SOrBuilder {
+      // Use C2S.newBuilder() to construct.
+      private C2S(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private C2S(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final C2S defaultInstance;
+      public static C2S getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public C2S getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private C2S(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                bitField0_ |= 0x00000001;
+                userId_ = input.readBytes();
+                break;
+              }
+              case 16: {
+                bitField0_ |= 0x00000002;
+                type_ = input.readInt32();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_C2S_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1115.C2S.class, com.tworr.msg.protocal.M0001.M1115.C2S.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<C2S> PARSER =
+          new com.google.protobuf.AbstractParser<C2S>() {
+        public C2S parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new C2S(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<C2S> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // required string userId = 1;
+      public static final int USERID_FIELD_NUMBER = 1;
+      private java.lang.Object userId_;
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      public boolean hasUserId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      public java.lang.String getUserId() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            userId_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getUserIdBytes() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          userId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // required int32 type = 2;
+      public static final int TYPE_FIELD_NUMBER = 2;
+      private int type_;
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.标记好友，2.取消标记好友
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.标记好友，2.取消标记好友
+       * </pre>
+       */
+      public int getType() {
+        return type_;
+      }
+
+      private void initFields() {
+        userId_ = "";
+        type_ = 0;
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        if (!hasUserId()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        if (!hasType()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeBytes(1, getUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeInt32(2, type_);
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(1, getUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(2, type_);
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1115.C2S parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1115.C2S prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code com.tworr.msg.M0001.M1115.C2S}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.tworr.msg.protocal.M0001.M1115.C2SOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_C2S_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.tworr.msg.protocal.M0001.M1115.C2S.class, com.tworr.msg.protocal.M0001.M1115.C2S.Builder.class);
+        }
+
+        // Construct using com.tworr.msg.protocal.M0001.M1115.C2S.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          userId_ = "";
+          bitField0_ = (bitField0_ & ~0x00000001);
+          type_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000002);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1115.C2S getDefaultInstanceForType() {
+          return com.tworr.msg.protocal.M0001.M1115.C2S.getDefaultInstance();
+        }
+
+        public com.tworr.msg.protocal.M0001.M1115.C2S build() {
+          com.tworr.msg.protocal.M0001.M1115.C2S result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1115.C2S buildPartial() {
+          com.tworr.msg.protocal.M0001.M1115.C2S result = new com.tworr.msg.protocal.M0001.M1115.C2S(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.userId_ = userId_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.type_ = type_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.tworr.msg.protocal.M0001.M1115.C2S) {
+            return mergeFrom((com.tworr.msg.protocal.M0001.M1115.C2S)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1115.C2S other) {
+          if (other == com.tworr.msg.protocal.M0001.M1115.C2S.getDefaultInstance()) return this;
+          if (other.hasUserId()) {
+            bitField0_ |= 0x00000001;
+            userId_ = other.userId_;
+            onChanged();
+          }
+          if (other.hasType()) {
+            setType(other.getType());
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          if (!hasUserId()) {
+            
+            return false;
+          }
+          if (!hasType()) {
+            
+            return false;
+          }
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.tworr.msg.protocal.M0001.M1115.C2S parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.tworr.msg.protocal.M0001.M1115.C2S) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // required string userId = 1;
+        private java.lang.Object userId_ = "";
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public boolean hasUserId() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public java.lang.String getUserId() {
+          java.lang.Object ref = userId_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            userId_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getUserIdBytes() {
+          java.lang.Object ref = userId_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            userId_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public Builder setUserId(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public Builder clearUserId() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          userId_ = getDefaultInstance().getUserId();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public Builder setUserIdBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+
+        // required int32 type = 2;
+        private int type_ ;
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.标记好友，2.取消标记好友
+         * </pre>
+         */
+        public boolean hasType() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.标记好友，2.取消标记好友
+         * </pre>
+         */
+        public int getType() {
+          return type_;
+        }
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.标记好友，2.取消标记好友
+         * </pre>
+         */
+        public Builder setType(int value) {
+          bitField0_ |= 0x00000002;
+          type_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.标记好友，2.取消标记好友
+         * </pre>
+         */
+        public Builder clearType() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          type_ = 0;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1115.C2S)
+      }
+
+      static {
+        defaultInstance = new C2S(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1115.C2S)
+    }
+
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1115 parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1115 prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1115}
+     *
+     * <pre>
+     *标识好友
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.tworr.msg.protocal.M0001.M1115OrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1115.class, com.tworr.msg.protocal.M0001.M1115.Builder.class);
+      }
+
+      // Construct using com.tworr.msg.protocal.M0001.M1115.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1115_descriptor;
+      }
+
+      public com.tworr.msg.protocal.M0001.M1115 getDefaultInstanceForType() {
+        return com.tworr.msg.protocal.M0001.M1115.getDefaultInstance();
+      }
+
+      public com.tworr.msg.protocal.M0001.M1115 build() {
+        com.tworr.msg.protocal.M0001.M1115 result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.tworr.msg.protocal.M0001.M1115 buildPartial() {
+        com.tworr.msg.protocal.M0001.M1115 result = new com.tworr.msg.protocal.M0001.M1115(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.tworr.msg.protocal.M0001.M1115) {
+          return mergeFrom((com.tworr.msg.protocal.M0001.M1115)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1115 other) {
+        if (other == com.tworr.msg.protocal.M0001.M1115.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.tworr.msg.protocal.M0001.M1115 parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.tworr.msg.protocal.M0001.M1115) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1115)
+    }
+
+    static {
+      defaultInstance = new M1115(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1115)
+  }
+
+  public interface M1116OrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code com.tworr.msg.M0001.M1116}
+   *
+   * <pre>
+   *黑名单
+   * </pre>
+   */
+  public static final class M1116 extends
+      com.google.protobuf.GeneratedMessage
+      implements M1116OrBuilder {
+    // Use M1116.newBuilder() to construct.
+    private M1116(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private M1116(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final M1116 defaultInstance;
+    public static M1116 getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public M1116 getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private M1116(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.tworr.msg.protocal.M0001.M1116.class, com.tworr.msg.protocal.M0001.M1116.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<M1116> PARSER =
+        new com.google.protobuf.AbstractParser<M1116>() {
+      public M1116 parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new M1116(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<M1116> getParserForType() {
+      return PARSER;
+    }
+
+    public interface S2COrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // required int32 status = 1;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      boolean hasStatus();
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      int getStatus();
+
+      // optional string msg = 2;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      boolean hasMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      java.lang.String getMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getMsgBytes();
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1116.S2C}
+     */
+    public static final class S2C extends
+        com.google.protobuf.GeneratedMessage
+        implements S2COrBuilder {
+      // Use S2C.newBuilder() to construct.
+      private S2C(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private S2C(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final S2C defaultInstance;
+      public static S2C getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public S2C getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private S2C(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 8: {
+                bitField0_ |= 0x00000001;
+                status_ = input.readInt32();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                msg_ = input.readBytes();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_S2C_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_S2C_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1116.S2C.class, com.tworr.msg.protocal.M0001.M1116.S2C.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<S2C> PARSER =
+          new com.google.protobuf.AbstractParser<S2C>() {
+        public S2C parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new S2C(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<S2C> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // required int32 status = 1;
+      public static final int STATUS_FIELD_NUMBER = 1;
+      private int status_;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *状态   
+       * </pre>
+       */
+      public int getStatus() {
+        return status_;
+      }
+
+      // optional string msg = 2;
+      public static final int MSG_FIELD_NUMBER = 2;
+      private java.lang.Object msg_;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public boolean hasMsg() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public java.lang.String getMsg() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            msg_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *提示消息
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getMsgBytes() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          msg_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private void initFields() {
+        status_ = 0;
+        msg_ = "";
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        if (!hasStatus()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeInt32(1, status_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getMsgBytes());
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(1, status_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(2, getMsgBytes());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.S2C parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1116.S2C prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code com.tworr.msg.M0001.M1116.S2C}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.tworr.msg.protocal.M0001.M1116.S2COrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_S2C_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_S2C_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.tworr.msg.protocal.M0001.M1116.S2C.class, com.tworr.msg.protocal.M0001.M1116.S2C.Builder.class);
+        }
+
+        // Construct using com.tworr.msg.protocal.M0001.M1116.S2C.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          status_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000001);
+          msg_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_S2C_descriptor;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1116.S2C getDefaultInstanceForType() {
+          return com.tworr.msg.protocal.M0001.M1116.S2C.getDefaultInstance();
+        }
+
+        public com.tworr.msg.protocal.M0001.M1116.S2C build() {
+          com.tworr.msg.protocal.M0001.M1116.S2C result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1116.S2C buildPartial() {
+          com.tworr.msg.protocal.M0001.M1116.S2C result = new com.tworr.msg.protocal.M0001.M1116.S2C(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.status_ = status_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.msg_ = msg_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.tworr.msg.protocal.M0001.M1116.S2C) {
+            return mergeFrom((com.tworr.msg.protocal.M0001.M1116.S2C)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1116.S2C other) {
+          if (other == com.tworr.msg.protocal.M0001.M1116.S2C.getDefaultInstance()) return this;
+          if (other.hasStatus()) {
+            setStatus(other.getStatus());
+          }
+          if (other.hasMsg()) {
+            bitField0_ |= 0x00000002;
+            msg_ = other.msg_;
+            onChanged();
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          if (!hasStatus()) {
+            
+            return false;
+          }
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.tworr.msg.protocal.M0001.M1116.S2C parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.tworr.msg.protocal.M0001.M1116.S2C) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // required int32 status = 1;
+        private int status_ ;
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public boolean hasStatus() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public int getStatus() {
+          return status_;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public Builder setStatus(int value) {
+          bitField0_ |= 0x00000001;
+          status_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *状态   
+         * </pre>
+         */
+        public Builder clearStatus() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          status_ = 0;
+          onChanged();
+          return this;
+        }
+
+        // optional string msg = 2;
+        private java.lang.Object msg_ = "";
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public boolean hasMsg() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public java.lang.String getMsg() {
+          java.lang.Object ref = msg_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            msg_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getMsgBytes() {
+          java.lang.Object ref = msg_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            msg_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder setMsg(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder clearMsg() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          msg_ = getDefaultInstance().getMsg();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *提示消息
+         * </pre>
+         */
+        public Builder setMsgBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1116.S2C)
+      }
+
+      static {
+        defaultInstance = new S2C(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1116.S2C)
+    }
+
+    public interface C2SOrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // required string userId = 1;
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      boolean hasUserId();
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      java.lang.String getUserId();
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getUserIdBytes();
+
+      // required int32 type = 2;
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.拉入黑名单，2.取消黑名单
+       * </pre>
+       */
+      boolean hasType();
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.拉入黑名单，2.取消黑名单
+       * </pre>
+       */
+      int getType();
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1116.C2S}
+     */
+    public static final class C2S extends
+        com.google.protobuf.GeneratedMessage
+        implements C2SOrBuilder {
+      // Use C2S.newBuilder() to construct.
+      private C2S(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private C2S(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final C2S defaultInstance;
+      public static C2S getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public C2S getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private C2S(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                bitField0_ |= 0x00000001;
+                userId_ = input.readBytes();
+                break;
+              }
+              case 16: {
+                bitField0_ |= 0x00000002;
+                type_ = input.readInt32();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_C2S_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1116.C2S.class, com.tworr.msg.protocal.M0001.M1116.C2S.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<C2S> PARSER =
+          new com.google.protobuf.AbstractParser<C2S>() {
+        public C2S parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new C2S(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<C2S> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // required string userId = 1;
+      public static final int USERID_FIELD_NUMBER = 1;
+      private java.lang.Object userId_;
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      public boolean hasUserId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      public java.lang.String getUserId() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            userId_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *发送者的用户id
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getUserIdBytes() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          userId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // required int32 type = 2;
+      public static final int TYPE_FIELD_NUMBER = 2;
+      private int type_;
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.拉入黑名单，2.取消黑名单
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 type = 2;</code>
+       *
+       * <pre>
+       *1.拉入黑名单，2.取消黑名单
+       * </pre>
+       */
+      public int getType() {
+        return type_;
+      }
+
+      private void initFields() {
+        userId_ = "";
+        type_ = 0;
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        if (!hasUserId()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        if (!hasType()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeBytes(1, getUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeInt32(2, type_);
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(1, getUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(2, type_);
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1116.C2S parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1116.C2S prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code com.tworr.msg.M0001.M1116.C2S}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.tworr.msg.protocal.M0001.M1116.C2SOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_C2S_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.tworr.msg.protocal.M0001.M1116.C2S.class, com.tworr.msg.protocal.M0001.M1116.C2S.Builder.class);
+        }
+
+        // Construct using com.tworr.msg.protocal.M0001.M1116.C2S.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          userId_ = "";
+          bitField0_ = (bitField0_ & ~0x00000001);
+          type_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000002);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1116.C2S getDefaultInstanceForType() {
+          return com.tworr.msg.protocal.M0001.M1116.C2S.getDefaultInstance();
+        }
+
+        public com.tworr.msg.protocal.M0001.M1116.C2S build() {
+          com.tworr.msg.protocal.M0001.M1116.C2S result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1116.C2S buildPartial() {
+          com.tworr.msg.protocal.M0001.M1116.C2S result = new com.tworr.msg.protocal.M0001.M1116.C2S(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.userId_ = userId_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.type_ = type_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.tworr.msg.protocal.M0001.M1116.C2S) {
+            return mergeFrom((com.tworr.msg.protocal.M0001.M1116.C2S)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1116.C2S other) {
+          if (other == com.tworr.msg.protocal.M0001.M1116.C2S.getDefaultInstance()) return this;
+          if (other.hasUserId()) {
+            bitField0_ |= 0x00000001;
+            userId_ = other.userId_;
+            onChanged();
+          }
+          if (other.hasType()) {
+            setType(other.getType());
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          if (!hasUserId()) {
+            
+            return false;
+          }
+          if (!hasType()) {
+            
+            return false;
+          }
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.tworr.msg.protocal.M0001.M1116.C2S parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.tworr.msg.protocal.M0001.M1116.C2S) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // required string userId = 1;
+        private java.lang.Object userId_ = "";
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public boolean hasUserId() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public java.lang.String getUserId() {
+          java.lang.Object ref = userId_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            userId_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getUserIdBytes() {
+          java.lang.Object ref = userId_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            userId_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public Builder setUserId(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public Builder clearUserId() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          userId_ = getDefaultInstance().getUserId();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *发送者的用户id
+         * </pre>
+         */
+        public Builder setUserIdBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+
+        // required int32 type = 2;
+        private int type_ ;
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.拉入黑名单，2.取消黑名单
+         * </pre>
+         */
+        public boolean hasType() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.拉入黑名单，2.取消黑名单
+         * </pre>
+         */
+        public int getType() {
+          return type_;
+        }
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.拉入黑名单，2.取消黑名单
+         * </pre>
+         */
+        public Builder setType(int value) {
+          bitField0_ |= 0x00000002;
+          type_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 type = 2;</code>
+         *
+         * <pre>
+         *1.拉入黑名单，2.取消黑名单
+         * </pre>
+         */
+        public Builder clearType() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          type_ = 0;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1116.C2S)
+      }
+
+      static {
+        defaultInstance = new C2S(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1116.C2S)
+    }
+
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1116 parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1116 prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1116}
+     *
+     * <pre>
+     *黑名单
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.tworr.msg.protocal.M0001.M1116OrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1116.class, com.tworr.msg.protocal.M0001.M1116.Builder.class);
+      }
+
+      // Construct using com.tworr.msg.protocal.M0001.M1116.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1116_descriptor;
+      }
+
+      public com.tworr.msg.protocal.M0001.M1116 getDefaultInstanceForType() {
+        return com.tworr.msg.protocal.M0001.M1116.getDefaultInstance();
+      }
+
+      public com.tworr.msg.protocal.M0001.M1116 build() {
+        com.tworr.msg.protocal.M0001.M1116 result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.tworr.msg.protocal.M0001.M1116 buildPartial() {
+        com.tworr.msg.protocal.M0001.M1116 result = new com.tworr.msg.protocal.M0001.M1116(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.tworr.msg.protocal.M0001.M1116) {
+          return mergeFrom((com.tworr.msg.protocal.M0001.M1116)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1116 other) {
+        if (other == com.tworr.msg.protocal.M0001.M1116.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.tworr.msg.protocal.M0001.M1116 parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.tworr.msg.protocal.M0001.M1116) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1116)
+    }
+
+    static {
+      defaultInstance = new M1116(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1116)
+  }
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_tworr_msg_M0001_M1111_descriptor;
   private static
@@ -8281,6 +11491,36 @@ public final class M0001 {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_tworr_msg_M0001_M1114_C2S_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1115_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1115_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1115_S2C_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1115_S2C_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1115_C2S_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1116_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1116_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1116_S2C_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1116_S2C_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1116_C2S_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -8306,8 +11546,12 @@ public final class M0001 {
       "\014\n\004type\030\005 \002(\005\"z\n\005M1114\032Z\n\003S2C\022\016\n\006status\030" +
       "\001 \002(\005\022\013\n\003msg\030\002 \001(\t\0226\n\007friends\030\003 \003(\0132%.co" +
       "m.tworr.msg.Commons.SimpleUserInfo\032\025\n\003C2" +
-      "S\022\016\n\006userId\030\001 \002(\tB\037\n\026com.tworr.msg.proto" +
-      "calB\005M0001"
+      "S\022\016\n\006userId\030\001 \002(\t\"P\n\005M1115\032\"\n\003S2C\022\016\n\006sta" +
+      "tus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\032#\n\003C2S\022\016\n\006userId\030" +
+      "\001 \002(\t\022\014\n\004type\030\002 \002(\005\"P\n\005M1116\032\"\n\003S2C\022\016\n\006s" +
+      "tatus\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\032#\n\003C2S\022\016\n\006userI",
+      "d\030\001 \002(\t\022\014\n\004type\030\002 \002(\005B\037\n\026com.tworr.msg.p" +
+      "rotocalB\005M0001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8386,6 +11630,42 @@ public final class M0001 {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1114_C2S_descriptor,
               new java.lang.String[] { "UserId", });
+          internal_static_com_tworr_msg_M0001_M1115_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_com_tworr_msg_M0001_M1115_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1115_descriptor,
+              new java.lang.String[] { });
+          internal_static_com_tworr_msg_M0001_M1115_S2C_descriptor =
+            internal_static_com_tworr_msg_M0001_M1115_descriptor.getNestedTypes().get(0);
+          internal_static_com_tworr_msg_M0001_M1115_S2C_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1115_S2C_descriptor,
+              new java.lang.String[] { "Status", "Msg", });
+          internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor =
+            internal_static_com_tworr_msg_M0001_M1115_descriptor.getNestedTypes().get(1);
+          internal_static_com_tworr_msg_M0001_M1115_C2S_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor,
+              new java.lang.String[] { "UserId", "Type", });
+          internal_static_com_tworr_msg_M0001_M1116_descriptor =
+            getDescriptor().getMessageTypes().get(5);
+          internal_static_com_tworr_msg_M0001_M1116_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1116_descriptor,
+              new java.lang.String[] { });
+          internal_static_com_tworr_msg_M0001_M1116_S2C_descriptor =
+            internal_static_com_tworr_msg_M0001_M1116_descriptor.getNestedTypes().get(0);
+          internal_static_com_tworr_msg_M0001_M1116_S2C_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1116_S2C_descriptor,
+              new java.lang.String[] { "Status", "Msg", });
+          internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor =
+            internal_static_com_tworr_msg_M0001_M1116_descriptor.getNestedTypes().get(1);
+          internal_static_com_tworr_msg_M0001_M1116_C2S_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor,
+              new java.lang.String[] { "UserId", "Type", });
           return null;
         }
       };

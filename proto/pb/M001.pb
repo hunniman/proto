@@ -1,5 +1,5 @@
 
-²
+Ö
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -37,5 +37,19 @@ fromUserId (	
 msg (	6
 friends (2%.com.tworr.msg.Commons.SimpleUserInfo
 C2S
-userId (	B
+userId (	"P
+M1115"
+S2C
+status (
+msg (	#
+C2S
+userId (	
+type ("P
+M1116"
+S2C
+status (
+msg (	#
+C2S
+userId (	
+type (B
 com.tworr.msg.protocalBM0001

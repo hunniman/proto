@@ -1,5 +1,5 @@
 
-Þ
+ï
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -51,5 +51,13 @@ fromUserId (	
 msg (	#
 C2S
 userId (	
-type (B
+type ("Ž
+M1117X
+S2C
+status (
+msg (	4
+messages (2".com.tworr.msg.Commons.ChatMessage+
+C2S
+userId (	
+targetUserId (	B
 com.tworr.msg.protocalBM0001

@@ -98,3 +98,20 @@ message M1116{  //黑名单
     }
 	
 }
+
+
+
+message M1117{  //获取聊天记录
+
+    message S2C{
+	required int32 status = 1;   //状态   
+	optional string msg= 2;     //提示消息
+	repeated Commons.ChatMessage messages=3;//聊天记录
+    }
+
+    message C2S{
+	required string userId=1;//发送者的用户id
+	required string targetUserId=2;//要获取记录的用户id
+    }
+	
+}

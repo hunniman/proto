@@ -802,6 +802,24 @@ public final class Commons {
      * </pre>
      */
     boolean getIsOnline();
+
+    // optional int32 isMark = 7;
+    /**
+     * <code>optional int32 isMark = 7;</code>
+     *
+     * <pre>
+     *0.没有标记，1.已经标记
+     * </pre>
+     */
+    boolean hasIsMark();
+    /**
+     * <code>optional int32 isMark = 7;</code>
+     *
+     * <pre>
+     *0.没有标记，1.已经标记
+     * </pre>
+     */
+    int getIsMark();
   }
   /**
    * Protobuf type {@code com.tworr.msg.Commons.SimpleUserInfo}
@@ -882,6 +900,11 @@ public final class Commons {
             case 48: {
               bitField0_ |= 0x00000020;
               isOnline_ = input.readBool();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              isMark_ = input.readInt32();
               break;
             }
           }
@@ -1192,6 +1215,30 @@ public final class Commons {
       return isOnline_;
     }
 
+    // optional int32 isMark = 7;
+    public static final int ISMARK_FIELD_NUMBER = 7;
+    private int isMark_;
+    /**
+     * <code>optional int32 isMark = 7;</code>
+     *
+     * <pre>
+     *0.没有标记，1.已经标记
+     * </pre>
+     */
+    public boolean hasIsMark() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional int32 isMark = 7;</code>
+     *
+     * <pre>
+     *0.没有标记，1.已经标记
+     * </pre>
+     */
+    public int getIsMark() {
+      return isMark_;
+    }
+
     private void initFields() {
       id_ = "";
       nickName_ = "";
@@ -1199,6 +1246,7 @@ public final class Commons {
       email_ = "";
       level_ = 0;
       isOnline_ = false;
+      isMark_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1250,6 +1298,9 @@ public final class Commons {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         output.writeBool(6, isOnline_);
       }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, isMark_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -1282,6 +1333,10 @@ public final class Commons {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, isOnline_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, isMark_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1411,6 +1466,8 @@ public final class Commons {
         bitField0_ = (bitField0_ & ~0x00000010);
         isOnline_ = false;
         bitField0_ = (bitField0_ & ~0x00000020);
+        isMark_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
 
@@ -1463,6 +1520,10 @@ public final class Commons {
           to_bitField0_ |= 0x00000020;
         }
         result.isOnline_ = isOnline_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.isMark_ = isMark_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1504,6 +1565,9 @@ public final class Commons {
         }
         if (other.hasIsOnline()) {
           setIsOnline(other.getIsOnline());
+        }
+        if (other.hasIsMark()) {
+          setIsMark(other.getIsMark());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2038,6 +2102,55 @@ public final class Commons {
       public Builder clearIsOnline() {
         bitField0_ = (bitField0_ & ~0x00000020);
         isOnline_ = false;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 isMark = 7;
+      private int isMark_ ;
+      /**
+       * <code>optional int32 isMark = 7;</code>
+       *
+       * <pre>
+       *0.没有标记，1.已经标记
+       * </pre>
+       */
+      public boolean hasIsMark() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional int32 isMark = 7;</code>
+       *
+       * <pre>
+       *0.没有标记，1.已经标记
+       * </pre>
+       */
+      public int getIsMark() {
+        return isMark_;
+      }
+      /**
+       * <code>optional int32 isMark = 7;</code>
+       *
+       * <pre>
+       *0.没有标记，1.已经标记
+       * </pre>
+       */
+      public Builder setIsMark(int value) {
+        bitField0_ |= 0x00000040;
+        isMark_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 isMark = 7;</code>
+       *
+       * <pre>
+       *0.没有标记，1.已经标记
+       * </pre>
+       */
+      public Builder clearIsMark() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        isMark_ = 0;
         onChanged();
         return this;
       }
@@ -2696,6 +2809,1886 @@ public final class Commons {
     // @@protoc_insertion_point(class_scope:com.tworr.msg.Commons.ImageMessage)
   }
 
+  public interface ChatMessageOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;
+    /**
+     * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+     *
+     * <pre>
+     *消息来源
+     * </pre>
+     */
+    boolean hasFromUser();
+    /**
+     * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+     *
+     * <pre>
+     *消息来源
+     * </pre>
+     */
+    com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser();
+    /**
+     * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+     *
+     * <pre>
+     *消息来源
+     * </pre>
+     */
+    com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder();
+
+    // required string msgData = 2;
+    /**
+     * <code>required string msgData = 2;</code>
+     *
+     * <pre>
+     *内容（图片路径 或者 文本内容）
+     * </pre>
+     */
+    boolean hasMsgData();
+    /**
+     * <code>required string msgData = 2;</code>
+     *
+     * <pre>
+     *内容（图片路径 或者 文本内容）
+     * </pre>
+     */
+    java.lang.String getMsgData();
+    /**
+     * <code>required string msgData = 2;</code>
+     *
+     * <pre>
+     *内容（图片路径 或者 文本内容）
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getMsgDataBytes();
+
+    // required int64 time = 3;
+    /**
+     * <code>required int64 time = 3;</code>
+     *
+     * <pre>
+     *服务器时间
+     * </pre>
+     */
+    boolean hasTime();
+    /**
+     * <code>required int64 time = 3;</code>
+     *
+     * <pre>
+     *服务器时间
+     * </pre>
+     */
+    long getTime();
+
+    // required int32 type = 4;
+    /**
+     * <code>required int32 type = 4;</code>
+     *
+     * <pre>
+     *1.纯文本，2.图片
+     * </pre>
+     */
+    boolean hasType();
+    /**
+     * <code>required int32 type = 4;</code>
+     *
+     * <pre>
+     *1.纯文本，2.图片
+     * </pre>
+     */
+    int getType();
+  }
+  /**
+   * Protobuf type {@code com.tworr.msg.Commons.ChatMessage}
+   */
+  public static final class ChatMessage extends
+      com.google.protobuf.GeneratedMessage
+      implements ChatMessageOrBuilder {
+    // Use ChatMessage.newBuilder() to construct.
+    private ChatMessage(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private ChatMessage(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final ChatMessage defaultInstance;
+    public static ChatMessage getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public ChatMessage getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ChatMessage(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = fromUser_.toBuilder();
+              }
+              fromUser_ = input.readMessage(com.tworr.msg.protocal.Commons.SimpleUserInfo.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(fromUser_);
+                fromUser_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              msgData_ = input.readBytes();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              time_ = input.readInt64();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              type_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_ChatMessage_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_ChatMessage_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.tworr.msg.protocal.Commons.ChatMessage.class, com.tworr.msg.protocal.Commons.ChatMessage.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<ChatMessage> PARSER =
+        new com.google.protobuf.AbstractParser<ChatMessage>() {
+      public ChatMessage parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ChatMessage(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ChatMessage> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;
+    public static final int FROMUSER_FIELD_NUMBER = 1;
+    private com.tworr.msg.protocal.Commons.SimpleUserInfo fromUser_;
+    /**
+     * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+     *
+     * <pre>
+     *消息来源
+     * </pre>
+     */
+    public boolean hasFromUser() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+     *
+     * <pre>
+     *消息来源
+     * </pre>
+     */
+    public com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser() {
+      return fromUser_;
+    }
+    /**
+     * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+     *
+     * <pre>
+     *消息来源
+     * </pre>
+     */
+    public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder() {
+      return fromUser_;
+    }
+
+    // required string msgData = 2;
+    public static final int MSGDATA_FIELD_NUMBER = 2;
+    private java.lang.Object msgData_;
+    /**
+     * <code>required string msgData = 2;</code>
+     *
+     * <pre>
+     *内容（图片路径 或者 文本内容）
+     * </pre>
+     */
+    public boolean hasMsgData() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string msgData = 2;</code>
+     *
+     * <pre>
+     *内容（图片路径 或者 文本内容）
+     * </pre>
+     */
+    public java.lang.String getMsgData() {
+      java.lang.Object ref = msgData_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          msgData_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string msgData = 2;</code>
+     *
+     * <pre>
+     *内容（图片路径 或者 文本内容）
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getMsgDataBytes() {
+      java.lang.Object ref = msgData_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        msgData_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required int64 time = 3;
+    public static final int TIME_FIELD_NUMBER = 3;
+    private long time_;
+    /**
+     * <code>required int64 time = 3;</code>
+     *
+     * <pre>
+     *服务器时间
+     * </pre>
+     */
+    public boolean hasTime() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int64 time = 3;</code>
+     *
+     * <pre>
+     *服务器时间
+     * </pre>
+     */
+    public long getTime() {
+      return time_;
+    }
+
+    // required int32 type = 4;
+    public static final int TYPE_FIELD_NUMBER = 4;
+    private int type_;
+    /**
+     * <code>required int32 type = 4;</code>
+     *
+     * <pre>
+     *1.纯文本，2.图片
+     * </pre>
+     */
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 type = 4;</code>
+     *
+     * <pre>
+     *1.纯文本，2.图片
+     * </pre>
+     */
+    public int getType() {
+      return type_;
+    }
+
+    private void initFields() {
+      fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+      msgData_ = "";
+      time_ = 0L;
+      type_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasMsgData()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasTime()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasFromUser()) {
+        if (!getFromUser().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, fromUser_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getMsgDataBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt64(3, time_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, type_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, fromUser_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getMsgDataBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, time_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, type_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.Commons.ChatMessage parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.tworr.msg.protocal.Commons.ChatMessage prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.Commons.ChatMessage}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.tworr.msg.protocal.Commons.ChatMessageOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_ChatMessage_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_ChatMessage_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.Commons.ChatMessage.class, com.tworr.msg.protocal.Commons.ChatMessage.Builder.class);
+      }
+
+      // Construct using com.tworr.msg.protocal.Commons.ChatMessage.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getFromUserFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (fromUserBuilder_ == null) {
+          fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+        } else {
+          fromUserBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        msgData_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        time_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        type_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_ChatMessage_descriptor;
+      }
+
+      public com.tworr.msg.protocal.Commons.ChatMessage getDefaultInstanceForType() {
+        return com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance();
+      }
+
+      public com.tworr.msg.protocal.Commons.ChatMessage build() {
+        com.tworr.msg.protocal.Commons.ChatMessage result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.tworr.msg.protocal.Commons.ChatMessage buildPartial() {
+        com.tworr.msg.protocal.Commons.ChatMessage result = new com.tworr.msg.protocal.Commons.ChatMessage(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (fromUserBuilder_ == null) {
+          result.fromUser_ = fromUser_;
+        } else {
+          result.fromUser_ = fromUserBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.msgData_ = msgData_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.time_ = time_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.type_ = type_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.tworr.msg.protocal.Commons.ChatMessage) {
+          return mergeFrom((com.tworr.msg.protocal.Commons.ChatMessage)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.tworr.msg.protocal.Commons.ChatMessage other) {
+        if (other == com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance()) return this;
+        if (other.hasFromUser()) {
+          mergeFromUser(other.getFromUser());
+        }
+        if (other.hasMsgData()) {
+          bitField0_ |= 0x00000002;
+          msgData_ = other.msgData_;
+          onChanged();
+        }
+        if (other.hasTime()) {
+          setTime(other.getTime());
+        }
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasMsgData()) {
+          
+          return false;
+        }
+        if (!hasTime()) {
+          
+          return false;
+        }
+        if (!hasType()) {
+          
+          return false;
+        }
+        if (hasFromUser()) {
+          if (!getFromUser().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.tworr.msg.protocal.Commons.ChatMessage parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.tworr.msg.protocal.Commons.ChatMessage) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;
+      private com.tworr.msg.protocal.Commons.SimpleUserInfo fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> fromUserBuilder_;
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public boolean hasFromUser() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser() {
+        if (fromUserBuilder_ == null) {
+          return fromUser_;
+        } else {
+          return fromUserBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public Builder setFromUser(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+        if (fromUserBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          fromUser_ = value;
+          onChanged();
+        } else {
+          fromUserBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public Builder setFromUser(
+          com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder builderForValue) {
+        if (fromUserBuilder_ == null) {
+          fromUser_ = builderForValue.build();
+          onChanged();
+        } else {
+          fromUserBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public Builder mergeFromUser(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+        if (fromUserBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              fromUser_ != com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance()) {
+            fromUser_ =
+              com.tworr.msg.protocal.Commons.SimpleUserInfo.newBuilder(fromUser_).mergeFrom(value).buildPartial();
+          } else {
+            fromUser_ = value;
+          }
+          onChanged();
+        } else {
+          fromUserBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public Builder clearFromUser() {
+        if (fromUserBuilder_ == null) {
+          fromUser_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+          onChanged();
+        } else {
+          fromUserBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder getFromUserBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getFromUserFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder() {
+        if (fromUserBuilder_ != null) {
+          return fromUserBuilder_.getMessageOrBuilder();
+        } else {
+          return fromUser_;
+        }
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 1;</code>
+       *
+       * <pre>
+       *消息来源
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> 
+          getFromUserFieldBuilder() {
+        if (fromUserBuilder_ == null) {
+          fromUserBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder>(
+                  fromUser_,
+                  getParentForChildren(),
+                  isClean());
+          fromUser_ = null;
+        }
+        return fromUserBuilder_;
+      }
+
+      // required string msgData = 2;
+      private java.lang.Object msgData_ = "";
+      /**
+       * <code>required string msgData = 2;</code>
+       *
+       * <pre>
+       *内容（图片路径 或者 文本内容）
+       * </pre>
+       */
+      public boolean hasMsgData() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string msgData = 2;</code>
+       *
+       * <pre>
+       *内容（图片路径 或者 文本内容）
+       * </pre>
+       */
+      public java.lang.String getMsgData() {
+        java.lang.Object ref = msgData_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          msgData_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string msgData = 2;</code>
+       *
+       * <pre>
+       *内容（图片路径 或者 文本内容）
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getMsgDataBytes() {
+        java.lang.Object ref = msgData_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          msgData_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string msgData = 2;</code>
+       *
+       * <pre>
+       *内容（图片路径 或者 文本内容）
+       * </pre>
+       */
+      public Builder setMsgData(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        msgData_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string msgData = 2;</code>
+       *
+       * <pre>
+       *内容（图片路径 或者 文本内容）
+       * </pre>
+       */
+      public Builder clearMsgData() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        msgData_ = getDefaultInstance().getMsgData();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string msgData = 2;</code>
+       *
+       * <pre>
+       *内容（图片路径 或者 文本内容）
+       * </pre>
+       */
+      public Builder setMsgDataBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        msgData_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required int64 time = 3;
+      private long time_ ;
+      /**
+       * <code>required int64 time = 3;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      public boolean hasTime() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int64 time = 3;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      public long getTime() {
+        return time_;
+      }
+      /**
+       * <code>required int64 time = 3;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      public Builder setTime(long value) {
+        bitField0_ |= 0x00000004;
+        time_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 time = 3;</code>
+       *
+       * <pre>
+       *服务器时间
+       * </pre>
+       */
+      public Builder clearTime() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        time_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // required int32 type = 4;
+      private int type_ ;
+      /**
+       * <code>required int32 type = 4;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required int32 type = 4;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public int getType() {
+        return type_;
+      }
+      /**
+       * <code>required int32 type = 4;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public Builder setType(int value) {
+        bitField0_ |= 0x00000008;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 type = 4;</code>
+       *
+       * <pre>
+       *1.纯文本，2.图片
+       * </pre>
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.tworr.msg.Commons.ChatMessage)
+    }
+
+    static {
+      defaultInstance = new ChatMessage(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.tworr.msg.Commons.ChatMessage)
+  }
+
+  public interface FriendWithLastMessageOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;
+    /**
+     * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+     *
+     * <pre>
+     *好友
+     * </pre>
+     */
+    boolean hasFriend();
+    /**
+     * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+     *
+     * <pre>
+     *好友
+     * </pre>
+     */
+    com.tworr.msg.protocal.Commons.SimpleUserInfo getFriend();
+    /**
+     * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+     *
+     * <pre>
+     *好友
+     * </pre>
+     */
+    com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFriendOrBuilder();
+
+    // optional .com.tworr.msg.Commons.ChatMessage message = 2;
+    /**
+     * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+     *
+     * <pre>
+     *最新一条信息
+     * </pre>
+     */
+    boolean hasMessage();
+    /**
+     * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+     *
+     * <pre>
+     *最新一条信息
+     * </pre>
+     */
+    com.tworr.msg.protocal.Commons.ChatMessage getMessage();
+    /**
+     * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+     *
+     * <pre>
+     *最新一条信息
+     * </pre>
+     */
+    com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessageOrBuilder();
+  }
+  /**
+   * Protobuf type {@code com.tworr.msg.Commons.FriendWithLastMessage}
+   */
+  public static final class FriendWithLastMessage extends
+      com.google.protobuf.GeneratedMessage
+      implements FriendWithLastMessageOrBuilder {
+    // Use FriendWithLastMessage.newBuilder() to construct.
+    private FriendWithLastMessage(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private FriendWithLastMessage(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final FriendWithLastMessage defaultInstance;
+    public static FriendWithLastMessage getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public FriendWithLastMessage getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private FriendWithLastMessage(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = friend_.toBuilder();
+              }
+              friend_ = input.readMessage(com.tworr.msg.protocal.Commons.SimpleUserInfo.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(friend_);
+                friend_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 18: {
+              com.tworr.msg.protocal.Commons.ChatMessage.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = message_.toBuilder();
+              }
+              message_ = input.readMessage(com.tworr.msg.protocal.Commons.ChatMessage.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(message_);
+                message_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_FriendWithLastMessage_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_FriendWithLastMessage_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.tworr.msg.protocal.Commons.FriendWithLastMessage.class, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<FriendWithLastMessage> PARSER =
+        new com.google.protobuf.AbstractParser<FriendWithLastMessage>() {
+      public FriendWithLastMessage parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new FriendWithLastMessage(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<FriendWithLastMessage> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;
+    public static final int FRIEND_FIELD_NUMBER = 1;
+    private com.tworr.msg.protocal.Commons.SimpleUserInfo friend_;
+    /**
+     * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+     *
+     * <pre>
+     *好友
+     * </pre>
+     */
+    public boolean hasFriend() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+     *
+     * <pre>
+     *好友
+     * </pre>
+     */
+    public com.tworr.msg.protocal.Commons.SimpleUserInfo getFriend() {
+      return friend_;
+    }
+    /**
+     * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+     *
+     * <pre>
+     *好友
+     * </pre>
+     */
+    public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFriendOrBuilder() {
+      return friend_;
+    }
+
+    // optional .com.tworr.msg.Commons.ChatMessage message = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private com.tworr.msg.protocal.Commons.ChatMessage message_;
+    /**
+     * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+     *
+     * <pre>
+     *最新一条信息
+     * </pre>
+     */
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+     *
+     * <pre>
+     *最新一条信息
+     * </pre>
+     */
+    public com.tworr.msg.protocal.Commons.ChatMessage getMessage() {
+      return message_;
+    }
+    /**
+     * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+     *
+     * <pre>
+     *最新一条信息
+     * </pre>
+     */
+    public com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessageOrBuilder() {
+      return message_;
+    }
+
+    private void initFields() {
+      friend_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+      message_ = com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasFriend()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getFriend().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasMessage()) {
+        if (!getMessage().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, friend_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, message_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, friend_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, message_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.Commons.FriendWithLastMessage parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.tworr.msg.protocal.Commons.FriendWithLastMessage prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.Commons.FriendWithLastMessage}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_FriendWithLastMessage_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_FriendWithLastMessage_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.Commons.FriendWithLastMessage.class, com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder.class);
+      }
+
+      // Construct using com.tworr.msg.protocal.Commons.FriendWithLastMessage.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getFriendFieldBuilder();
+          getMessageFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (friendBuilder_ == null) {
+          friend_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+        } else {
+          friendBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (messageBuilder_ == null) {
+          message_ = com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance();
+        } else {
+          messageBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.tworr.msg.protocal.Commons.internal_static_com_tworr_msg_Commons_FriendWithLastMessage_descriptor;
+      }
+
+      public com.tworr.msg.protocal.Commons.FriendWithLastMessage getDefaultInstanceForType() {
+        return com.tworr.msg.protocal.Commons.FriendWithLastMessage.getDefaultInstance();
+      }
+
+      public com.tworr.msg.protocal.Commons.FriendWithLastMessage build() {
+        com.tworr.msg.protocal.Commons.FriendWithLastMessage result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.tworr.msg.protocal.Commons.FriendWithLastMessage buildPartial() {
+        com.tworr.msg.protocal.Commons.FriendWithLastMessage result = new com.tworr.msg.protocal.Commons.FriendWithLastMessage(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (friendBuilder_ == null) {
+          result.friend_ = friend_;
+        } else {
+          result.friend_ = friendBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (messageBuilder_ == null) {
+          result.message_ = message_;
+        } else {
+          result.message_ = messageBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.tworr.msg.protocal.Commons.FriendWithLastMessage) {
+          return mergeFrom((com.tworr.msg.protocal.Commons.FriendWithLastMessage)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.tworr.msg.protocal.Commons.FriendWithLastMessage other) {
+        if (other == com.tworr.msg.protocal.Commons.FriendWithLastMessage.getDefaultInstance()) return this;
+        if (other.hasFriend()) {
+          mergeFriend(other.getFriend());
+        }
+        if (other.hasMessage()) {
+          mergeMessage(other.getMessage());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasFriend()) {
+          
+          return false;
+        }
+        if (!getFriend().isInitialized()) {
+          
+          return false;
+        }
+        if (hasMessage()) {
+          if (!getMessage().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.tworr.msg.protocal.Commons.FriendWithLastMessage parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.tworr.msg.protocal.Commons.FriendWithLastMessage) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;
+      private com.tworr.msg.protocal.Commons.SimpleUserInfo friend_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> friendBuilder_;
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public boolean hasFriend() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.SimpleUserInfo getFriend() {
+        if (friendBuilder_ == null) {
+          return friend_;
+        } else {
+          return friendBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public Builder setFriend(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+        if (friendBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          friend_ = value;
+          onChanged();
+        } else {
+          friendBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public Builder setFriend(
+          com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder builderForValue) {
+        if (friendBuilder_ == null) {
+          friend_ = builderForValue.build();
+          onChanged();
+        } else {
+          friendBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public Builder mergeFriend(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
+        if (friendBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              friend_ != com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance()) {
+            friend_ =
+              com.tworr.msg.protocal.Commons.SimpleUserInfo.newBuilder(friend_).mergeFrom(value).buildPartial();
+          } else {
+            friend_ = value;
+          }
+          onChanged();
+        } else {
+          friendBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public Builder clearFriend() {
+        if (friendBuilder_ == null) {
+          friend_ = com.tworr.msg.protocal.Commons.SimpleUserInfo.getDefaultInstance();
+          onChanged();
+        } else {
+          friendBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder getFriendBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getFriendFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFriendOrBuilder() {
+        if (friendBuilder_ != null) {
+          return friendBuilder_.getMessageOrBuilder();
+        } else {
+          return friend_;
+        }
+      }
+      /**
+       * <code>required .com.tworr.msg.Commons.SimpleUserInfo friend = 1;</code>
+       *
+       * <pre>
+       *好友
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder> 
+          getFriendFieldBuilder() {
+        if (friendBuilder_ == null) {
+          friendBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.tworr.msg.protocal.Commons.SimpleUserInfo, com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder, com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder>(
+                  friend_,
+                  getParentForChildren(),
+                  isClean());
+          friend_ = null;
+        }
+        return friendBuilder_;
+      }
+
+      // optional .com.tworr.msg.Commons.ChatMessage message = 2;
+      private com.tworr.msg.protocal.Commons.ChatMessage message_ = com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.tworr.msg.protocal.Commons.ChatMessage, com.tworr.msg.protocal.Commons.ChatMessage.Builder, com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> messageBuilder_;
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.ChatMessage getMessage() {
+        if (messageBuilder_ == null) {
+          return message_;
+        } else {
+          return messageBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public Builder setMessage(com.tworr.msg.protocal.Commons.ChatMessage value) {
+        if (messageBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          message_ = value;
+          onChanged();
+        } else {
+          messageBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public Builder setMessage(
+          com.tworr.msg.protocal.Commons.ChatMessage.Builder builderForValue) {
+        if (messageBuilder_ == null) {
+          message_ = builderForValue.build();
+          onChanged();
+        } else {
+          messageBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public Builder mergeMessage(com.tworr.msg.protocal.Commons.ChatMessage value) {
+        if (messageBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              message_ != com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance()) {
+            message_ =
+              com.tworr.msg.protocal.Commons.ChatMessage.newBuilder(message_).mergeFrom(value).buildPartial();
+          } else {
+            message_ = value;
+          }
+          onChanged();
+        } else {
+          messageBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public Builder clearMessage() {
+        if (messageBuilder_ == null) {
+          message_ = com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance();
+          onChanged();
+        } else {
+          messageBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.ChatMessage.Builder getMessageBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getMessageFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessageOrBuilder() {
+        if (messageBuilder_ != null) {
+          return messageBuilder_.getMessageOrBuilder();
+        } else {
+          return message_;
+        }
+      }
+      /**
+       * <code>optional .com.tworr.msg.Commons.ChatMessage message = 2;</code>
+       *
+       * <pre>
+       *最新一条信息
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.tworr.msg.protocal.Commons.ChatMessage, com.tworr.msg.protocal.Commons.ChatMessage.Builder, com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
+          getMessageFieldBuilder() {
+        if (messageBuilder_ == null) {
+          messageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.tworr.msg.protocal.Commons.ChatMessage, com.tworr.msg.protocal.Commons.ChatMessage.Builder, com.tworr.msg.protocal.Commons.ChatMessageOrBuilder>(
+                  message_,
+                  getParentForChildren(),
+                  isClean());
+          message_ = null;
+        }
+        return messageBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.tworr.msg.Commons.FriendWithLastMessage)
+    }
+
+    static {
+      defaultInstance = new FriendWithLastMessage(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.tworr.msg.Commons.FriendWithLastMessage)
+  }
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_tworr_msg_Commons_ResponseInfo_descriptor;
   private static
@@ -2711,6 +4704,16 @@ public final class Commons {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_tworr_msg_Commons_ImageMessage_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_Commons_ChatMessage_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_Commons_ChatMessage_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_Commons_FriendWithLastMessage_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_Commons_FriendWithLastMessage_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2722,12 +4725,18 @@ public final class Commons {
     java.lang.String[] descriptorData = {
       "\n\rCommoms.proto\022\025com.tworr.msg.Commons\"+" +
       "\n\014ResponseInfo\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 " +
-      "\001(\t\"r\n\016SimpleUserInfo\022\n\n\002id\030\001 \002(\t\022\020\n\010nic" +
-      "kName\030\002 \002(\t\022\022\n\nheaderPath\030\003 \002(\t\022\r\n\005email" +
-      "\030\004 \002(\t\022\r\n\005level\030\005 \001(\005\022\020\n\010isOnline\030\006 \002(\010\"" +
-      ".\n\014ImageMessage\022\014\n\004file\030\001 \002(\014\022\020\n\010fileNam" +
-      "e\030\002 \001(\tB!\n\026com.tworr.msg.protocalB\007Commo" +
-      "ns"
+      "\001(\t\"\202\001\n\016SimpleUserInfo\022\n\n\002id\030\001 \002(\t\022\020\n\010ni" +
+      "ckName\030\002 \002(\t\022\022\n\nheaderPath\030\003 \002(\t\022\r\n\005emai" +
+      "l\030\004 \002(\t\022\r\n\005level\030\005 \001(\005\022\020\n\010isOnline\030\006 \002(\010" +
+      "\022\016\n\006isMark\030\007 \001(\005\".\n\014ImageMessage\022\014\n\004file" +
+      "\030\001 \002(\014\022\020\n\010fileName\030\002 \001(\t\"s\n\013ChatMessage\022" +
+      "7\n\010fromUser\030\001 \001(\0132%.com.tworr.msg.Common" +
+      "s.SimpleUserInfo\022\017\n\007msgData\030\002 \002(\t\022\014\n\004tim" +
+      "e\030\003 \002(\003\022\014\n\004type\030\004 \002(\005\"\203\001\n\025FriendWithLast",
+      "Message\0225\n\006friend\030\001 \002(\0132%.com.tworr.msg." +
+      "Commons.SimpleUserInfo\0223\n\007message\030\002 \001(\0132" +
+      "\".com.tworr.msg.Commons.ChatMessageB!\n\026c" +
+      "om.tworr.msg.protocalB\007Commons"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -2745,13 +4754,25 @@ public final class Commons {
           internal_static_com_tworr_msg_Commons_SimpleUserInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_Commons_SimpleUserInfo_descriptor,
-              new java.lang.String[] { "Id", "NickName", "HeaderPath", "Email", "Level", "IsOnline", });
+              new java.lang.String[] { "Id", "NickName", "HeaderPath", "Email", "Level", "IsOnline", "IsMark", });
           internal_static_com_tworr_msg_Commons_ImageMessage_descriptor =
             getDescriptor().getMessageTypes().get(2);
           internal_static_com_tworr_msg_Commons_ImageMessage_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_Commons_ImageMessage_descriptor,
               new java.lang.String[] { "File", "FileName", });
+          internal_static_com_tworr_msg_Commons_ChatMessage_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_com_tworr_msg_Commons_ChatMessage_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_Commons_ChatMessage_descriptor,
+              new java.lang.String[] { "FromUser", "MsgData", "Time", "Type", });
+          internal_static_com_tworr_msg_Commons_FriendWithLastMessage_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_com_tworr_msg_Commons_FriendWithLastMessage_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_Commons_FriendWithLastMessage_descriptor,
+              new java.lang.String[] { "Friend", "Message", });
           return null;
         }
       };

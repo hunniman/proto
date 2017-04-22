@@ -1,9 +1,9 @@
 
-š
+¦
 Commoms.protocom.tworr.msg.Commons"+
 ResponseInfo
 status (
-msg (	"r
+msg (	"‚
 SimpleUserInfo
 
 id (	
@@ -12,8 +12,17 @@
 headerPath (	
 email (	
 level (
-isOnline (".
+isOnline (
+isMark (".
 ImageMessage
 file (
-fileName (	B!
+fileName (	"s
+ChatMessage7
+fromUser (2%.com.tworr.msg.Commons.SimpleUserInfo
+msgData (	
+time (
+type ("ƒ
+FriendWithLastMessage5
+friend (2%.com.tworr.msg.Commons.SimpleUserInfo3
+message (2".com.tworr.msg.Commons.ChatMessageB!
 com.tworr.msg.protocalBCommons

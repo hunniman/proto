@@ -76,6 +76,7 @@ message M1115{  //标识好友
     message S2C{
 	required int32 status = 1;   //状态   
 	optional string msg= 2;     //提示消息
+	optional string targetUserId=3;//被成功操作的好友
     }
 
     message C2S{
@@ -90,6 +91,7 @@ message M1116{  //黑名单
     message S2C{
 	required int32 status = 1;   //状态   
 	optional string msg= 2;     //提示消息
+	optional string targetUserId=3;//被成功操作的好友
     }
 
     message C2S{
@@ -112,6 +114,14 @@ message M1117{  //获取聊天记录
     message C2S{
 	required string userId=1;//发送者的用户id
 	required string targetUserId=2;//要获取记录的用户id
-    }
-	
+    }	
 }
+
+message M1118{
+
+    message S2C{
+	required int32 actionType = 1; //状态(1.好友上线，2.好友下线)
+	required string userId= 2;  //好友id
+    }
+}
+

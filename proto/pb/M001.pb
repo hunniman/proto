@@ -1,5 +1,5 @@
 
-ï
+Ï
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -37,18 +37,20 @@ fromUserId (	
 msg (	=
 friends (2,.com.tworr.msg.Commons.FriendWithLastMessage
 C2S
-userId (	"P
-M1115"
+userId (	"f
+M11158
 S2C
 status (
-msg (	#
+msg (	
+targetUserId (	#
 C2S
 userId (	
-type ("P
-M1116"
+type ("f
+M11168
 S2C
 status (
-msg (	#
+msg (	
+targetUserId (	#
 C2S
 userId (	
 type ("Ž
@@ -59,5 +61,10 @@ fromUserId (	
 messages (2".com.tworr.msg.Commons.ChatMessage+
 C2S
 userId (	
-targetUserId (	B
+targetUserId (	"2
+M1118)
+S2C
+
+actionType (
+userId (	B
 com.tworr.msg.protocalBM0001

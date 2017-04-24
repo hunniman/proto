@@ -1,5 +1,5 @@
 
-Ï
+û
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -37,23 +37,25 @@ fromUserId (	
 msg (	=
 friends (2,.com.tworr.msg.Commons.FriendWithLastMessage
 C2S
-userId (	"f
+userId (	"|
 M11158
 S2C
 status (
 msg (	
-targetUserId (	#
+targetUserId (	9
 C2S
-userId (	
-type ("f
+userId (	
+targetUserId (	
+type ("|
 M11168
 S2C
 status (
 msg (	
-targetUserId (	#
+targetUserId (	9
 C2S
-userId (	
-type ("Ž
+userId (	
+targetUserId (	
+type ("Ž
 M1117X
 S2C
 status (

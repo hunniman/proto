@@ -9191,9 +9191,36 @@ public final class M0001 {
       com.google.protobuf.ByteString
           getUserIdBytes();
 
-      // required int32 type = 2;
+      // required string targetUserId = 2;
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      boolean hasTargetUserId();
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      java.lang.String getTargetUserId();
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getTargetUserIdBytes();
+
+      // required int32 type = 3;
+      /**
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.标记好友，2.取消标记好友
@@ -9201,7 +9228,7 @@ public final class M0001 {
        */
       boolean hasType();
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.标记好友，2.取消标记好友
@@ -9265,8 +9292,13 @@ public final class M0001 {
                 userId_ = input.readBytes();
                 break;
               }
-              case 16: {
+              case 18: {
                 bitField0_ |= 0x00000002;
+                targetUserId_ = input.readBytes();
+                break;
+              }
+              case 24: {
+                bitField0_ |= 0x00000004;
                 type_ = input.readInt32();
                 break;
               }
@@ -9365,21 +9397,76 @@ public final class M0001 {
         }
       }
 
-      // required int32 type = 2;
-      public static final int TYPE_FIELD_NUMBER = 2;
+      // required string targetUserId = 2;
+      public static final int TARGETUSERID_FIELD_NUMBER = 2;
+      private java.lang.Object targetUserId_;
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      public boolean hasTargetUserId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      public java.lang.String getTargetUserId() {
+        java.lang.Object ref = targetUserId_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            targetUserId_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getTargetUserIdBytes() {
+        java.lang.Object ref = targetUserId_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          targetUserId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // required int32 type = 3;
+      public static final int TYPE_FIELD_NUMBER = 3;
       private int type_;
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.标记好友，2.取消标记好友
        * </pre>
        */
       public boolean hasType() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.标记好友，2.取消标记好友
@@ -9391,6 +9478,7 @@ public final class M0001 {
 
       private void initFields() {
         userId_ = "";
+        targetUserId_ = "";
         type_ = 0;
       }
       private byte memoizedIsInitialized = -1;
@@ -9399,6 +9487,10 @@ public final class M0001 {
         if (isInitialized != -1) return isInitialized == 1;
 
         if (!hasUserId()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        if (!hasTargetUserId()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -9417,7 +9509,10 @@ public final class M0001 {
           output.writeBytes(1, getUserIdBytes());
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeInt32(2, type_);
+          output.writeBytes(2, getTargetUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeInt32(3, type_);
         }
         getUnknownFields().writeTo(output);
       }
@@ -9434,7 +9529,11 @@ public final class M0001 {
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeInt32Size(2, type_);
+            .computeBytesSize(2, getTargetUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(3, type_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -9554,8 +9653,10 @@ public final class M0001 {
           super.clear();
           userId_ = "";
           bitField0_ = (bitField0_ & ~0x00000001);
-          type_ = 0;
+          targetUserId_ = "";
           bitField0_ = (bitField0_ & ~0x00000002);
+          type_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000004);
           return this;
         }
 
@@ -9591,6 +9692,10 @@ public final class M0001 {
           if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
             to_bitField0_ |= 0x00000002;
           }
+          result.targetUserId_ = targetUserId_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
           result.type_ = type_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
@@ -9613,6 +9718,11 @@ public final class M0001 {
             userId_ = other.userId_;
             onChanged();
           }
+          if (other.hasTargetUserId()) {
+            bitField0_ |= 0x00000002;
+            targetUserId_ = other.targetUserId_;
+            onChanged();
+          }
           if (other.hasType()) {
             setType(other.getType());
           }
@@ -9622,6 +9732,10 @@ public final class M0001 {
 
         public final boolean isInitialized() {
           if (!hasUserId()) {
+            
+            return false;
+          }
+          if (!hasTargetUserId()) {
             
             return false;
           }
@@ -9749,20 +9863,118 @@ public final class M0001 {
           return this;
         }
 
-        // required int32 type = 2;
+        // required string targetUserId = 2;
+        private java.lang.Object targetUserId_ = "";
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public boolean hasTargetUserId() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public java.lang.String getTargetUserId() {
+          java.lang.Object ref = targetUserId_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            targetUserId_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getTargetUserIdBytes() {
+          java.lang.Object ref = targetUserId_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            targetUserId_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public Builder setTargetUserId(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          targetUserId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public Builder clearTargetUserId() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          targetUserId_ = getDefaultInstance().getTargetUserId();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public Builder setTargetUserIdBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          targetUserId_ = value;
+          onChanged();
+          return this;
+        }
+
+        // required int32 type = 3;
         private int type_ ;
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.标记好友，2.取消标记好友
          * </pre>
          */
         public boolean hasType() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
+          return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.标记好友，2.取消标记好友
@@ -9772,27 +9984,27 @@ public final class M0001 {
           return type_;
         }
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.标记好友，2.取消标记好友
          * </pre>
          */
         public Builder setType(int value) {
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
           type_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.标记好友，2.取消标记好友
          * </pre>
          */
         public Builder clearType() {
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           type_ = 0;
           onChanged();
           return this;
@@ -11000,9 +11212,36 @@ public final class M0001 {
       com.google.protobuf.ByteString
           getUserIdBytes();
 
-      // required int32 type = 2;
+      // required string targetUserId = 2;
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      boolean hasTargetUserId();
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      java.lang.String getTargetUserId();
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getTargetUserIdBytes();
+
+      // required int32 type = 3;
+      /**
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.拉入黑名单，2.取消黑名单
@@ -11010,7 +11249,7 @@ public final class M0001 {
        */
       boolean hasType();
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.拉入黑名单，2.取消黑名单
@@ -11074,8 +11313,13 @@ public final class M0001 {
                 userId_ = input.readBytes();
                 break;
               }
-              case 16: {
+              case 18: {
                 bitField0_ |= 0x00000002;
+                targetUserId_ = input.readBytes();
+                break;
+              }
+              case 24: {
+                bitField0_ |= 0x00000004;
                 type_ = input.readInt32();
                 break;
               }
@@ -11174,21 +11418,76 @@ public final class M0001 {
         }
       }
 
-      // required int32 type = 2;
-      public static final int TYPE_FIELD_NUMBER = 2;
+      // required string targetUserId = 2;
+      public static final int TARGETUSERID_FIELD_NUMBER = 2;
+      private java.lang.Object targetUserId_;
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      public boolean hasTargetUserId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      public java.lang.String getTargetUserId() {
+        java.lang.Object ref = targetUserId_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            targetUserId_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>required string targetUserId = 2;</code>
+       *
+       * <pre>
+       *被成功操作的好友
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getTargetUserIdBytes() {
+        java.lang.Object ref = targetUserId_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          targetUserId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // required int32 type = 3;
+      public static final int TYPE_FIELD_NUMBER = 3;
       private int type_;
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.拉入黑名单，2.取消黑名单
        * </pre>
        */
       public boolean hasType() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int32 type = 2;</code>
+       * <code>required int32 type = 3;</code>
        *
        * <pre>
        *1.拉入黑名单，2.取消黑名单
@@ -11200,6 +11499,7 @@ public final class M0001 {
 
       private void initFields() {
         userId_ = "";
+        targetUserId_ = "";
         type_ = 0;
       }
       private byte memoizedIsInitialized = -1;
@@ -11208,6 +11508,10 @@ public final class M0001 {
         if (isInitialized != -1) return isInitialized == 1;
 
         if (!hasUserId()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        if (!hasTargetUserId()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -11226,7 +11530,10 @@ public final class M0001 {
           output.writeBytes(1, getUserIdBytes());
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeInt32(2, type_);
+          output.writeBytes(2, getTargetUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeInt32(3, type_);
         }
         getUnknownFields().writeTo(output);
       }
@@ -11243,7 +11550,11 @@ public final class M0001 {
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeInt32Size(2, type_);
+            .computeBytesSize(2, getTargetUserIdBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(3, type_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -11363,8 +11674,10 @@ public final class M0001 {
           super.clear();
           userId_ = "";
           bitField0_ = (bitField0_ & ~0x00000001);
-          type_ = 0;
+          targetUserId_ = "";
           bitField0_ = (bitField0_ & ~0x00000002);
+          type_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000004);
           return this;
         }
 
@@ -11400,6 +11713,10 @@ public final class M0001 {
           if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
             to_bitField0_ |= 0x00000002;
           }
+          result.targetUserId_ = targetUserId_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
           result.type_ = type_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
@@ -11422,6 +11739,11 @@ public final class M0001 {
             userId_ = other.userId_;
             onChanged();
           }
+          if (other.hasTargetUserId()) {
+            bitField0_ |= 0x00000002;
+            targetUserId_ = other.targetUserId_;
+            onChanged();
+          }
           if (other.hasType()) {
             setType(other.getType());
           }
@@ -11431,6 +11753,10 @@ public final class M0001 {
 
         public final boolean isInitialized() {
           if (!hasUserId()) {
+            
+            return false;
+          }
+          if (!hasTargetUserId()) {
             
             return false;
           }
@@ -11558,20 +11884,118 @@ public final class M0001 {
           return this;
         }
 
-        // required int32 type = 2;
+        // required string targetUserId = 2;
+        private java.lang.Object targetUserId_ = "";
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public boolean hasTargetUserId() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public java.lang.String getTargetUserId() {
+          java.lang.Object ref = targetUserId_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            targetUserId_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getTargetUserIdBytes() {
+          java.lang.Object ref = targetUserId_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            targetUserId_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public Builder setTargetUserId(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          targetUserId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public Builder clearTargetUserId() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          targetUserId_ = getDefaultInstance().getTargetUserId();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string targetUserId = 2;</code>
+         *
+         * <pre>
+         *被成功操作的好友
+         * </pre>
+         */
+        public Builder setTargetUserIdBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          targetUserId_ = value;
+          onChanged();
+          return this;
+        }
+
+        // required int32 type = 3;
         private int type_ ;
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.拉入黑名单，2.取消黑名单
          * </pre>
          */
         public boolean hasType() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
+          return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.拉入黑名单，2.取消黑名单
@@ -11581,27 +12005,27 @@ public final class M0001 {
           return type_;
         }
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.拉入黑名单，2.取消黑名单
          * </pre>
          */
         public Builder setType(int value) {
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
           type_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>required int32 type = 2;</code>
+         * <code>required int32 type = 3;</code>
          *
          * <pre>
          *1.拉入黑名单，2.取消黑名单
          * </pre>
          */
         public Builder clearType() {
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           type_ = 0;
           onChanged();
           return this;
@@ -15118,18 +15542,19 @@ public final class M0001 {
       "\014\n\004type\030\005 \002(\005\"\201\001\n\005M1114\032a\n\003S2C\022\016\n\006status" +
       "\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022=\n\007friends\030\003 \003(\0132,.c" +
       "om.tworr.msg.Commons.FriendWithLastMessa" +
-      "ge\032\025\n\003C2S\022\016\n\006userId\030\001 \002(\t\"f\n\005M1115\0328\n\003S2" +
+      "ge\032\025\n\003C2S\022\016\n\006userId\030\001 \002(\t\"|\n\005M1115\0328\n\003S2" +
       "C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022\024\n\014target" +
-      "UserId\030\003 \001(\t\032#\n\003C2S\022\016\n\006userId\030\001 \002(\t\022\014\n\004t" +
-      "ype\030\002 \002(\005\"f\n\005M1116\0328\n\003S2C\022\016\n\006status\030\001 \002(",
-      "\005\022\013\n\003msg\030\002 \001(\t\022\024\n\014targetUserId\030\003 \001(\t\032#\n\003" +
-      "C2S\022\016\n\006userId\030\001 \002(\t\022\014\n\004type\030\002 \002(\005\"\216\001\n\005M1" +
-      "117\032X\n\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022" +
-      "4\n\010messages\030\003 \003(\0132\".com.tworr.msg.Common" +
-      "s.ChatMessage\032+\n\003C2S\022\016\n\006userId\030\001 \002(\t\022\024\n\014" +
-      "targetUserId\030\002 \002(\t\"2\n\005M1118\032)\n\003S2C\022\022\n\nac" +
-      "tionType\030\001 \002(\005\022\016\n\006userId\030\002 \002(\tB\037\n\026com.tw" +
-      "orr.msg.protocalB\005M0001"
+      "UserId\030\003 \001(\t\0329\n\003C2S\022\016\n\006userId\030\001 \002(\t\022\024\n\014t" +
+      "argetUserId\030\002 \002(\t\022\014\n\004type\030\003 \002(\005\"|\n\005M1116",
+      "\0328\n\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t\022\024\n\014" +
+      "targetUserId\030\003 \001(\t\0329\n\003C2S\022\016\n\006userId\030\001 \002(" +
+      "\t\022\024\n\014targetUserId\030\002 \002(\t\022\014\n\004type\030\003 \002(\005\"\216\001" +
+      "\n\005M1117\032X\n\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 " +
+      "\001(\t\0224\n\010messages\030\003 \003(\0132\".com.tworr.msg.Co" +
+      "mmons.ChatMessage\032+\n\003C2S\022\016\n\006userId\030\001 \002(\t" +
+      "\022\024\n\014targetUserId\030\002 \002(\t\"2\n\005M1118\032)\n\003S2C\022\022" +
+      "\n\nactionType\030\001 \002(\005\022\016\n\006userId\030\002 \002(\tB\037\n\026co" +
+      "m.tworr.msg.protocalB\005M0001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -15225,7 +15650,7 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1115_C2S_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1115_C2S_descriptor,
-              new java.lang.String[] { "UserId", "Type", });
+              new java.lang.String[] { "UserId", "TargetUserId", "Type", });
           internal_static_com_tworr_msg_M0001_M1116_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_com_tworr_msg_M0001_M1116_fieldAccessorTable = new
@@ -15243,7 +15668,7 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1116_C2S_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1116_C2S_descriptor,
-              new java.lang.String[] { "UserId", "Type", });
+              new java.lang.String[] { "UserId", "TargetUserId", "Type", });
           internal_static_com_tworr_msg_M0001_M1117_descriptor =
             getDescriptor().getMessageTypes().get(6);
           internal_static_com_tworr_msg_M0001_M1117_fieldAccessorTable = new

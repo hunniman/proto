@@ -81,7 +81,8 @@ message M1115{  //标识好友
 
     message C2S{
 	required string userId=1;//发送者的用户id
-	required int32 type=2;//1.标记好友，2.取消标记好友
+	required string targetUserId=2;//被成功操作的好友
+	required int32 type=3;//1.标记好友，2.取消标记好友
     }
 	
 }
@@ -96,7 +97,8 @@ message M1116{  //黑名单
 
     message C2S{
 	required string userId=1;//发送者的用户id
-	required int32 type=2;//1.拉入黑名单，2.取消黑名单
+	required string targetUserId=2;//被成功操作的好友
+	required int32 type=3;//1.拉入黑名单，2.取消黑名单
     }
 	
 }

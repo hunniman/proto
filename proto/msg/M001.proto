@@ -119,11 +119,31 @@ message M1117{  //获取聊天记录
     }	
 }
 
-message M1118{
+message M1118{ //好友上下线提醒
 
     message S2C{
 	required int32 actionType = 1; //状态(1.好友上线，2.好友下线)
 	required string userId= 2;  //好友id
     }
 }
+
+
+
+message M1119{  //获取黑名单好友
+
+    message S2C{
+	required int32 status = 1;   //状态   
+	optional string msg= 2;     //提示消息
+	repeated Commons.FriendWithLastMessage friends=3; //好友列表
+    }
+
+    message C2S{
+	required string userId=1;//发送者的用户id
+    }	
+}
+
+
+
+
+
 

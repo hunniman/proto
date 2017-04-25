@@ -1,5 +1,5 @@
 
-˚
+ˇ	
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -68,5 +68,12 @@ fromUserId (	
 S2C
 
 actionType (
-userId (	B
+userId (	"Å
+M1119a
+S2C
+status (
+msg (	=
+friends (2,.com.tworr.msg.Commons.FriendWithLastMessage
+C2S
+userId (	B
 com.tworr.msg.protocalBM0001

@@ -1,5 +1,6 @@
 
-ÿ	
+ù
+
 
 M001.protocom.tworr.msg.M0001Commoms.proto"9
 M1111
@@ -74,6 +75,13 @@ actionType (
 status (
 msg (	=
 friends (2,.com.tworr.msg.Commons.FriendWithLastMessage
+C2S
+userId (	"x
+M1120X
+S2C
+status (
+msg (	4
+messages (2".com.tworr.msg.Commons.ChatMessage
 C2S
 userId (	B
 com.tworr.msg.protocalBM0001

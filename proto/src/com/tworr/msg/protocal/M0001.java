@@ -15,7 +15,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1111}
    *
    * <pre>
-   *ĞÄÌø°ü
+   *å¿ƒè·³åŒ…  å¯¹åº”cmdId=1000
    * </pre>
    */
   public static final class M1111 extends
@@ -112,7 +112,7 @@ public final class M0001 {
        * <code>required int32 serverTime = 1;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       boolean hasServerTime();
@@ -120,7 +120,7 @@ public final class M0001 {
        * <code>required int32 serverTime = 1;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       int getServerTime();
@@ -228,7 +228,7 @@ public final class M0001 {
        * <code>required int32 serverTime = 1;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       public boolean hasServerTime() {
@@ -238,7 +238,7 @@ public final class M0001 {
        * <code>required int32 serverTime = 1;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       public int getServerTime() {
@@ -486,7 +486,7 @@ public final class M0001 {
          * <code>required int32 serverTime = 1;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public boolean hasServerTime() {
@@ -496,7 +496,7 @@ public final class M0001 {
          * <code>required int32 serverTime = 1;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public int getServerTime() {
@@ -506,7 +506,7 @@ public final class M0001 {
          * <code>required int32 serverTime = 1;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public Builder setServerTime(int value) {
@@ -519,7 +519,7 @@ public final class M0001 {
          * <code>required int32 serverTime = 1;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public Builder clearServerTime() {
@@ -548,7 +548,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *ÓÃ»§id
+       *ç”¨æˆ·id
        * </pre>
        */
       boolean hasUserId();
@@ -556,7 +556,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *ÓÃ»§id
+       *ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getUserId();
@@ -564,7 +564,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *ÓÃ»§id
+       *ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -673,7 +673,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *ÓÃ»§id
+       *ç”¨æˆ·id
        * </pre>
        */
       public boolean hasUserId() {
@@ -683,7 +683,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *ÓÃ»§id
+       *ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -704,7 +704,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *ÓÃ»§id
+       *ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -964,7 +964,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *ÓÃ»§id
+         *ç”¨æˆ·id
          * </pre>
          */
         public boolean hasUserId() {
@@ -974,7 +974,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *ÓÃ»§id
+         *ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -992,7 +992,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *ÓÃ»§id
+         *ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -1012,7 +1012,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *ÓÃ»§id
+         *ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserId(
@@ -1029,7 +1029,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *ÓÃ»§id
+         *ç”¨æˆ·id
          * </pre>
          */
         public Builder clearUserId() {
@@ -1042,7 +1042,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *ÓÃ»§id
+         *ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -1172,7 +1172,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1111}
      *
      * <pre>
-     *ĞÄÌø°ü
+     *å¿ƒè·³åŒ…  å¯¹åº”cmdId=1000
      * </pre>
      */
     public static final class Builder extends
@@ -1295,7 +1295,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1112}
    *
    * <pre>
-   *µÇÂ½
+   *ç™»é™†  å¯¹åº”cmdId=1001
    * </pre>
    */
   public static final class M1112 extends
@@ -1392,7 +1392,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬
+       *çŠ¶æ€
        * </pre>
        */
       boolean hasStatus();
@@ -1400,7 +1400,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬
+       *çŠ¶æ€
        * </pre>
        */
       int getStatus();
@@ -1410,7 +1410,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -1418,7 +1418,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -1426,7 +1426,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -1437,7 +1437,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
        *
        * <pre>
-       *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+       *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
        * </pre>
        */
       boolean hasSimpleUserInfo();
@@ -1445,7 +1445,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
        *
        * <pre>
-       *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+       *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
        * </pre>
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfo getSimpleUserInfo();
@@ -1453,7 +1453,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
        *
        * <pre>
-       *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+       *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
        * </pre>
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getSimpleUserInfoOrBuilder();
@@ -1579,7 +1579,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬
+       *çŠ¶æ€
        * </pre>
        */
       public boolean hasStatus() {
@@ -1589,7 +1589,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬
+       *çŠ¶æ€
        * </pre>
        */
       public int getStatus() {
@@ -1603,7 +1603,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -1613,7 +1613,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -1634,7 +1634,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -1658,7 +1658,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
        *
        * <pre>
-       *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+       *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
        * </pre>
        */
       public boolean hasSimpleUserInfo() {
@@ -1668,7 +1668,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
        *
        * <pre>
-       *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+       *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.SimpleUserInfo getSimpleUserInfo() {
@@ -1678,7 +1678,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
        *
        * <pre>
-       *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+       *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getSimpleUserInfoOrBuilder() {
@@ -1983,7 +1983,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬
+         *çŠ¶æ€
          * </pre>
          */
         public boolean hasStatus() {
@@ -1993,7 +1993,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬
+         *çŠ¶æ€
          * </pre>
          */
         public int getStatus() {
@@ -2003,7 +2003,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬
+         *çŠ¶æ€
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -2016,7 +2016,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬
+         *çŠ¶æ€
          * </pre>
          */
         public Builder clearStatus() {
@@ -2032,7 +2032,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -2042,7 +2042,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -2060,7 +2060,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -2080,7 +2080,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -2097,7 +2097,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -2110,7 +2110,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -2132,7 +2132,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public boolean hasSimpleUserInfo() {
@@ -2142,7 +2142,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfo getSimpleUserInfo() {
@@ -2156,7 +2156,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public Builder setSimpleUserInfo(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
@@ -2176,7 +2176,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public Builder setSimpleUserInfo(
@@ -2194,7 +2194,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public Builder mergeSimpleUserInfo(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
@@ -2217,7 +2217,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public Builder clearSimpleUserInfo() {
@@ -2234,7 +2234,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder getSimpleUserInfoBuilder() {
@@ -2246,7 +2246,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getSimpleUserInfoOrBuilder() {
@@ -2260,7 +2260,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo simpleUserInfo = 3;</code>
          *
          * <pre>
-         *µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+         *ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
          * </pre>
          */
         private com.google.protobuf.SingleFieldBuilder<
@@ -2296,7 +2296,7 @@ public final class M0001 {
        * <code>required string phone = 1;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       boolean hasPhone();
@@ -2304,7 +2304,7 @@ public final class M0001 {
        * <code>required string phone = 1;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       java.lang.String getPhone();
@@ -2312,7 +2312,7 @@ public final class M0001 {
        * <code>required string phone = 1;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -2323,7 +2323,7 @@ public final class M0001 {
        * <code>required string password = 2;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       boolean hasPassword();
@@ -2331,7 +2331,7 @@ public final class M0001 {
        * <code>required string password = 2;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       java.lang.String getPassword();
@@ -2339,7 +2339,7 @@ public final class M0001 {
        * <code>required string password = 2;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -2453,7 +2453,7 @@ public final class M0001 {
        * <code>required string phone = 1;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       public boolean hasPhone() {
@@ -2463,7 +2463,7 @@ public final class M0001 {
        * <code>required string phone = 1;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       public java.lang.String getPhone() {
@@ -2484,7 +2484,7 @@ public final class M0001 {
        * <code>required string phone = 1;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -2508,7 +2508,7 @@ public final class M0001 {
        * <code>required string password = 2;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       public boolean hasPassword() {
@@ -2518,7 +2518,7 @@ public final class M0001 {
        * <code>required string password = 2;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       public java.lang.String getPassword() {
@@ -2539,7 +2539,7 @@ public final class M0001 {
        * <code>required string password = 2;</code>
        *
        * <pre>
-       *ÊÖ™CÌ–´a
+       *æ‰‹æ©Ÿè™Ÿç¢¼
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -2826,7 +2826,7 @@ public final class M0001 {
          * <code>required string phone = 1;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public boolean hasPhone() {
@@ -2836,7 +2836,7 @@ public final class M0001 {
          * <code>required string phone = 1;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public java.lang.String getPhone() {
@@ -2854,7 +2854,7 @@ public final class M0001 {
          * <code>required string phone = 1;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -2874,7 +2874,7 @@ public final class M0001 {
          * <code>required string phone = 1;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public Builder setPhone(
@@ -2891,7 +2891,7 @@ public final class M0001 {
          * <code>required string phone = 1;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public Builder clearPhone() {
@@ -2904,7 +2904,7 @@ public final class M0001 {
          * <code>required string phone = 1;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public Builder setPhoneBytes(
@@ -2924,7 +2924,7 @@ public final class M0001 {
          * <code>required string password = 2;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public boolean hasPassword() {
@@ -2934,7 +2934,7 @@ public final class M0001 {
          * <code>required string password = 2;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public java.lang.String getPassword() {
@@ -2952,7 +2952,7 @@ public final class M0001 {
          * <code>required string password = 2;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -2972,7 +2972,7 @@ public final class M0001 {
          * <code>required string password = 2;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public Builder setPassword(
@@ -2989,7 +2989,7 @@ public final class M0001 {
          * <code>required string password = 2;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public Builder clearPassword() {
@@ -3002,7 +3002,7 @@ public final class M0001 {
          * <code>required string password = 2;</code>
          *
          * <pre>
-         *ÊÖ™CÌ–´a
+         *æ‰‹æ©Ÿè™Ÿç¢¼
          * </pre>
          */
         public Builder setPasswordBytes(
@@ -3132,7 +3132,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1112}
      *
      * <pre>
-     *µÇÂ½
+     *ç™»é™†  å¯¹åº”cmdId=1001
      * </pre>
      */
     public static final class Builder extends
@@ -3255,7 +3255,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1113}
    *
    * <pre>
-   *ÁÄÌì
+   *èŠå¤©  å¯¹åº”cmdId=1002
    * </pre>
    */
   public static final class M1113 extends
@@ -3352,7 +3352,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       boolean hasStatus();
@@ -3360,7 +3360,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       int getStatus();
@@ -3370,7 +3370,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -3378,7 +3378,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -3386,7 +3386,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -3397,7 +3397,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
-       *ÏûÏ¢À´Ô´
+       *æ¶ˆæ¯æ¥æº
        * </pre>
        */
       boolean hasFromUser();
@@ -3405,7 +3405,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
-       *ÏûÏ¢À´Ô´
+       *æ¶ˆæ¯æ¥æº
        * </pre>
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser();
@@ -3413,7 +3413,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
-       *ÏûÏ¢À´Ô´
+       *æ¶ˆæ¯æ¥æº
        * </pre>
        */
       com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder();
@@ -3423,7 +3423,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+       *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
        * </pre>
        */
       boolean hasMsgData();
@@ -3431,7 +3431,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+       *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
        * </pre>
        */
       java.lang.String getMsgData();
@@ -3439,7 +3439,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+       *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -3450,7 +3450,7 @@ public final class M0001 {
        * <code>required int64 time = 5;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       boolean hasTime();
@@ -3458,7 +3458,7 @@ public final class M0001 {
        * <code>required int64 time = 5;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       long getTime();
@@ -3468,7 +3468,7 @@ public final class M0001 {
        * <code>required int32 type = 6;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       boolean hasType();
@@ -3476,7 +3476,7 @@ public final class M0001 {
        * <code>required int32 type = 6;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       int getType();
@@ -3617,7 +3617,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public boolean hasStatus() {
@@ -3627,7 +3627,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public int getStatus() {
@@ -3641,7 +3641,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -3651,7 +3651,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -3672,7 +3672,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -3696,7 +3696,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
-       *ÏûÏ¢À´Ô´
+       *æ¶ˆæ¯æ¥æº
        * </pre>
        */
       public boolean hasFromUser() {
@@ -3706,7 +3706,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
-       *ÏûÏ¢À´Ô´
+       *æ¶ˆæ¯æ¥æº
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser() {
@@ -3716,7 +3716,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
        *
        * <pre>
-       *ÏûÏ¢À´Ô´
+       *æ¶ˆæ¯æ¥æº
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder() {
@@ -3730,7 +3730,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+       *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
        * </pre>
        */
       public boolean hasMsgData() {
@@ -3740,7 +3740,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+       *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
        * </pre>
        */
       public java.lang.String getMsgData() {
@@ -3761,7 +3761,7 @@ public final class M0001 {
        * <code>required string msgData = 4;</code>
        *
        * <pre>
-       *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+       *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -3785,7 +3785,7 @@ public final class M0001 {
        * <code>required int64 time = 5;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       public boolean hasTime() {
@@ -3795,7 +3795,7 @@ public final class M0001 {
        * <code>required int64 time = 5;</code>
        *
        * <pre>
-       *·şÎñÆ÷Ê±¼ä
+       *æœåŠ¡å™¨æ—¶é—´
        * </pre>
        */
       public long getTime() {
@@ -3809,7 +3809,7 @@ public final class M0001 {
        * <code>required int32 type = 6;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       public boolean hasType() {
@@ -3819,7 +3819,7 @@ public final class M0001 {
        * <code>required int32 type = 6;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       public int getType() {
@@ -4201,7 +4201,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public boolean hasStatus() {
@@ -4211,7 +4211,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public int getStatus() {
@@ -4221,7 +4221,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -4234,7 +4234,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder clearStatus() {
@@ -4250,7 +4250,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -4260,7 +4260,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -4278,7 +4278,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -4298,7 +4298,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -4315,7 +4315,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -4328,7 +4328,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -4350,7 +4350,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public boolean hasFromUser() {
@@ -4360,7 +4360,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfo getFromUser() {
@@ -4374,7 +4374,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public Builder setFromUser(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
@@ -4394,7 +4394,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public Builder setFromUser(
@@ -4412,7 +4412,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public Builder mergeFromUser(com.tworr.msg.protocal.Commons.SimpleUserInfo value) {
@@ -4435,7 +4435,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public Builder clearFromUser() {
@@ -4452,7 +4452,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfo.Builder getFromUserBuilder() {
@@ -4464,7 +4464,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.SimpleUserInfoOrBuilder getFromUserOrBuilder() {
@@ -4478,7 +4478,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.SimpleUserInfo fromUser = 3;</code>
          *
          * <pre>
-         *ÏûÏ¢À´Ô´
+         *æ¶ˆæ¯æ¥æº
          * </pre>
          */
         private com.google.protobuf.SingleFieldBuilder<
@@ -4501,7 +4501,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+         *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
          * </pre>
          */
         public boolean hasMsgData() {
@@ -4511,7 +4511,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+         *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
          * </pre>
          */
         public java.lang.String getMsgData() {
@@ -4529,7 +4529,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+         *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -4549,7 +4549,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+         *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
          * </pre>
          */
         public Builder setMsgData(
@@ -4566,7 +4566,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+         *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
          * </pre>
          */
         public Builder clearMsgData() {
@@ -4579,7 +4579,7 @@ public final class M0001 {
          * <code>required string msgData = 4;</code>
          *
          * <pre>
-         *ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
+         *å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
          * </pre>
          */
         public Builder setMsgDataBytes(
@@ -4599,7 +4599,7 @@ public final class M0001 {
          * <code>required int64 time = 5;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public boolean hasTime() {
@@ -4609,7 +4609,7 @@ public final class M0001 {
          * <code>required int64 time = 5;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public long getTime() {
@@ -4619,7 +4619,7 @@ public final class M0001 {
          * <code>required int64 time = 5;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public Builder setTime(long value) {
@@ -4632,7 +4632,7 @@ public final class M0001 {
          * <code>required int64 time = 5;</code>
          *
          * <pre>
-         *·şÎñÆ÷Ê±¼ä
+         *æœåŠ¡å™¨æ—¶é—´
          * </pre>
          */
         public Builder clearTime() {
@@ -4648,7 +4648,7 @@ public final class M0001 {
          * <code>required int32 type = 6;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public boolean hasType() {
@@ -4658,7 +4658,7 @@ public final class M0001 {
          * <code>required int32 type = 6;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public int getType() {
@@ -4668,7 +4668,7 @@ public final class M0001 {
          * <code>required int32 type = 6;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public Builder setType(int value) {
@@ -4681,7 +4681,7 @@ public final class M0001 {
          * <code>required int32 type = 6;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public Builder clearType() {
@@ -4710,7 +4710,7 @@ public final class M0001 {
        * <code>required string fromUserId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasFromUserId();
@@ -4718,7 +4718,7 @@ public final class M0001 {
        * <code>required string fromUserId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getFromUserId();
@@ -4726,7 +4726,7 @@ public final class M0001 {
        * <code>required string fromUserId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -4737,7 +4737,7 @@ public final class M0001 {
        * <code>required string toUserId = 2;</code>
        *
        * <pre>
-       *Ä¿±êµÄÓÃ»§id
+       *ç›®æ ‡çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasToUserId();
@@ -4745,7 +4745,7 @@ public final class M0001 {
        * <code>required string toUserId = 2;</code>
        *
        * <pre>
-       *Ä¿±êµÄÓÃ»§id
+       *ç›®æ ‡çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getToUserId();
@@ -4753,7 +4753,7 @@ public final class M0001 {
        * <code>required string toUserId = 2;</code>
        *
        * <pre>
-       *Ä¿±êµÄÓÃ»§id
+       *ç›®æ ‡çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -4764,7 +4764,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+       *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
        * </pre>
        */
       boolean hasImage();
@@ -4772,7 +4772,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+       *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
        * </pre>
        */
       com.tworr.msg.protocal.Commons.ImageMessage getImage();
@@ -4780,7 +4780,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+       *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
        * </pre>
        */
       com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder();
@@ -4790,7 +4790,7 @@ public final class M0001 {
        * <code>optional string txtData = 4;</code>
        *
        * <pre>
-       *´¿ÎÄ±¾ÄÚÈİ
+       *çº¯æ–‡æœ¬å†…å®¹
        * </pre>
        */
       boolean hasTxtData();
@@ -4798,7 +4798,7 @@ public final class M0001 {
        * <code>optional string txtData = 4;</code>
        *
        * <pre>
-       *´¿ÎÄ±¾ÄÚÈİ
+       *çº¯æ–‡æœ¬å†…å®¹
        * </pre>
        */
       java.lang.String getTxtData();
@@ -4806,7 +4806,7 @@ public final class M0001 {
        * <code>optional string txtData = 4;</code>
        *
        * <pre>
-       *´¿ÎÄ±¾ÄÚÈİ
+       *çº¯æ–‡æœ¬å†…å®¹
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -4817,7 +4817,7 @@ public final class M0001 {
        * <code>required int32 type = 5;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       boolean hasType();
@@ -4825,7 +4825,7 @@ public final class M0001 {
        * <code>required int32 type = 5;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       int getType();
@@ -4961,7 +4961,7 @@ public final class M0001 {
        * <code>required string fromUserId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasFromUserId() {
@@ -4971,7 +4971,7 @@ public final class M0001 {
        * <code>required string fromUserId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getFromUserId() {
@@ -4992,7 +4992,7 @@ public final class M0001 {
        * <code>required string fromUserId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -5016,7 +5016,7 @@ public final class M0001 {
        * <code>required string toUserId = 2;</code>
        *
        * <pre>
-       *Ä¿±êµÄÓÃ»§id
+       *ç›®æ ‡çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasToUserId() {
@@ -5026,7 +5026,7 @@ public final class M0001 {
        * <code>required string toUserId = 2;</code>
        *
        * <pre>
-       *Ä¿±êµÄÓÃ»§id
+       *ç›®æ ‡çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getToUserId() {
@@ -5047,7 +5047,7 @@ public final class M0001 {
        * <code>required string toUserId = 2;</code>
        *
        * <pre>
-       *Ä¿±êµÄÓÃ»§id
+       *ç›®æ ‡çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -5071,7 +5071,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+       *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
        * </pre>
        */
       public boolean hasImage() {
@@ -5081,7 +5081,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+       *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.ImageMessage getImage() {
@@ -5091,7 +5091,7 @@ public final class M0001 {
        * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
        *
        * <pre>
-       *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+       *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder() {
@@ -5105,7 +5105,7 @@ public final class M0001 {
        * <code>optional string txtData = 4;</code>
        *
        * <pre>
-       *´¿ÎÄ±¾ÄÚÈİ
+       *çº¯æ–‡æœ¬å†…å®¹
        * </pre>
        */
       public boolean hasTxtData() {
@@ -5115,7 +5115,7 @@ public final class M0001 {
        * <code>optional string txtData = 4;</code>
        *
        * <pre>
-       *´¿ÎÄ±¾ÄÚÈİ
+       *çº¯æ–‡æœ¬å†…å®¹
        * </pre>
        */
       public java.lang.String getTxtData() {
@@ -5136,7 +5136,7 @@ public final class M0001 {
        * <code>optional string txtData = 4;</code>
        *
        * <pre>
-       *´¿ÎÄ±¾ÄÚÈİ
+       *çº¯æ–‡æœ¬å†…å®¹
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -5160,7 +5160,7 @@ public final class M0001 {
        * <code>required int32 type = 5;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       public boolean hasType() {
@@ -5170,7 +5170,7 @@ public final class M0001 {
        * <code>required int32 type = 5;</code>
        *
        * <pre>
-       *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+       *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
        * </pre>
        */
       public int getType() {
@@ -5529,7 +5529,7 @@ public final class M0001 {
          * <code>required string fromUserId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasFromUserId() {
@@ -5539,7 +5539,7 @@ public final class M0001 {
          * <code>required string fromUserId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getFromUserId() {
@@ -5557,7 +5557,7 @@ public final class M0001 {
          * <code>required string fromUserId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -5577,7 +5577,7 @@ public final class M0001 {
          * <code>required string fromUserId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setFromUserId(
@@ -5594,7 +5594,7 @@ public final class M0001 {
          * <code>required string fromUserId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearFromUserId() {
@@ -5607,7 +5607,7 @@ public final class M0001 {
          * <code>required string fromUserId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setFromUserIdBytes(
@@ -5627,7 +5627,7 @@ public final class M0001 {
          * <code>required string toUserId = 2;</code>
          *
          * <pre>
-         *Ä¿±êµÄÓÃ»§id
+         *ç›®æ ‡çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasToUserId() {
@@ -5637,7 +5637,7 @@ public final class M0001 {
          * <code>required string toUserId = 2;</code>
          *
          * <pre>
-         *Ä¿±êµÄÓÃ»§id
+         *ç›®æ ‡çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getToUserId() {
@@ -5655,7 +5655,7 @@ public final class M0001 {
          * <code>required string toUserId = 2;</code>
          *
          * <pre>
-         *Ä¿±êµÄÓÃ»§id
+         *ç›®æ ‡çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -5675,7 +5675,7 @@ public final class M0001 {
          * <code>required string toUserId = 2;</code>
          *
          * <pre>
-         *Ä¿±êµÄÓÃ»§id
+         *ç›®æ ‡çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setToUserId(
@@ -5692,7 +5692,7 @@ public final class M0001 {
          * <code>required string toUserId = 2;</code>
          *
          * <pre>
-         *Ä¿±êµÄÓÃ»§id
+         *ç›®æ ‡çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearToUserId() {
@@ -5705,7 +5705,7 @@ public final class M0001 {
          * <code>required string toUserId = 2;</code>
          *
          * <pre>
-         *Ä¿±êµÄÓÃ»§id
+         *ç›®æ ‡çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setToUserIdBytes(
@@ -5727,7 +5727,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public boolean hasImage() {
@@ -5737,7 +5737,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessage getImage() {
@@ -5751,7 +5751,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public Builder setImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
@@ -5771,7 +5771,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public Builder setImage(
@@ -5789,7 +5789,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public Builder mergeImage(com.tworr.msg.protocal.Commons.ImageMessage value) {
@@ -5812,7 +5812,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public Builder clearImage() {
@@ -5829,7 +5829,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessage.Builder getImageBuilder() {
@@ -5841,7 +5841,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ImageMessageOrBuilder getImageOrBuilder() {
@@ -5855,7 +5855,7 @@ public final class M0001 {
          * <code>optional .com.tworr.msg.Commons.ImageMessage image = 3;</code>
          *
          * <pre>
-         *Í¼Æ¬ÄÚÈİbyte[]Êı×é 
+         *å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
          * </pre>
          */
         private com.google.protobuf.SingleFieldBuilder<
@@ -5878,7 +5878,7 @@ public final class M0001 {
          * <code>optional string txtData = 4;</code>
          *
          * <pre>
-         *´¿ÎÄ±¾ÄÚÈİ
+         *çº¯æ–‡æœ¬å†…å®¹
          * </pre>
          */
         public boolean hasTxtData() {
@@ -5888,7 +5888,7 @@ public final class M0001 {
          * <code>optional string txtData = 4;</code>
          *
          * <pre>
-         *´¿ÎÄ±¾ÄÚÈİ
+         *çº¯æ–‡æœ¬å†…å®¹
          * </pre>
          */
         public java.lang.String getTxtData() {
@@ -5906,7 +5906,7 @@ public final class M0001 {
          * <code>optional string txtData = 4;</code>
          *
          * <pre>
-         *´¿ÎÄ±¾ÄÚÈİ
+         *çº¯æ–‡æœ¬å†…å®¹
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -5926,7 +5926,7 @@ public final class M0001 {
          * <code>optional string txtData = 4;</code>
          *
          * <pre>
-         *´¿ÎÄ±¾ÄÚÈİ
+         *çº¯æ–‡æœ¬å†…å®¹
          * </pre>
          */
         public Builder setTxtData(
@@ -5943,7 +5943,7 @@ public final class M0001 {
          * <code>optional string txtData = 4;</code>
          *
          * <pre>
-         *´¿ÎÄ±¾ÄÚÈİ
+         *çº¯æ–‡æœ¬å†…å®¹
          * </pre>
          */
         public Builder clearTxtData() {
@@ -5956,7 +5956,7 @@ public final class M0001 {
          * <code>optional string txtData = 4;</code>
          *
          * <pre>
-         *´¿ÎÄ±¾ÄÚÈİ
+         *çº¯æ–‡æœ¬å†…å®¹
          * </pre>
          */
         public Builder setTxtDataBytes(
@@ -5976,7 +5976,7 @@ public final class M0001 {
          * <code>required int32 type = 5;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public boolean hasType() {
@@ -5986,7 +5986,7 @@ public final class M0001 {
          * <code>required int32 type = 5;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public int getType() {
@@ -5996,7 +5996,7 @@ public final class M0001 {
          * <code>required int32 type = 5;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public Builder setType(int value) {
@@ -6009,7 +6009,7 @@ public final class M0001 {
          * <code>required int32 type = 5;</code>
          *
          * <pre>
-         *1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+         *1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
          * </pre>
          */
         public Builder clearType() {
@@ -6135,7 +6135,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1113}
      *
      * <pre>
-     *ÁÄÌì
+     *èŠå¤©  å¯¹åº”cmdId=1002
      * </pre>
      */
     public static final class Builder extends
@@ -6258,7 +6258,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1114}
    *
    * <pre>
-   *»ñÈ¡ÁÄÌìºÃÓÑ
+   *è·å–èŠå¤©å¥½å‹  å¯¹åº”cmdId=1003
    * </pre>
    */
   public static final class M1114 extends
@@ -6355,7 +6355,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       boolean hasStatus();
@@ -6363,7 +6363,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       int getStatus();
@@ -6373,7 +6373,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -6381,7 +6381,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -6389,7 +6389,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -6400,7 +6400,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> 
@@ -6409,7 +6409,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index);
@@ -6417,7 +6417,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       int getFriendsCount();
@@ -6425,7 +6425,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
@@ -6434,7 +6434,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
@@ -6559,7 +6559,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public boolean hasStatus() {
@@ -6569,7 +6569,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public int getStatus() {
@@ -6583,7 +6583,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -6593,7 +6593,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -6614,7 +6614,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -6638,7 +6638,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> getFriendsList() {
@@ -6648,7 +6648,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
@@ -6659,7 +6659,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public int getFriendsCount() {
@@ -6669,7 +6669,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index) {
@@ -6679,7 +6679,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
@@ -7009,7 +7009,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public boolean hasStatus() {
@@ -7019,7 +7019,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public int getStatus() {
@@ -7029,7 +7029,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -7042,7 +7042,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder clearStatus() {
@@ -7058,7 +7058,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -7068,7 +7068,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -7086,7 +7086,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -7106,7 +7106,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -7123,7 +7123,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -7136,7 +7136,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -7167,7 +7167,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> getFriendsList() {
@@ -7181,7 +7181,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public int getFriendsCount() {
@@ -7195,7 +7195,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index) {
@@ -7209,7 +7209,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder setFriends(
@@ -7230,7 +7230,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder setFriends(
@@ -7248,7 +7248,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(com.tworr.msg.protocal.Commons.FriendWithLastMessage value) {
@@ -7268,7 +7268,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(
@@ -7289,7 +7289,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(
@@ -7307,7 +7307,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(
@@ -7325,7 +7325,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addAllFriends(
@@ -7343,7 +7343,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder clearFriends() {
@@ -7360,7 +7360,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder removeFriends(int index) {
@@ -7377,7 +7377,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder getFriendsBuilder(
@@ -7388,7 +7388,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
@@ -7402,7 +7402,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
@@ -7417,7 +7417,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder addFriendsBuilder() {
@@ -7428,7 +7428,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder addFriendsBuilder(
@@ -7440,7 +7440,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder> 
@@ -7481,7 +7481,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasUserId();
@@ -7489,7 +7489,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getUserId();
@@ -7497,7 +7497,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -7606,7 +7606,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasUserId() {
@@ -7616,7 +7616,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -7637,7 +7637,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -7897,7 +7897,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasUserId() {
@@ -7907,7 +7907,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -7925,7 +7925,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -7945,7 +7945,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserId(
@@ -7962,7 +7962,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearUserId() {
@@ -7975,7 +7975,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -8105,7 +8105,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1114}
      *
      * <pre>
-     *»ñÈ¡ÁÄÌìºÃÓÑ
+     *è·å–èŠå¤©å¥½å‹  å¯¹åº”cmdId=1003
      * </pre>
      */
     public static final class Builder extends
@@ -8228,7 +8228,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1115}
    *
    * <pre>
-   *±êÊ¶ºÃÓÑ
+   *æ ‡è¯†å¥½å‹  å¯¹åº”cmdId=1006
    * </pre>
    */
   public static final class M1115 extends
@@ -8325,7 +8325,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       boolean hasStatus();
@@ -8333,7 +8333,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       int getStatus();
@@ -8343,7 +8343,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -8351,7 +8351,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -8359,7 +8359,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -8370,7 +8370,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       boolean hasTargetUserId();
@@ -8378,7 +8378,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       java.lang.String getTargetUserId();
@@ -8386,7 +8386,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -8505,7 +8505,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public boolean hasStatus() {
@@ -8515,7 +8515,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public int getStatus() {
@@ -8529,7 +8529,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -8539,7 +8539,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -8560,7 +8560,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -8584,7 +8584,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public boolean hasTargetUserId() {
@@ -8594,7 +8594,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public java.lang.String getTargetUserId() {
@@ -8615,7 +8615,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -8911,7 +8911,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public boolean hasStatus() {
@@ -8921,7 +8921,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public int getStatus() {
@@ -8931,7 +8931,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -8944,7 +8944,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder clearStatus() {
@@ -8960,7 +8960,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -8970,7 +8970,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -8988,7 +8988,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -9008,7 +9008,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -9025,7 +9025,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -9038,7 +9038,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -9058,7 +9058,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public boolean hasTargetUserId() {
@@ -9068,7 +9068,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public java.lang.String getTargetUserId() {
@@ -9086,7 +9086,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -9106,7 +9106,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserId(
@@ -9123,7 +9123,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder clearTargetUserId() {
@@ -9136,7 +9136,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserIdBytes(
@@ -9169,7 +9169,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasUserId();
@@ -9177,7 +9177,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getUserId();
@@ -9185,7 +9185,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -9196,7 +9196,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       boolean hasTargetUserId();
@@ -9204,7 +9204,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       java.lang.String getTargetUserId();
@@ -9212,7 +9212,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -9223,7 +9223,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+       *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
        * </pre>
        */
       boolean hasType();
@@ -9231,7 +9231,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+       *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
        * </pre>
        */
       int getType();
@@ -9349,7 +9349,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasUserId() {
@@ -9359,7 +9359,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -9380,7 +9380,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -9404,7 +9404,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public boolean hasTargetUserId() {
@@ -9414,7 +9414,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public java.lang.String getTargetUserId() {
@@ -9435,7 +9435,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -9459,7 +9459,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+       *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
        * </pre>
        */
       public boolean hasType() {
@@ -9469,7 +9469,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+       *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
        * </pre>
        */
       public int getType() {
@@ -9771,7 +9771,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasUserId() {
@@ -9781,7 +9781,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -9799,7 +9799,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -9819,7 +9819,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserId(
@@ -9836,7 +9836,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearUserId() {
@@ -9849,7 +9849,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -9869,7 +9869,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public boolean hasTargetUserId() {
@@ -9879,7 +9879,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public java.lang.String getTargetUserId() {
@@ -9897,7 +9897,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -9917,7 +9917,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserId(
@@ -9934,7 +9934,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder clearTargetUserId() {
@@ -9947,7 +9947,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserIdBytes(
@@ -9967,7 +9967,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+         *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
          * </pre>
          */
         public boolean hasType() {
@@ -9977,7 +9977,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+         *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
          * </pre>
          */
         public int getType() {
@@ -9987,7 +9987,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+         *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
          * </pre>
          */
         public Builder setType(int value) {
@@ -10000,7 +10000,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
+         *1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
          * </pre>
          */
         public Builder clearType() {
@@ -10126,7 +10126,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1115}
      *
      * <pre>
-     *±êÊ¶ºÃÓÑ
+     *æ ‡è¯†å¥½å‹  å¯¹åº”cmdId=1006
      * </pre>
      */
     public static final class Builder extends
@@ -10249,7 +10249,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1116}
    *
    * <pre>
-   *ºÚÃûµ¥
+   *é»‘åå•  å¯¹åº”cmdId=1007
    * </pre>
    */
   public static final class M1116 extends
@@ -10346,7 +10346,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       boolean hasStatus();
@@ -10354,7 +10354,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       int getStatus();
@@ -10364,7 +10364,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -10372,7 +10372,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -10380,7 +10380,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -10391,7 +10391,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       boolean hasTargetUserId();
@@ -10399,7 +10399,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       java.lang.String getTargetUserId();
@@ -10407,7 +10407,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -10526,7 +10526,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public boolean hasStatus() {
@@ -10536,7 +10536,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public int getStatus() {
@@ -10550,7 +10550,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -10560,7 +10560,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -10581,7 +10581,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -10605,7 +10605,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public boolean hasTargetUserId() {
@@ -10615,7 +10615,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public java.lang.String getTargetUserId() {
@@ -10636,7 +10636,7 @@ public final class M0001 {
        * <code>optional string targetUserId = 3;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -10932,7 +10932,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public boolean hasStatus() {
@@ -10942,7 +10942,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public int getStatus() {
@@ -10952,7 +10952,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -10965,7 +10965,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder clearStatus() {
@@ -10981,7 +10981,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -10991,7 +10991,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -11009,7 +11009,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -11029,7 +11029,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -11046,7 +11046,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -11059,7 +11059,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -11079,7 +11079,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public boolean hasTargetUserId() {
@@ -11089,7 +11089,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public java.lang.String getTargetUserId() {
@@ -11107,7 +11107,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -11127,7 +11127,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserId(
@@ -11144,7 +11144,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder clearTargetUserId() {
@@ -11157,7 +11157,7 @@ public final class M0001 {
          * <code>optional string targetUserId = 3;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserIdBytes(
@@ -11190,7 +11190,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasUserId();
@@ -11198,7 +11198,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getUserId();
@@ -11206,7 +11206,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -11217,7 +11217,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       boolean hasTargetUserId();
@@ -11225,7 +11225,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       java.lang.String getTargetUserId();
@@ -11233,7 +11233,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -11244,7 +11244,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+       *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
        * </pre>
        */
       boolean hasType();
@@ -11252,7 +11252,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+       *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
        * </pre>
        */
       int getType();
@@ -11370,7 +11370,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasUserId() {
@@ -11380,7 +11380,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -11401,7 +11401,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -11425,7 +11425,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public boolean hasTargetUserId() {
@@ -11435,7 +11435,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public java.lang.String getTargetUserId() {
@@ -11456,7 +11456,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *±»³É¹¦²Ù×÷µÄºÃÓÑ
+       *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -11480,7 +11480,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+       *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
        * </pre>
        */
       public boolean hasType() {
@@ -11490,7 +11490,7 @@ public final class M0001 {
        * <code>required int32 type = 3;</code>
        *
        * <pre>
-       *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+       *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
        * </pre>
        */
       public int getType() {
@@ -11792,7 +11792,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasUserId() {
@@ -11802,7 +11802,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -11820,7 +11820,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -11840,7 +11840,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserId(
@@ -11857,7 +11857,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearUserId() {
@@ -11870,7 +11870,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -11890,7 +11890,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public boolean hasTargetUserId() {
@@ -11900,7 +11900,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public java.lang.String getTargetUserId() {
@@ -11918,7 +11918,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -11938,7 +11938,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserId(
@@ -11955,7 +11955,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder clearTargetUserId() {
@@ -11968,7 +11968,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *±»³É¹¦²Ù×÷µÄºÃÓÑ
+         *è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
          * </pre>
          */
         public Builder setTargetUserIdBytes(
@@ -11988,7 +11988,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+         *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
          * </pre>
          */
         public boolean hasType() {
@@ -11998,7 +11998,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+         *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
          * </pre>
          */
         public int getType() {
@@ -12008,7 +12008,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+         *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
          * </pre>
          */
         public Builder setType(int value) {
@@ -12021,7 +12021,7 @@ public final class M0001 {
          * <code>required int32 type = 3;</code>
          *
          * <pre>
-         *1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+         *1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
          * </pre>
          */
         public Builder clearType() {
@@ -12147,7 +12147,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1116}
      *
      * <pre>
-     *ºÚÃûµ¥
+     *é»‘åå•  å¯¹åº”cmdId=1007
      * </pre>
      */
     public static final class Builder extends
@@ -12270,7 +12270,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1117}
    *
    * <pre>
-   *»ñÈ¡ÁÄÌì¼ÇÂ¼
+   *è·å–èŠå¤©è®°å½•  å¯¹åº”cmdId=1004
    * </pre>
    */
   public static final class M1117 extends
@@ -12367,7 +12367,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       boolean hasStatus();
@@ -12375,7 +12375,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       int getStatus();
@@ -12385,7 +12385,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -12393,7 +12393,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -12401,7 +12401,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -12412,7 +12412,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> 
@@ -12421,7 +12421,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       com.tworr.msg.protocal.Commons.ChatMessage getMessages(int index);
@@ -12429,7 +12429,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       int getMessagesCount();
@@ -12437,7 +12437,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       java.util.List<? extends com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
@@ -12446,7 +12446,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessagesOrBuilder(
@@ -12571,7 +12571,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public boolean hasStatus() {
@@ -12581,7 +12581,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public int getStatus() {
@@ -12595,7 +12595,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -12605,7 +12605,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -12626,7 +12626,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -12650,7 +12650,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       public java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> getMessagesList() {
@@ -12660,7 +12660,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       public java.util.List<? extends com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
@@ -12671,7 +12671,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       public int getMessagesCount() {
@@ -12681,7 +12681,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.ChatMessage getMessages(int index) {
@@ -12691,7 +12691,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
        *
        * <pre>
-       *ÁÄÌì¼ÇÂ¼
+       *èŠå¤©è®°å½•
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessagesOrBuilder(
@@ -13021,7 +13021,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public boolean hasStatus() {
@@ -13031,7 +13031,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public int getStatus() {
@@ -13041,7 +13041,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -13054,7 +13054,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder clearStatus() {
@@ -13070,7 +13070,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -13080,7 +13080,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -13098,7 +13098,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -13118,7 +13118,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -13135,7 +13135,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -13148,7 +13148,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -13179,7 +13179,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> getMessagesList() {
@@ -13193,7 +13193,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public int getMessagesCount() {
@@ -13207,7 +13207,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ChatMessage getMessages(int index) {
@@ -13221,7 +13221,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder setMessages(
@@ -13242,7 +13242,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder setMessages(
@@ -13260,7 +13260,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder addMessages(com.tworr.msg.protocal.Commons.ChatMessage value) {
@@ -13280,7 +13280,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder addMessages(
@@ -13301,7 +13301,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder addMessages(
@@ -13319,7 +13319,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder addMessages(
@@ -13337,7 +13337,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder addAllMessages(
@@ -13355,7 +13355,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder clearMessages() {
@@ -13372,7 +13372,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public Builder removeMessages(int index) {
@@ -13389,7 +13389,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ChatMessage.Builder getMessagesBuilder(
@@ -13400,7 +13400,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessagesOrBuilder(
@@ -13414,7 +13414,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public java.util.List<? extends com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
@@ -13429,7 +13429,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ChatMessage.Builder addMessagesBuilder() {
@@ -13440,7 +13440,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.ChatMessage.Builder addMessagesBuilder(
@@ -13452,7 +13452,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
          *
          * <pre>
-         *ÁÄÌì¼ÇÂ¼
+         *èŠå¤©è®°å½•
          * </pre>
          */
         public java.util.List<com.tworr.msg.protocal.Commons.ChatMessage.Builder> 
@@ -13493,7 +13493,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasUserId();
@@ -13501,7 +13501,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getUserId();
@@ -13509,7 +13509,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -13520,7 +13520,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+       *è¦è·å–è®°å½•çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasTargetUserId();
@@ -13528,7 +13528,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+       *è¦è·å–è®°å½•çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getTargetUserId();
@@ -13536,7 +13536,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+       *è¦è·å–è®°å½•çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -13650,7 +13650,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasUserId() {
@@ -13660,7 +13660,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -13681,7 +13681,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -13705,7 +13705,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+       *è¦è·å–è®°å½•çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasTargetUserId() {
@@ -13715,7 +13715,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+       *è¦è·å–è®°å½•çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getTargetUserId() {
@@ -13736,7 +13736,7 @@ public final class M0001 {
        * <code>required string targetUserId = 2;</code>
        *
        * <pre>
-       *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+       *è¦è·å–è®°å½•çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -14023,7 +14023,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasUserId() {
@@ -14033,7 +14033,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -14051,7 +14051,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -14071,7 +14071,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserId(
@@ -14088,7 +14088,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearUserId() {
@@ -14101,7 +14101,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -14121,7 +14121,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+         *è¦è·å–è®°å½•çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasTargetUserId() {
@@ -14131,7 +14131,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+         *è¦è·å–è®°å½•çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getTargetUserId() {
@@ -14149,7 +14149,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+         *è¦è·å–è®°å½•çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -14169,7 +14169,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+         *è¦è·å–è®°å½•çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setTargetUserId(
@@ -14186,7 +14186,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+         *è¦è·å–è®°å½•çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearTargetUserId() {
@@ -14199,7 +14199,7 @@ public final class M0001 {
          * <code>required string targetUserId = 2;</code>
          *
          * <pre>
-         *Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+         *è¦è·å–è®°å½•çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setTargetUserIdBytes(
@@ -14329,7 +14329,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1117}
      *
      * <pre>
-     *»ñÈ¡ÁÄÌì¼ÇÂ¼
+     *è·å–èŠå¤©è®°å½•  å¯¹åº”cmdId=1004
      * </pre>
      */
     public static final class Builder extends
@@ -14452,7 +14452,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1118}
    *
    * <pre>
-   *ºÃÓÑÉÏÏÂÏßÌáĞÑ
+   *å¥½å‹ä¸Šä¸‹çº¿æé†’  å¯¹åº”cmdId=1005
    * </pre>
    */
   public static final class M1118 extends
@@ -14549,7 +14549,7 @@ public final class M0001 {
        * <code>required int32 actionType = 1;</code>
        *
        * <pre>
-       *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+       *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
        * </pre>
        */
       boolean hasActionType();
@@ -14557,7 +14557,7 @@ public final class M0001 {
        * <code>required int32 actionType = 1;</code>
        *
        * <pre>
-       *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+       *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
        * </pre>
        */
       int getActionType();
@@ -14567,7 +14567,7 @@ public final class M0001 {
        * <code>required string userId = 2;</code>
        *
        * <pre>
-       *ºÃÓÑid
+       *å¥½å‹id
        * </pre>
        */
       boolean hasUserId();
@@ -14575,7 +14575,7 @@ public final class M0001 {
        * <code>required string userId = 2;</code>
        *
        * <pre>
-       *ºÃÓÑid
+       *å¥½å‹id
        * </pre>
        */
       java.lang.String getUserId();
@@ -14583,7 +14583,7 @@ public final class M0001 {
        * <code>required string userId = 2;</code>
        *
        * <pre>
-       *ºÃÓÑid
+       *å¥½å‹id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -14697,7 +14697,7 @@ public final class M0001 {
        * <code>required int32 actionType = 1;</code>
        *
        * <pre>
-       *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+       *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
        * </pre>
        */
       public boolean hasActionType() {
@@ -14707,7 +14707,7 @@ public final class M0001 {
        * <code>required int32 actionType = 1;</code>
        *
        * <pre>
-       *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+       *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
        * </pre>
        */
       public int getActionType() {
@@ -14721,7 +14721,7 @@ public final class M0001 {
        * <code>required string userId = 2;</code>
        *
        * <pre>
-       *ºÃÓÑid
+       *å¥½å‹id
        * </pre>
        */
       public boolean hasUserId() {
@@ -14731,7 +14731,7 @@ public final class M0001 {
        * <code>required string userId = 2;</code>
        *
        * <pre>
-       *ºÃÓÑid
+       *å¥½å‹id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -14752,7 +14752,7 @@ public final class M0001 {
        * <code>required string userId = 2;</code>
        *
        * <pre>
-       *ºÃÓÑid
+       *å¥½å‹id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -15037,7 +15037,7 @@ public final class M0001 {
          * <code>required int32 actionType = 1;</code>
          *
          * <pre>
-         *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+         *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
          * </pre>
          */
         public boolean hasActionType() {
@@ -15047,7 +15047,7 @@ public final class M0001 {
          * <code>required int32 actionType = 1;</code>
          *
          * <pre>
-         *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+         *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
          * </pre>
          */
         public int getActionType() {
@@ -15057,7 +15057,7 @@ public final class M0001 {
          * <code>required int32 actionType = 1;</code>
          *
          * <pre>
-         *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+         *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
          * </pre>
          */
         public Builder setActionType(int value) {
@@ -15070,7 +15070,7 @@ public final class M0001 {
          * <code>required int32 actionType = 1;</code>
          *
          * <pre>
-         *×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
+         *çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
          * </pre>
          */
         public Builder clearActionType() {
@@ -15086,7 +15086,7 @@ public final class M0001 {
          * <code>required string userId = 2;</code>
          *
          * <pre>
-         *ºÃÓÑid
+         *å¥½å‹id
          * </pre>
          */
         public boolean hasUserId() {
@@ -15096,7 +15096,7 @@ public final class M0001 {
          * <code>required string userId = 2;</code>
          *
          * <pre>
-         *ºÃÓÑid
+         *å¥½å‹id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -15114,7 +15114,7 @@ public final class M0001 {
          * <code>required string userId = 2;</code>
          *
          * <pre>
-         *ºÃÓÑid
+         *å¥½å‹id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -15134,7 +15134,7 @@ public final class M0001 {
          * <code>required string userId = 2;</code>
          *
          * <pre>
-         *ºÃÓÑid
+         *å¥½å‹id
          * </pre>
          */
         public Builder setUserId(
@@ -15151,7 +15151,7 @@ public final class M0001 {
          * <code>required string userId = 2;</code>
          *
          * <pre>
-         *ºÃÓÑid
+         *å¥½å‹id
          * </pre>
          */
         public Builder clearUserId() {
@@ -15164,7 +15164,7 @@ public final class M0001 {
          * <code>required string userId = 2;</code>
          *
          * <pre>
-         *ºÃÓÑid
+         *å¥½å‹id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -15294,7 +15294,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1118}
      *
      * <pre>
-     *ºÃÓÑÉÏÏÂÏßÌáĞÑ
+     *å¥½å‹ä¸Šä¸‹çº¿æé†’  å¯¹åº”cmdId=1005
      * </pre>
      */
     public static final class Builder extends
@@ -15417,7 +15417,7 @@ public final class M0001 {
    * Protobuf type {@code com.tworr.msg.M0001.M1119}
    *
    * <pre>
-   *»ñÈ¡ºÚÃûµ¥ºÃÓÑ
+   *è·å–é»‘åå•å¥½å‹   å¯¹åº”cmdId=1008
    * </pre>
    */
   public static final class M1119 extends
@@ -15514,7 +15514,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       boolean hasStatus();
@@ -15522,7 +15522,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       int getStatus();
@@ -15532,7 +15532,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       boolean hasMsg();
@@ -15540,7 +15540,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       java.lang.String getMsg();
@@ -15548,7 +15548,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -15559,7 +15559,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> 
@@ -15568,7 +15568,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index);
@@ -15576,7 +15576,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       int getFriendsCount();
@@ -15584,7 +15584,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
@@ -15593,7 +15593,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
@@ -15718,7 +15718,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public boolean hasStatus() {
@@ -15728,7 +15728,7 @@ public final class M0001 {
        * <code>required int32 status = 1;</code>
        *
        * <pre>
-       *×´Ì¬   
+       *çŠ¶æ€   
        * </pre>
        */
       public int getStatus() {
@@ -15742,7 +15742,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public boolean hasMsg() {
@@ -15752,7 +15752,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public java.lang.String getMsg() {
@@ -15773,7 +15773,7 @@ public final class M0001 {
        * <code>optional string msg = 2;</code>
        *
        * <pre>
-       *ÌáÊ¾ÏûÏ¢
+       *æç¤ºæ¶ˆæ¯
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -15797,7 +15797,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> getFriendsList() {
@@ -15807,7 +15807,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
@@ -15818,7 +15818,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public int getFriendsCount() {
@@ -15828,7 +15828,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index) {
@@ -15838,7 +15838,7 @@ public final class M0001 {
        * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
        *
        * <pre>
-       *ºÃÓÑÁĞ±í
+       *å¥½å‹åˆ—è¡¨
        * </pre>
        */
       public com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
@@ -16168,7 +16168,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public boolean hasStatus() {
@@ -16178,7 +16178,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public int getStatus() {
@@ -16188,7 +16188,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder setStatus(int value) {
@@ -16201,7 +16201,7 @@ public final class M0001 {
          * <code>required int32 status = 1;</code>
          *
          * <pre>
-         *×´Ì¬   
+         *çŠ¶æ€   
          * </pre>
          */
         public Builder clearStatus() {
@@ -16217,7 +16217,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public boolean hasMsg() {
@@ -16227,7 +16227,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public java.lang.String getMsg() {
@@ -16245,7 +16245,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -16265,7 +16265,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsg(
@@ -16282,7 +16282,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder clearMsg() {
@@ -16295,7 +16295,7 @@ public final class M0001 {
          * <code>optional string msg = 2;</code>
          *
          * <pre>
-         *ÌáÊ¾ÏûÏ¢
+         *æç¤ºæ¶ˆæ¯
          * </pre>
          */
         public Builder setMsgBytes(
@@ -16326,7 +16326,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage> getFriendsList() {
@@ -16340,7 +16340,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public int getFriendsCount() {
@@ -16354,7 +16354,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage getFriends(int index) {
@@ -16368,7 +16368,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder setFriends(
@@ -16389,7 +16389,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder setFriends(
@@ -16407,7 +16407,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(com.tworr.msg.protocal.Commons.FriendWithLastMessage value) {
@@ -16427,7 +16427,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(
@@ -16448,7 +16448,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(
@@ -16466,7 +16466,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addFriends(
@@ -16484,7 +16484,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder addAllFriends(
@@ -16502,7 +16502,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder clearFriends() {
@@ -16519,7 +16519,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public Builder removeFriends(int index) {
@@ -16536,7 +16536,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder getFriendsBuilder(
@@ -16547,7 +16547,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder getFriendsOrBuilder(
@@ -16561,7 +16561,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public java.util.List<? extends com.tworr.msg.protocal.Commons.FriendWithLastMessageOrBuilder> 
@@ -16576,7 +16576,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder addFriendsBuilder() {
@@ -16587,7 +16587,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder addFriendsBuilder(
@@ -16599,7 +16599,7 @@ public final class M0001 {
          * <code>repeated .com.tworr.msg.Commons.FriendWithLastMessage friends = 3;</code>
          *
          * <pre>
-         *ºÃÓÑÁĞ±í
+         *å¥½å‹åˆ—è¡¨
          * </pre>
          */
         public java.util.List<com.tworr.msg.protocal.Commons.FriendWithLastMessage.Builder> 
@@ -16640,7 +16640,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       boolean hasUserId();
@@ -16648,7 +16648,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       java.lang.String getUserId();
@@ -16656,7 +16656,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       com.google.protobuf.ByteString
@@ -16765,7 +16765,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public boolean hasUserId() {
@@ -16775,7 +16775,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public java.lang.String getUserId() {
@@ -16796,7 +16796,7 @@ public final class M0001 {
        * <code>required string userId = 1;</code>
        *
        * <pre>
-       *·¢ËÍÕßµÄÓÃ»§id
+       *å‘é€è€…çš„ç”¨æˆ·id
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -17056,7 +17056,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public boolean hasUserId() {
@@ -17066,7 +17066,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public java.lang.String getUserId() {
@@ -17084,7 +17084,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -17104,7 +17104,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserId(
@@ -17121,7 +17121,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder clearUserId() {
@@ -17134,7 +17134,7 @@ public final class M0001 {
          * <code>required string userId = 1;</code>
          *
          * <pre>
-         *·¢ËÍÕßµÄÓÃ»§id
+         *å‘é€è€…çš„ç”¨æˆ·id
          * </pre>
          */
         public Builder setUserIdBytes(
@@ -17264,7 +17264,7 @@ public final class M0001 {
      * Protobuf type {@code com.tworr.msg.M0001.M1119}
      *
      * <pre>
-     *»ñÈ¡ºÚÃûµ¥ºÃÓÑ
+     *è·å–é»‘åå•å¥½å‹   å¯¹åº”cmdId=1008
      * </pre>
      */
     public static final class Builder extends
@@ -17378,6 +17378,1976 @@ public final class M0001 {
     }
 
     // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1119)
+  }
+
+  public interface M1120OrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code com.tworr.msg.M0001.M1120}
+   *
+   * <pre>
+   *ä¸Šçº¿æ¨é€ç¦»çº¿æ¶ˆæ¯  å¯¹åº”cmdId=1009
+   * </pre>
+   */
+  public static final class M1120 extends
+      com.google.protobuf.GeneratedMessage
+      implements M1120OrBuilder {
+    // Use M1120.newBuilder() to construct.
+    private M1120(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private M1120(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final M1120 defaultInstance;
+    public static M1120 getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public M1120 getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private M1120(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.tworr.msg.protocal.M0001.M1120.class, com.tworr.msg.protocal.M0001.M1120.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<M1120> PARSER =
+        new com.google.protobuf.AbstractParser<M1120>() {
+      public M1120 parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new M1120(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<M1120> getParserForType() {
+      return PARSER;
+    }
+
+    public interface S2COrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // required int32 status = 1;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *çŠ¶æ€   
+       * </pre>
+       */
+      boolean hasStatus();
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *çŠ¶æ€   
+       * </pre>
+       */
+      int getStatus();
+
+      // optional string msg = 2;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *æç¤ºæ¶ˆæ¯
+       * </pre>
+       */
+      boolean hasMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *æç¤ºæ¶ˆæ¯
+       * </pre>
+       */
+      java.lang.String getMsg();
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *æç¤ºæ¶ˆæ¯
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getMsgBytes();
+
+      // repeated .com.tworr.msg.Commons.ChatMessage messages = 3;
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> 
+          getMessagesList();
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      com.tworr.msg.protocal.Commons.ChatMessage getMessages(int index);
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      int getMessagesCount();
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      java.util.List<? extends com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
+          getMessagesOrBuilderList();
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessagesOrBuilder(
+          int index);
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1120.S2C}
+     */
+    public static final class S2C extends
+        com.google.protobuf.GeneratedMessage
+        implements S2COrBuilder {
+      // Use S2C.newBuilder() to construct.
+      private S2C(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private S2C(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final S2C defaultInstance;
+      public static S2C getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public S2C getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private S2C(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 8: {
+                bitField0_ |= 0x00000001;
+                status_ = input.readInt32();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                msg_ = input.readBytes();
+                break;
+              }
+              case 26: {
+                if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                  messages_ = new java.util.ArrayList<com.tworr.msg.protocal.Commons.ChatMessage>();
+                  mutable_bitField0_ |= 0x00000004;
+                }
+                messages_.add(input.readMessage(com.tworr.msg.protocal.Commons.ChatMessage.PARSER, extensionRegistry));
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+            messages_ = java.util.Collections.unmodifiableList(messages_);
+          }
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_S2C_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_S2C_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1120.S2C.class, com.tworr.msg.protocal.M0001.M1120.S2C.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<S2C> PARSER =
+          new com.google.protobuf.AbstractParser<S2C>() {
+        public S2C parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new S2C(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<S2C> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // required int32 status = 1;
+      public static final int STATUS_FIELD_NUMBER = 1;
+      private int status_;
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *çŠ¶æ€   
+       * </pre>
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 status = 1;</code>
+       *
+       * <pre>
+       *çŠ¶æ€   
+       * </pre>
+       */
+      public int getStatus() {
+        return status_;
+      }
+
+      // optional string msg = 2;
+      public static final int MSG_FIELD_NUMBER = 2;
+      private java.lang.Object msg_;
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *æç¤ºæ¶ˆæ¯
+       * </pre>
+       */
+      public boolean hasMsg() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *æç¤ºæ¶ˆæ¯
+       * </pre>
+       */
+      public java.lang.String getMsg() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            msg_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string msg = 2;</code>
+       *
+       * <pre>
+       *æç¤ºæ¶ˆæ¯
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getMsgBytes() {
+        java.lang.Object ref = msg_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          msg_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // repeated .com.tworr.msg.Commons.ChatMessage messages = 3;
+      public static final int MESSAGES_FIELD_NUMBER = 3;
+      private java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> messages_;
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      public java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> getMessagesList() {
+        return messages_;
+      }
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      public java.util.List<? extends com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
+          getMessagesOrBuilderList() {
+        return messages_;
+      }
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      public int getMessagesCount() {
+        return messages_.size();
+      }
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.ChatMessage getMessages(int index) {
+        return messages_.get(index);
+      }
+      /**
+       * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+       *
+       * <pre>
+       *èŠå¤©è®°å½•
+       * </pre>
+       */
+      public com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessagesOrBuilder(
+          int index) {
+        return messages_.get(index);
+      }
+
+      private void initFields() {
+        status_ = 0;
+        msg_ = "";
+        messages_ = java.util.Collections.emptyList();
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        if (!hasStatus()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        for (int i = 0; i < getMessagesCount(); i++) {
+          if (!getMessages(i).isInitialized()) {
+            memoizedIsInitialized = 0;
+            return false;
+          }
+        }
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeInt32(1, status_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getMsgBytes());
+        }
+        for (int i = 0; i < messages_.size(); i++) {
+          output.writeMessage(3, messages_.get(i));
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(1, status_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(2, getMsgBytes());
+        }
+        for (int i = 0; i < messages_.size(); i++) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(3, messages_.get(i));
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.S2C parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1120.S2C prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code com.tworr.msg.M0001.M1120.S2C}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.tworr.msg.protocal.M0001.M1120.S2COrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_S2C_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_S2C_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.tworr.msg.protocal.M0001.M1120.S2C.class, com.tworr.msg.protocal.M0001.M1120.S2C.Builder.class);
+        }
+
+        // Construct using com.tworr.msg.protocal.M0001.M1120.S2C.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+            getMessagesFieldBuilder();
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          status_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000001);
+          msg_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          if (messagesBuilder_ == null) {
+            messages_ = java.util.Collections.emptyList();
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            messagesBuilder_.clear();
+          }
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_S2C_descriptor;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1120.S2C getDefaultInstanceForType() {
+          return com.tworr.msg.protocal.M0001.M1120.S2C.getDefaultInstance();
+        }
+
+        public com.tworr.msg.protocal.M0001.M1120.S2C build() {
+          com.tworr.msg.protocal.M0001.M1120.S2C result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1120.S2C buildPartial() {
+          com.tworr.msg.protocal.M0001.M1120.S2C result = new com.tworr.msg.protocal.M0001.M1120.S2C(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.status_ = status_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.msg_ = msg_;
+          if (messagesBuilder_ == null) {
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+              messages_ = java.util.Collections.unmodifiableList(messages_);
+              bitField0_ = (bitField0_ & ~0x00000004);
+            }
+            result.messages_ = messages_;
+          } else {
+            result.messages_ = messagesBuilder_.build();
+          }
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.tworr.msg.protocal.M0001.M1120.S2C) {
+            return mergeFrom((com.tworr.msg.protocal.M0001.M1120.S2C)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1120.S2C other) {
+          if (other == com.tworr.msg.protocal.M0001.M1120.S2C.getDefaultInstance()) return this;
+          if (other.hasStatus()) {
+            setStatus(other.getStatus());
+          }
+          if (other.hasMsg()) {
+            bitField0_ |= 0x00000002;
+            msg_ = other.msg_;
+            onChanged();
+          }
+          if (messagesBuilder_ == null) {
+            if (!other.messages_.isEmpty()) {
+              if (messages_.isEmpty()) {
+                messages_ = other.messages_;
+                bitField0_ = (bitField0_ & ~0x00000004);
+              } else {
+                ensureMessagesIsMutable();
+                messages_.addAll(other.messages_);
+              }
+              onChanged();
+            }
+          } else {
+            if (!other.messages_.isEmpty()) {
+              if (messagesBuilder_.isEmpty()) {
+                messagesBuilder_.dispose();
+                messagesBuilder_ = null;
+                messages_ = other.messages_;
+                bitField0_ = (bitField0_ & ~0x00000004);
+                messagesBuilder_ = 
+                  com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                     getMessagesFieldBuilder() : null;
+              } else {
+                messagesBuilder_.addAllMessages(other.messages_);
+              }
+            }
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          if (!hasStatus()) {
+            
+            return false;
+          }
+          for (int i = 0; i < getMessagesCount(); i++) {
+            if (!getMessages(i).isInitialized()) {
+              
+              return false;
+            }
+          }
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.tworr.msg.protocal.M0001.M1120.S2C parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.tworr.msg.protocal.M0001.M1120.S2C) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // required int32 status = 1;
+        private int status_ ;
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *çŠ¶æ€   
+         * </pre>
+         */
+        public boolean hasStatus() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *çŠ¶æ€   
+         * </pre>
+         */
+        public int getStatus() {
+          return status_;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *çŠ¶æ€   
+         * </pre>
+         */
+        public Builder setStatus(int value) {
+          bitField0_ |= 0x00000001;
+          status_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required int32 status = 1;</code>
+         *
+         * <pre>
+         *çŠ¶æ€   
+         * </pre>
+         */
+        public Builder clearStatus() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          status_ = 0;
+          onChanged();
+          return this;
+        }
+
+        // optional string msg = 2;
+        private java.lang.Object msg_ = "";
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *æç¤ºæ¶ˆæ¯
+         * </pre>
+         */
+        public boolean hasMsg() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *æç¤ºæ¶ˆæ¯
+         * </pre>
+         */
+        public java.lang.String getMsg() {
+          java.lang.Object ref = msg_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            msg_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *æç¤ºæ¶ˆæ¯
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getMsgBytes() {
+          java.lang.Object ref = msg_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            msg_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *æç¤ºæ¶ˆæ¯
+         * </pre>
+         */
+        public Builder setMsg(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *æç¤ºæ¶ˆæ¯
+         * </pre>
+         */
+        public Builder clearMsg() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          msg_ = getDefaultInstance().getMsg();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string msg = 2;</code>
+         *
+         * <pre>
+         *æç¤ºæ¶ˆæ¯
+         * </pre>
+         */
+        public Builder setMsgBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          msg_ = value;
+          onChanged();
+          return this;
+        }
+
+        // repeated .com.tworr.msg.Commons.ChatMessage messages = 3;
+        private java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> messages_ =
+          java.util.Collections.emptyList();
+        private void ensureMessagesIsMutable() {
+          if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+            messages_ = new java.util.ArrayList<com.tworr.msg.protocal.Commons.ChatMessage>(messages_);
+            bitField0_ |= 0x00000004;
+           }
+        }
+
+        private com.google.protobuf.RepeatedFieldBuilder<
+            com.tworr.msg.protocal.Commons.ChatMessage, com.tworr.msg.protocal.Commons.ChatMessage.Builder, com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> messagesBuilder_;
+
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public java.util.List<com.tworr.msg.protocal.Commons.ChatMessage> getMessagesList() {
+          if (messagesBuilder_ == null) {
+            return java.util.Collections.unmodifiableList(messages_);
+          } else {
+            return messagesBuilder_.getMessageList();
+          }
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public int getMessagesCount() {
+          if (messagesBuilder_ == null) {
+            return messages_.size();
+          } else {
+            return messagesBuilder_.getCount();
+          }
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public com.tworr.msg.protocal.Commons.ChatMessage getMessages(int index) {
+          if (messagesBuilder_ == null) {
+            return messages_.get(index);
+          } else {
+            return messagesBuilder_.getMessage(index);
+          }
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder setMessages(
+            int index, com.tworr.msg.protocal.Commons.ChatMessage value) {
+          if (messagesBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureMessagesIsMutable();
+            messages_.set(index, value);
+            onChanged();
+          } else {
+            messagesBuilder_.setMessage(index, value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder setMessages(
+            int index, com.tworr.msg.protocal.Commons.ChatMessage.Builder builderForValue) {
+          if (messagesBuilder_ == null) {
+            ensureMessagesIsMutable();
+            messages_.set(index, builderForValue.build());
+            onChanged();
+          } else {
+            messagesBuilder_.setMessage(index, builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder addMessages(com.tworr.msg.protocal.Commons.ChatMessage value) {
+          if (messagesBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureMessagesIsMutable();
+            messages_.add(value);
+            onChanged();
+          } else {
+            messagesBuilder_.addMessage(value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder addMessages(
+            int index, com.tworr.msg.protocal.Commons.ChatMessage value) {
+          if (messagesBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureMessagesIsMutable();
+            messages_.add(index, value);
+            onChanged();
+          } else {
+            messagesBuilder_.addMessage(index, value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder addMessages(
+            com.tworr.msg.protocal.Commons.ChatMessage.Builder builderForValue) {
+          if (messagesBuilder_ == null) {
+            ensureMessagesIsMutable();
+            messages_.add(builderForValue.build());
+            onChanged();
+          } else {
+            messagesBuilder_.addMessage(builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder addMessages(
+            int index, com.tworr.msg.protocal.Commons.ChatMessage.Builder builderForValue) {
+          if (messagesBuilder_ == null) {
+            ensureMessagesIsMutable();
+            messages_.add(index, builderForValue.build());
+            onChanged();
+          } else {
+            messagesBuilder_.addMessage(index, builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder addAllMessages(
+            java.lang.Iterable<? extends com.tworr.msg.protocal.Commons.ChatMessage> values) {
+          if (messagesBuilder_ == null) {
+            ensureMessagesIsMutable();
+            super.addAll(values, messages_);
+            onChanged();
+          } else {
+            messagesBuilder_.addAllMessages(values);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder clearMessages() {
+          if (messagesBuilder_ == null) {
+            messages_ = java.util.Collections.emptyList();
+            bitField0_ = (bitField0_ & ~0x00000004);
+            onChanged();
+          } else {
+            messagesBuilder_.clear();
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public Builder removeMessages(int index) {
+          if (messagesBuilder_ == null) {
+            ensureMessagesIsMutable();
+            messages_.remove(index);
+            onChanged();
+          } else {
+            messagesBuilder_.remove(index);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public com.tworr.msg.protocal.Commons.ChatMessage.Builder getMessagesBuilder(
+            int index) {
+          return getMessagesFieldBuilder().getBuilder(index);
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public com.tworr.msg.protocal.Commons.ChatMessageOrBuilder getMessagesOrBuilder(
+            int index) {
+          if (messagesBuilder_ == null) {
+            return messages_.get(index);  } else {
+            return messagesBuilder_.getMessageOrBuilder(index);
+          }
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public java.util.List<? extends com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
+             getMessagesOrBuilderList() {
+          if (messagesBuilder_ != null) {
+            return messagesBuilder_.getMessageOrBuilderList();
+          } else {
+            return java.util.Collections.unmodifiableList(messages_);
+          }
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public com.tworr.msg.protocal.Commons.ChatMessage.Builder addMessagesBuilder() {
+          return getMessagesFieldBuilder().addBuilder(
+              com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance());
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public com.tworr.msg.protocal.Commons.ChatMessage.Builder addMessagesBuilder(
+            int index) {
+          return getMessagesFieldBuilder().addBuilder(
+              index, com.tworr.msg.protocal.Commons.ChatMessage.getDefaultInstance());
+        }
+        /**
+         * <code>repeated .com.tworr.msg.Commons.ChatMessage messages = 3;</code>
+         *
+         * <pre>
+         *èŠå¤©è®°å½•
+         * </pre>
+         */
+        public java.util.List<com.tworr.msg.protocal.Commons.ChatMessage.Builder> 
+             getMessagesBuilderList() {
+          return getMessagesFieldBuilder().getBuilderList();
+        }
+        private com.google.protobuf.RepeatedFieldBuilder<
+            com.tworr.msg.protocal.Commons.ChatMessage, com.tworr.msg.protocal.Commons.ChatMessage.Builder, com.tworr.msg.protocal.Commons.ChatMessageOrBuilder> 
+            getMessagesFieldBuilder() {
+          if (messagesBuilder_ == null) {
+            messagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                com.tworr.msg.protocal.Commons.ChatMessage, com.tworr.msg.protocal.Commons.ChatMessage.Builder, com.tworr.msg.protocal.Commons.ChatMessageOrBuilder>(
+                    messages_,
+                    ((bitField0_ & 0x00000004) == 0x00000004),
+                    getParentForChildren(),
+                    isClean());
+            messages_ = null;
+          }
+          return messagesBuilder_;
+        }
+
+        // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1120.S2C)
+      }
+
+      static {
+        defaultInstance = new S2C(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1120.S2C)
+    }
+
+    public interface C2SOrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // required string userId = 1;
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *å‘é€è€…çš„ç”¨æˆ·id
+       * </pre>
+       */
+      boolean hasUserId();
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *å‘é€è€…çš„ç”¨æˆ·id
+       * </pre>
+       */
+      java.lang.String getUserId();
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *å‘é€è€…çš„ç”¨æˆ·id
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getUserIdBytes();
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1120.C2S}
+     */
+    public static final class C2S extends
+        com.google.protobuf.GeneratedMessage
+        implements C2SOrBuilder {
+      // Use C2S.newBuilder() to construct.
+      private C2S(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private C2S(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final C2S defaultInstance;
+      public static C2S getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public C2S getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private C2S(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                bitField0_ |= 0x00000001;
+                userId_ = input.readBytes();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_C2S_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_C2S_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1120.C2S.class, com.tworr.msg.protocal.M0001.M1120.C2S.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<C2S> PARSER =
+          new com.google.protobuf.AbstractParser<C2S>() {
+        public C2S parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new C2S(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<C2S> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // required string userId = 1;
+      public static final int USERID_FIELD_NUMBER = 1;
+      private java.lang.Object userId_;
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *å‘é€è€…çš„ç”¨æˆ·id
+       * </pre>
+       */
+      public boolean hasUserId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *å‘é€è€…çš„ç”¨æˆ·id
+       * </pre>
+       */
+      public java.lang.String getUserId() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            userId_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>required string userId = 1;</code>
+       *
+       * <pre>
+       *å‘é€è€…çš„ç”¨æˆ·id
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getUserIdBytes() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          userId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private void initFields() {
+        userId_ = "";
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        if (!hasUserId()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeBytes(1, getUserIdBytes());
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(1, getUserIdBytes());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.tworr.msg.protocal.M0001.M1120.C2S parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1120.C2S prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code com.tworr.msg.M0001.M1120.C2S}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.tworr.msg.protocal.M0001.M1120.C2SOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_C2S_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_C2S_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.tworr.msg.protocal.M0001.M1120.C2S.class, com.tworr.msg.protocal.M0001.M1120.C2S.Builder.class);
+        }
+
+        // Construct using com.tworr.msg.protocal.M0001.M1120.C2S.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          userId_ = "";
+          bitField0_ = (bitField0_ & ~0x00000001);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_C2S_descriptor;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1120.C2S getDefaultInstanceForType() {
+          return com.tworr.msg.protocal.M0001.M1120.C2S.getDefaultInstance();
+        }
+
+        public com.tworr.msg.protocal.M0001.M1120.C2S build() {
+          com.tworr.msg.protocal.M0001.M1120.C2S result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.tworr.msg.protocal.M0001.M1120.C2S buildPartial() {
+          com.tworr.msg.protocal.M0001.M1120.C2S result = new com.tworr.msg.protocal.M0001.M1120.C2S(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.userId_ = userId_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.tworr.msg.protocal.M0001.M1120.C2S) {
+            return mergeFrom((com.tworr.msg.protocal.M0001.M1120.C2S)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1120.C2S other) {
+          if (other == com.tworr.msg.protocal.M0001.M1120.C2S.getDefaultInstance()) return this;
+          if (other.hasUserId()) {
+            bitField0_ |= 0x00000001;
+            userId_ = other.userId_;
+            onChanged();
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          if (!hasUserId()) {
+            
+            return false;
+          }
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.tworr.msg.protocal.M0001.M1120.C2S parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.tworr.msg.protocal.M0001.M1120.C2S) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // required string userId = 1;
+        private java.lang.Object userId_ = "";
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *å‘é€è€…çš„ç”¨æˆ·id
+         * </pre>
+         */
+        public boolean hasUserId() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *å‘é€è€…çš„ç”¨æˆ·id
+         * </pre>
+         */
+        public java.lang.String getUserId() {
+          java.lang.Object ref = userId_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            userId_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *å‘é€è€…çš„ç”¨æˆ·id
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getUserIdBytes() {
+          java.lang.Object ref = userId_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            userId_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *å‘é€è€…çš„ç”¨æˆ·id
+         * </pre>
+         */
+        public Builder setUserId(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *å‘é€è€…çš„ç”¨æˆ·id
+         * </pre>
+         */
+        public Builder clearUserId() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          userId_ = getDefaultInstance().getUserId();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>required string userId = 1;</code>
+         *
+         * <pre>
+         *å‘é€è€…çš„ç”¨æˆ·id
+         * </pre>
+         */
+        public Builder setUserIdBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1120.C2S)
+      }
+
+      static {
+        defaultInstance = new C2S(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1120.C2S)
+    }
+
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.tworr.msg.protocal.M0001.M1120 parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.tworr.msg.protocal.M0001.M1120 prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.tworr.msg.M0001.M1120}
+     *
+     * <pre>
+     *ä¸Šçº¿æ¨é€ç¦»çº¿æ¶ˆæ¯  å¯¹åº”cmdId=1009
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.tworr.msg.protocal.M0001.M1120OrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.tworr.msg.protocal.M0001.M1120.class, com.tworr.msg.protocal.M0001.M1120.Builder.class);
+      }
+
+      // Construct using com.tworr.msg.protocal.M0001.M1120.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.tworr.msg.protocal.M0001.internal_static_com_tworr_msg_M0001_M1120_descriptor;
+      }
+
+      public com.tworr.msg.protocal.M0001.M1120 getDefaultInstanceForType() {
+        return com.tworr.msg.protocal.M0001.M1120.getDefaultInstance();
+      }
+
+      public com.tworr.msg.protocal.M0001.M1120 build() {
+        com.tworr.msg.protocal.M0001.M1120 result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.tworr.msg.protocal.M0001.M1120 buildPartial() {
+        com.tworr.msg.protocal.M0001.M1120 result = new com.tworr.msg.protocal.M0001.M1120(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.tworr.msg.protocal.M0001.M1120) {
+          return mergeFrom((com.tworr.msg.protocal.M0001.M1120)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.tworr.msg.protocal.M0001.M1120 other) {
+        if (other == com.tworr.msg.protocal.M0001.M1120.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.tworr.msg.protocal.M0001.M1120 parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.tworr.msg.protocal.M0001.M1120) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.tworr.msg.M0001.M1120)
+    }
+
+    static {
+      defaultInstance = new M1120(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.tworr.msg.M0001.M1120)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
@@ -17510,6 +19480,21 @@ public final class M0001 {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_tworr_msg_M0001_M1119_C2S_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1120_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1120_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1120_S2C_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1120_S2C_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_tworr_msg_M0001_M1120_C2S_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_tworr_msg_M0001_M1120_C2S_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -17550,7 +19535,11 @@ public final class M0001 {
       "1119\032a\n\003S2C\022\016\n\006status\030\001 \002(\005\022\013\n\003msg\030\002 \001(\t" +
       "\022=\n\007friends\030\003 \003(\0132,.com.tworr.msg.Common",
       "s.FriendWithLastMessage\032\025\n\003C2S\022\016\n\006userId" +
-      "\030\001 \002(\tB\037\n\026com.tworr.msg.protocalB\005M0001"
+      "\030\001 \002(\t\"x\n\005M1120\032X\n\003S2C\022\016\n\006status\030\001 \002(\005\022\013" +
+      "\n\003msg\030\002 \001(\t\0224\n\010messages\030\003 \003(\0132\".com.twor" +
+      "r.msg.Commons.ChatMessage\032\025\n\003C2S\022\016\n\006user" +
+      "Id\030\001 \002(\tB\037\n\026com.tworr.msg.protocalB\005M000" +
+      "1"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -17712,6 +19701,24 @@ public final class M0001 {
           internal_static_com_tworr_msg_M0001_M1119_C2S_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_tworr_msg_M0001_M1119_C2S_descriptor,
+              new java.lang.String[] { "UserId", });
+          internal_static_com_tworr_msg_M0001_M1120_descriptor =
+            getDescriptor().getMessageTypes().get(9);
+          internal_static_com_tworr_msg_M0001_M1120_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1120_descriptor,
+              new java.lang.String[] { });
+          internal_static_com_tworr_msg_M0001_M1120_S2C_descriptor =
+            internal_static_com_tworr_msg_M0001_M1120_descriptor.getNestedTypes().get(0);
+          internal_static_com_tworr_msg_M0001_M1120_S2C_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1120_S2C_descriptor,
+              new java.lang.String[] { "Status", "Msg", "Messages", });
+          internal_static_com_tworr_msg_M0001_M1120_C2S_descriptor =
+            internal_static_com_tworr_msg_M0001_M1120_descriptor.getNestedTypes().get(1);
+          internal_static_com_tworr_msg_M0001_M1120_C2S_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_tworr_msg_M0001_M1120_C2S_descriptor,
               new java.lang.String[] { "UserId", });
           return null;
         }

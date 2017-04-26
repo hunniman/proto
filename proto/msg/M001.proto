@@ -1,146 +1,162 @@
 package com.tworr.msg.M0001;  
   
 option java_package = "com.tworr.msg.protocal";  
-option java_outer_classname = "M0001";  //µÇÂ½Ğ­Òé
+option java_outer_classname = "M0001";  //ç™»é™†åè®®
 
 
 import "Commoms.proto";
 
-message M1111{  //ĞÄÌø°ü
+message M1111{  //å¿ƒè·³åŒ…  å¯¹åº”cmdId=1000
 
     message  S2C{
-        required int32 serverTime = 1; //·şÎñÆ÷Ê±¼ä
+        required int32 serverTime = 1; //æœåŠ¡å™¨æ—¶é—´
     }
 
     message C2S{
-	required string userId=1;//ÓÃ»§id
+	required string userId=1;//ç”¨æˆ·id
     }
 	
 }
 
-message M1112{  //µÇÂ½
+message M1112{  //ç™»é™†  å¯¹åº”cmdId=1001
 
     message  S2C{
-        required int32 status = 1;   //×´Ì¬
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	optional Commons.SimpleUserInfo simpleUserInfo=3; //µÇÂ½³É¹¦ºó·µ»ØµÄÓÃ»§ĞÅÏ¢
+        required int32 status = 1;   //çŠ¶æ€
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	optional Commons.SimpleUserInfo simpleUserInfo=3; //ç™»é™†æˆåŠŸåè¿”å›çš„ç”¨æˆ·ä¿¡æ¯
     }
 
     message C2S{
-	required string phone=1;//ÊÖ™CÌ–´a
-	required string password=2;//ÊÖ™CÌ–´a
+	required string phone=1;//æ‰‹æ©Ÿè™Ÿç¢¼
+	required string password=2;//æ‰‹æ©Ÿè™Ÿç¢¼
     }
 	
 }
 
 
-message M1113{  //ÁÄÌì
+message M1113{  //èŠå¤©  å¯¹åº”cmdId=1002
 
     message S2C{
-	required int32 status = 1;   //×´Ì¬   
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	optional Commons.SimpleUserInfo fromUser=3; //ÏûÏ¢À´Ô´
-	required string msgData=4;//ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
-	required int64 time=5;//·şÎñÆ÷Ê±¼ä
-	required int32 type=6;//1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+	required int32 status = 1;   //çŠ¶æ€   
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	optional Commons.SimpleUserInfo fromUser=3; //æ¶ˆæ¯æ¥æº
+	required string msgData=4;//å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
+	required int64 time=5;//æœåŠ¡å™¨æ—¶é—´
+	required int32 type=6;//1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
     }
 
     message C2S{
-	required string fromUserId=1;//·¢ËÍÕßµÄÓÃ»§id
-	required string toUserId=2;//Ä¿±êµÄÓÃ»§id
-	optional Commons.ImageMessage image=3;//Í¼Æ¬ÄÚÈİbyte[]Êı×é 
-	optional string txtData=4;//´¿ÎÄ±¾ÄÚÈİ
-	required int32 type=5;//1.´¿ÎÄ±¾£¬2.Í¼Æ¬
-    }
-	
-}
-
-
-
-message M1114{  //»ñÈ¡ÁÄÌìºÃÓÑ
-
-    message S2C{
-	required int32 status = 1;   //×´Ì¬   
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	repeated Commons.FriendWithLastMessage friends=3; //ºÃÓÑÁĞ±í
-    }
-
-    message C2S{
-	required string userId=1;//·¢ËÍÕßµÄÓÃ»§id
-    }
-	
-}
-
-message M1115{  //±êÊ¶ºÃÓÑ
-
-    message S2C{
-	required int32 status = 1;   //×´Ì¬   
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	optional string targetUserId=3;//±»³É¹¦²Ù×÷µÄºÃÓÑ
-    }
-
-    message C2S{
-	required string userId=1;//·¢ËÍÕßµÄÓÃ»§id
-	required string targetUserId=2;//±»³É¹¦²Ù×÷µÄºÃÓÑ
-	required int32 type=3;//1.±ê¼ÇºÃÓÑ£¬2.È¡Ïû±ê¼ÇºÃÓÑ
-    }
-	
-}
-
-message M1116{  //ºÚÃûµ¥
-
-    message S2C{
-	required int32 status = 1;   //×´Ì¬   
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	optional string targetUserId=3;//±»³É¹¦²Ù×÷µÄºÃÓÑ
-    }
-
-    message C2S{
-	required string userId=1;//·¢ËÍÕßµÄÓÃ»§id
-	required string targetUserId=2;//±»³É¹¦²Ù×÷µÄºÃÓÑ
-	required int32 type=3;//1.À­ÈëºÚÃûµ¥£¬2.È¡ÏûºÚÃûµ¥
+	required string fromUserId=1;//å‘é€è€…çš„ç”¨æˆ·id
+	required string toUserId=2;//ç›®æ ‡çš„ç”¨æˆ·id
+	optional Commons.ImageMessage image=3;//å›¾ç‰‡å†…å®¹byte[]æ•°ç»„ 
+	optional string txtData=4;//çº¯æ–‡æœ¬å†…å®¹
+	required int32 type=5;//1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
     }
 	
 }
 
 
 
-message M1117{  //»ñÈ¡ÁÄÌì¼ÇÂ¼
+message M1114{  //è·å–èŠå¤©å¥½å‹  å¯¹åº”cmdId=1003
 
     message S2C{
-	required int32 status = 1;   //×´Ì¬   
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	repeated Commons.ChatMessage messages=3;//ÁÄÌì¼ÇÂ¼
+	required int32 status = 1;   //çŠ¶æ€   
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	repeated Commons.FriendWithLastMessage friends=3; //å¥½å‹åˆ—è¡¨
     }
 
     message C2S{
-	required string userId=1;//·¢ËÍÕßµÄÓÃ»§id
-	required string targetUserId=2;//Òª»ñÈ¡¼ÇÂ¼µÄÓÃ»§id
+	required string userId=1;//å‘é€è€…çš„ç”¨æˆ·id
+    }
+	
+}
+
+message M1115{  //æ ‡è¯†å¥½å‹  å¯¹åº”cmdId=1006
+
+    message S2C{
+	required int32 status = 1;   //çŠ¶æ€   
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	optional string targetUserId=3;//è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
+    }
+
+    message C2S{
+	required string userId=1;//å‘é€è€…çš„ç”¨æˆ·id
+	required string targetUserId=2;//è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
+	required int32 type=3;//1.æ ‡è®°å¥½å‹ï¼Œ2.å–æ¶ˆæ ‡è®°å¥½å‹
+    }
+	
+}
+
+message M1116{  //é»‘åå•  å¯¹åº”cmdId=1007
+ 
+    message S2C{
+	required int32 status = 1;   //çŠ¶æ€   
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	optional string targetUserId=3;//è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
+    }
+
+    message C2S{
+	required string userId=1;//å‘é€è€…çš„ç”¨æˆ·id
+	required string targetUserId=2;//è¢«æˆåŠŸæ“ä½œçš„å¥½å‹
+	required int32 type=3;//1.æ‹‰å…¥é»‘åå•ï¼Œ2.å–æ¶ˆé»‘åå•
+    }
+	
+}
+
+
+
+message M1117{  //è·å–èŠå¤©è®°å½•  å¯¹åº”cmdId=1004
+
+    message S2C{
+	required int32 status = 1;   //çŠ¶æ€   
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	repeated Commons.ChatMessage messages=3;//èŠå¤©è®°å½•
+    }
+
+    message C2S{
+	required string userId=1;//å‘é€è€…çš„ç”¨æˆ·id
+	required string targetUserId=2;//è¦è·å–è®°å½•çš„ç”¨æˆ·id
     }	
 }
 
-message M1118{ //ºÃÓÑÉÏÏÂÏßÌáĞÑ
+message M1118{ //å¥½å‹ä¸Šä¸‹çº¿æé†’  å¯¹åº”cmdId=1005
 
     message S2C{
-	required int32 actionType = 1; //×´Ì¬(1.ºÃÓÑÉÏÏß£¬2.ºÃÓÑÏÂÏß)
-	required string userId= 2;  //ºÃÓÑid
+	required int32 actionType = 1; //çŠ¶æ€(1.å¥½å‹ä¸Šçº¿ï¼Œ2.å¥½å‹ä¸‹çº¿)
+	required string userId= 2;  //å¥½å‹id
     }
 }
 
 
 
-message M1119{  //»ñÈ¡ºÚÃûµ¥ºÃÓÑ
+message M1119{  //è·å–é»‘åå•å¥½å‹   å¯¹åº”cmdId=1008
 
     message S2C{
-	required int32 status = 1;   //×´Ì¬   
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
-	repeated Commons.FriendWithLastMessage friends=3; //ºÃÓÑÁĞ±í
+	required int32 status = 1;   //çŠ¶æ€   
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+	repeated Commons.FriendWithLastMessage friends=3; //å¥½å‹åˆ—è¡¨
     }
 
     message C2S{
-	required string userId=1;//·¢ËÍÕßµÄÓÃ»§id
+	required string userId=1;//å‘é€è€…çš„ç”¨æˆ·id
     }	
 }
+
+
+
+message M1120{  //ä¸Šçº¿æ¨é€ç¦»çº¿æ¶ˆæ¯  å¯¹åº”cmdId=1009
+
+    message S2C{
+		required int32 status = 1;   //çŠ¶æ€   
+		optional string msg= 2;     //æç¤ºæ¶ˆæ¯
+		repeated Commons.ChatMessage messages=3;//èŠå¤©è®°å½•
+    }
+
+    message C2S{
+		required string userId=1;//å‘é€è€…çš„ç”¨æˆ·id
+    }	
+}
+
 
 
 

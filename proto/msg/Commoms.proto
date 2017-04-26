@@ -2,42 +2,42 @@ package com.tworr.msg.Commons;
   
 option java_package = "com.tworr.msg.protocal"; 
 
-option java_outer_classname = "Commons";  //¹«¹²
+option java_outer_classname = "Commons";  //å…¬å…±
 
 
-message ResponseInfo{ //·µ»Ø¿Í»§¶ËµÄÊµÌå
-	required int32 status = 1;   //×´Ì¬
-	optional string msg= 2;     //ÌáÊ¾ÏûÏ¢
+message ResponseInfo{ //è¿”å›å®¢æˆ·ç«¯çš„å®ä½“
+	required int32 status = 1;   //çŠ¶æ€
+	optional string msg= 2;     //æç¤ºæ¶ˆæ¯
 	
 }
 
 message SimpleUserInfo{
-	required string id=1;//ÓÃ»§id
-	required string nickName=2;//ÓÃ»§êÇ³Æ
-	required string headerPath=3;//Í·ÏñµØÖ·
-	required string email=4;//ÓÊÏä
-	optional int32 level=5;//µÈ¼¶
-	required bool isOnline=6;//ÊÇ·ñÔÚÏß
-	optional int32 isMark=7;//0.Ã»ÓĞ±ê¼Ç£¬1.ÒÑ¾­±ê¼Ç
+	required string id=1;//ç”¨æˆ·id
+	required string nickName=2;//ç”¨æˆ·æ˜µç§°
+	required string headerPath=3;//å¤´åƒåœ°å€
+	required string email=4;//é‚®ç®±
+	optional int32 level=5;//ç­‰çº§
+	required bool isOnline=6;//æ˜¯å¦åœ¨çº¿
+	optional int32 isMark=7;//0.æ²¡æœ‰æ ‡è®°ï¼Œ1.å·²ç»æ ‡è®°
 }
 
 message ImageMessage{
-	required bytes file=1;//Í¼Æ¬ÄÚÈİ
-	optional string fileName=2;//Í¼Æ¬Ãû³Æ
+	required bytes file=1;//å›¾ç‰‡å†…å®¹
+	optional string fileName=2;//å›¾ç‰‡åç§°
 }
 
 
 message ChatMessage{
-	optional SimpleUserInfo fromUser=1; //ÏûÏ¢À´Ô´
-	required string msgData=2;//ÄÚÈİ£¨Í¼Æ¬Â·¾¶ »òÕß ÎÄ±¾ÄÚÈİ£©
-	required int64 time=3;//·şÎñÆ÷Ê±¼ä
-	required int32 type=4;//1.´¿ÎÄ±¾£¬2.Í¼Æ¬
+	optional SimpleUserInfo fromUser=1; //æ¶ˆæ¯æ¥æº
+	required string msgData=2;//å†…å®¹ï¼ˆå›¾ç‰‡è·¯å¾„ æˆ–è€… æ–‡æœ¬å†…å®¹ï¼‰
+	required int64 time=3;//æœåŠ¡å™¨æ—¶é—´
+	required int32 type=4;//1.çº¯æ–‡æœ¬ï¼Œ2.å›¾ç‰‡
 }
 
 
 message FriendWithLastMessage{
-	required SimpleUserInfo friend=1;//ºÃÓÑ
-	optional ChatMessage message=2;//×îĞÂÒ»ÌõĞÅÏ¢
+	required SimpleUserInfo friend=1;//å¥½å‹
+	optional ChatMessage message=2;//æœ€æ–°ä¸€æ¡ä¿¡æ¯
 }
 
 
